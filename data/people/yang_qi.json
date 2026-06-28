@@ -1,0 +1,40 @@
+{
+  "id": "yang_qi",
+  "photo": "",
+  "name": {
+    "zh": "杨旗",
+    "en": "Yang Qi",
+    "ja": "楊 旗"
+  },
+  "title": {
+    "zh": "硕士研究生 · 2024 级",
+    "en": "Master's Student, enrolled 2024",
+    "ja": "修士課程・2024年入学"
+  },
+  "tagline": {
+    "zh": "H!NT Lab · 多智能文档理解",
+    "en": "",
+    "ja": ""
+  },
+  "links": {
+    "github": "",
+    "email": "",
+    "homepage": "",
+    "scholar": ""
+  },
+  "about": {
+    "zh": [
+      "上海大学计算机工程与科学学院硕士研究生，H!NT Lab 成员。",
+      "（编辑 data/people/yang_qi.json 替换为你的个人简介。）"
+    ],
+    "en": [],
+    "ja": []
+  },
+  "research": {
+    "zh": [
+      "多智能文档理解"
+    ],
+    "en": [],
+    "ja": []
+  }
+}

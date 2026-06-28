@@ -84,33 +84,7 @@
     },
     "projects": {
         "title": "Research Projects",
-        "subtitle": "Selected projects currently underway in our lab",
-        "cards": [
-            {
-                "name": "Deepling.tech",
-                "description": "An AI-powered technology commentary platform with a distinct voice, known for sharp, witty, and fully automated tech reviews.",
-                "logo": "/projects/deepling-logo.png",
-                "link": "https://www.deepling.tech"
-            },
-            {
-                "name": "DeepTrans Studio",
-                "description": "A professional AI-assisted translation platform for high-quality multilingual document translation and post-editing.",
-                "logo": "/projects/deeptrans-logo.svg",
-                "link": "https://www.deeptrans.studio"
-            },
-            {
-                "name": "DeepMed Search",
-                "description": "An intelligent medical literature retrieval system that uses deep learning and knowledge graphs to support precise search and recommendation for medical researchers.",
-                "logo": "/projects/deepmed-logo.svg",
-                "link": "https://www.deepmedsearch.cloud"
-            },
-            {
-                "name": "ChineseLawTranslation",
-                "description": "A Chinese–English legal translation project that builds high-quality legal terminology and translation resources to support the international communication of Chinese law.",
-                "logo": "/projects/chineselaw-logo.png",
-                "link": "https://www.chineselawtranslation.com"
-            }
-        ]
+        "subtitle": "Selected projects currently underway in our lab"
     },
     "expectations": {
         "title": "To Prospective Students",
@@ -180,7 +154,10 @@
                 "Interactive Medical RAG"
             ],
             [
-                "Yang Qi",
+                {
+                    "text": "Yang Qi",
+                    "href": "/people/yang_qi/en"
+                },
                 "2024",
                 "Dongguan University of Technology",
                 "",
@@ -203,7 +180,7 @@
                 "Liu Maolin",
                 "2026",
                 "Shanghai University",
-                "Trip.com Group",
+                "Trip.com Group, Shanghai",
                 {
                     "text": "Master's Thesis",
                     "href": "/thesis/liumaolin.pdf"

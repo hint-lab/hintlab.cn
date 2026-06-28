@@ -1,0 +1,78 @@
+{
+  "_comment": "复制本文件为 <你的拼音名>.json（例如 zhang_san.json），然后修改下面的字段。所有多语言字段如果只填 zh，en/ja 会自动回退到 zh。任何字段留空（或删除）后，页面上对应板块会自动隐藏。更多说明见 README.md。",
+
+  "id": "your_id",
+  "_id_comment": "必须与文件名（不含 .json）一致；URL 会是 /people/your_id",
+
+  "_optional": "以下字段都可选，不需要就删掉或留空",
+
+  "photo": "",
+  "_photo_comment": "把照片放到 public/people/<id>.jpg，这里填 /people/<id>.jpg。留空则用姓名首字母占位。",
+
+  "name": {
+    "zh": "你的姓名",
+    "en": "",
+    "ja": ""
+  },
+
+  "title": {
+    "zh": "硕士研究生 · 2024 级",
+    "en": "",
+    "ja": ""
+  },
+
+  "tagline": {
+    "zh": "一句话简介，会显示在姓名下方",
+    "en": "",
+    "ja": ""
+  },
+
+  "links": {
+    "_comment": "想显示哪个就填哪个；不填的图标不会显示",
+    "homepage": "",
+    "github": "",
+    "email": "",
+    "scholar": "",
+    "twitter": ""
+  },
+
+  "about": {
+    "_comment": "数组，每个元素是一段。不需要整个 about 板块就把它删掉。",
+    "zh": [
+      "第一段：自我介绍、背景、兴趣等。",
+      "第二段（可选）。"
+    ],
+    "en": [],
+    "ja": []
+  },
+
+  "research": {
+    "_comment": "数组，每行一个研究方向/兴趣点。",
+    "zh": [],
+    "en": [],
+    "ja": []
+  },
+
+  "publications": [
+    {
+      "_comment": "不需要就删掉整个 publications 数组或留空 []",
+      "year": "2024",
+      "title": "论文标题",
+      "authors": "",
+      "venue": "ACL / EMNLP / ...",
+      "href": "https://arxiv.org/..."
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "项目名",
+      "description": {
+        "zh": "项目简介",
+        "en": "",
+        "ja": ""
+      },
+      "href": "https://..."
+    }
+  ]
+}

@@ -7,23 +7,30 @@ import Image from 'next/image';
 import { ChevronDown } from 'lucide-react';
 
 type LangSwitchProps = {
-    /** 站点导航（首页等）或「个人简介」同页三语切换 */
-    scope?: 'site' | 'about';
+    /** site = 首页导航；about = 王老师页面三语切换；person = 学生/成员页面三语切换 */
+    scope?: 'site' | 'about' | 'person';
+    /** 仅 scope='person' 时使用，对应 data/people/<id>.json 的 id */
+    personId?: string;
     /** 'dark' = hero 深色背景, 'light' = 白色背景页面 */
     theme?: 'dark' | 'light';
 };
 
-export default function LangSwitch({ scope = 'site', theme = 'dark' }: LangSwitchProps) {
+export default function LangSwitch({ scope = 'site', personId, theme = 'dark' }: LangSwitchProps) {
     const pathname = usePathname();
 
-    const isAbout = scope === 'about';
-    const routes = isAbout
-        ? ({ zh: '/people/wang_hao', en: '/people/wang_hao/en', ja: '/people/wang_hao/ja' } as const)
-        : ({ zh: '/', en: '/en', ja: '/ja' } as const);
+    const routes: { zh: string; en: string; ja: string } =
+        scope === 'about'
+            ? { zh: '/people/wang_hao', en: '/people/wang_hao/en', ja: '/people/wang_hao/ja' }
+            : scope === 'person' && personId
+                ? { zh: `/people/${personId}`, en: `/people/${personId}/en`, ja: `/people/${personId}/ja` }
+                : { zh: '/', en: '/en', ja: '/ja' };
 
-    const current: 'zh' | 'en' | 'ja' = isAbout
+    const scopeKey = scope === 'about' ? 'about' : scope === 'person' && personId ? 'person' : 'site';
+    const current: 'zh' | 'en' | 'ja' = scopeKey === 'about'
         ? (pathname.startsWith('/people/wang_hao/ja') ? 'ja' : pathname.startsWith('/people/wang_hao/en') ? 'en' : 'zh')
-        : (pathname.startsWith('/en') ? 'en' : pathname.startsWith('/ja') ? 'ja' : 'zh');
+        : scopeKey === 'person'
+            ? (pathname.startsWith(`/people/${personId}/ja`) ? 'ja' : pathname.startsWith(`/people/${personId}/en`) ? 'en' : 'zh')
+            : (pathname.startsWith('/en') ? 'en' : pathname.startsWith('/ja') ? 'ja' : 'zh');
 
     const [open, setOpen] = useState(false);
     const btnRef = useRef<HTMLButtonElement | null>(null);

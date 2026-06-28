@@ -128,7 +128,15 @@ export default function WangHaoPageEN() {
                             <tbody>
                                 {t.students.rows.map((r, idx) => (
                                     <tr key={idx}>
-                                        {r.map((cell, cidx) => (<td key={cidx}>{cell}</td>))}
+                                        {r.map((cell: any, cidx: number) => (
+                                            <td key={cidx}>
+                                                {cell && typeof cell === 'object' && 'href' in cell ? (
+                                                    <a href={cell.href} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)' }}>{cell.text}</a>
+                                                ) : (
+                                                    cell
+                                                )}
+                                            </td>
+                                        ))}
                                     </tr>
                                 ))}
                             </tbody>

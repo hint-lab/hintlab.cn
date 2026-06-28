@@ -3,11 +3,12 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Brain, FileText, Lightbulb, Mail, Menu, Shield, X } from 'lucide-react';
+import { ArrowRight, Brain, ExternalLink, FileText, Lightbulb, Mail, Menu, PlayCircle, Shield, X } from 'lucide-react';
 import LangSwitch from './LangSwitch';
 import SideToc from './SideToc';
 import ContactModal from './ContactModal';
 import type { Dict } from '../lib/i18n';
+import { getProjects } from '../lib/projects';
 import pubs from '../../data/publications.json';
 
 type LandingPageProps = {
@@ -44,6 +45,7 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
   const [showContactModal, setShowContactModal] = useState(false);
   // Display latest 4 publications on home
   const homePubs = pubs.slice(0, 4);
+  const projects = getProjects(locale);
 
   const closeMenu = () => setMenuOpen(false);
 
@@ -162,25 +164,58 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
           />
 
           <div className="projects-grid">
-            {t.projects.cards.map((project: any, idx: number) => {
-              const styles = [
-                { class: 'thumb-purple', label: 'DEEPLING' },
-                { class: 'thumb-green', label: 'DeepTrans' },
-                { class: 'thumb-blue', label: 'DeepMed' },
-                { class: 'thumb-orange', label: 'CLT' },
-              ];
-              const style = styles[idx % styles.length];
+            {projects.map((project) => {
+              const papers = project.papers;
+              const detailHref = project.slug
+                ? locale === 'zh'
+                  ? `/projects/${project.slug}`
+                  : `/${locale}/projects/${project.slug}`
+                : '';
+              const style = { class: `thumb-${project.theme}`, label: project.label };
 
               return (
-                <a key={idx} href={project.link} target="_blank" rel="noopener noreferrer" className="project-card">
+                <article key={project.slug} className="project-card">
                   <div className={`project-thumb ${style.class}`}>
+                    {project.status && (
+                      <span className={`project-thumb-status project-thumb-status-${project.statusTone || 'neutral'}`}>
+                        {project.status}
+                      </span>
+                    )}
                     <span>{style.label}</span>
                   </div>
                   <div className="project-content">
                     <h3>{project.name}</h3>
                     <p>{project.description}</p>
+                    {(detailHref || project.link || project.video || papers.length > 0) && (
+                      <div className="project-actions">
+                        {detailHref && (
+                          <Link href={detailHref} className="project-link">
+                            <ArrowRight size={14} />
+                            {locale === 'zh' ? '详情' : locale === 'ja' ? '詳細' : 'Details'}
+                          </Link>
+                        )}
+                        {project.link && (
+                          <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                            <ExternalLink size={14} />
+                            Website
+                          </a>
+                        )}
+                        {project.video && (
+                          <a href={project.video} target="_blank" rel="noopener noreferrer" className="project-link">
+                            <PlayCircle size={14} />
+                            Video
+                          </a>
+                        )}
+                        {papers.map((paper: any) => (
+                          <a key={`${paper.label}-${paper.href}`} href={paper.href} className="project-link">
+                            <FileText size={14} />
+                            {paper.label || 'Paper'}
+                          </a>
+                        ))}
+                      </div>
+                    )}
                   </div>
-                </a>
+                </article>
               );
             })}
           </div>

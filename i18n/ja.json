@@ -83,33 +83,7 @@
     },
     "projects": {
         "title": "研究プロジェクト",
-        "subtitle": "当研究室で進行中の主要研究プロジェクト",
-        "cards": [
-            {
-                "name": "Deepling.tech",
-                "description": "独自の人格を持ち、完全自動運営のAI毒舌テクノロジー評論メディア。",
-                "logo": "/projects/deepling-logo.png",
-                "link": "https://www.deepling.tech"
-            },
-            {
-                "name": "DeepTrans Studio",
-                "description": "プロフェッショナルな深層翻訳スタジオ。AIを活用した高品質翻訳プラットフォームで、多言語文書のインテリジェント翻訳とポストエディットをサポート。",
-                "logo": "/projects/deeptrans-logo.svg",
-                "link": "https://www.deeptrans.studio"
-            },
-            {
-                "name": "DeepMed Search",
-                "description": "医学文献インテリジェント検索システム。深層学習と知識グラフ技術を活用し、医学研究者に精密な文献検索と推薦サービスを提供。",
-                "logo": "/projects/deepmed-logo.svg",
-                "link": "https://www.deepmedsearch.cloud"
-            },
-            {
-                "name": "ChineseLawTranslation",
-                "description": "中国法律文献バイリンガル翻訳プロジェクト。高品質な中英法律用語データベースを構築し、中国法の国際的普及を推進。",
-                "logo": "/projects/chineselaw-logo.png",
-                "link": "https://www.chineselawtranslation.com"
-            }
-        ]
+        "subtitle": "当研究室で進行中の主要研究プロジェクト"
     },
     "expectations": {
         "title": "志望する学生の皆さんへ",
@@ -181,7 +155,10 @@
                 "医療RAGの能動的対話"
             ],
             [
-                "楊 旗",
+                {
+                    "text": "楊 旗",
+                    "href": "/people/yang_qi/ja"
+                },
                 "2024",
                 "東莞理工学院",
                 "",
@@ -204,7 +181,7 @@
                 "劉 茂林",
                 "2026",
                 "上海大学",
-                "Trip.com Group",
+                "Trip.com Group（上海）",
                 {
                     "text": "修士論文",
                     "href": "/thesis/liumaolin.pdf"

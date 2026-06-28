@@ -1,0 +1,380 @@
+[
+  {
+    "slug": "runos",
+    "name": "RunOS",
+    "label": "RunOS",
+    "theme": "runos",
+    "link": "",
+    "video": "",
+    "logo": "",
+    "statusTone": "ongoing",
+    "status": {
+      "zh": "进行中",
+      "en": "Ongoing",
+      "ja": "進行中"
+    },
+    "description": {
+      "zh": "面向跨境物流治理的智能协同系统，围绕订单、单证、仓储、运输与风控流程构建可追踪、可协同、可治理的业务运行底座。",
+      "en": "An intelligent collaboration system for cross-border logistics governance, building a traceable and governable operating foundation across orders, documents, warehousing, transportation, and risk control.",
+      "ja": "越境物流ガバナンスに向けた知能協働システム。受注、書類、倉庫、輸送、リスク管理を横断し、追跡可能で統制可能な業務基盤を構築。"
+    },
+    "papers": [],
+    "detail": {
+      "tagline": {
+        "zh": "面向企业与跨境物流治理的 AI 原生业务操作系统。",
+        "en": "An AI-native operating system for enterprise and cross-border logistics governance.",
+        "ja": "企業および越境物流ガバナンスのためのAIネイティブ業務OS。"
+      },
+      "overview": {
+        "zh": "RunOS 将订单、单证、仓储、运输、风控与协同流程组织成可追踪、可治理的业务运行底座，并通过身份、流程、文档、网关与智能体模块把大模型能力嵌入真实业务链路。",
+        "en": "RunOS organizes orders, documents, warehousing, transportation, risk control, and collaboration into a traceable and governable operating foundation, embedding LLM capabilities into real business workflows through identity, workflow, document, gateway, and agent modules.",
+        "ja": "RunOSは、受注、書類、倉庫、輸送、リスク管理、協働プロセスを追跡可能で統制可能な業務基盤として組織し、ID、ワークフロー、文書、ゲートウェイ、エージェントの各モジュールを通じてLLM能力を実務に組み込みます。"
+      },
+      "highlights": {
+        "zh": [
+          "围绕跨境物流治理构建订单、单证、仓储、运输与风控的一体化协同底座。",
+          "通过 RunID、RunLoop、RunDoc、RunGateway、RunWorkers、RunAgents、RunHome 等模块形成可组合系统。",
+          "以动态本体、上下文包和可审计流程把 LLM 能力接入业务工作流。",
+          "面向企业级部署，强调权限边界、事件流、检索增强与运行可观测性。"
+        ],
+        "en": [
+          "Builds an integrated governance foundation across orders, documents, warehousing, transportation, and risk control.",
+          "Combines modules such as RunID, RunLoop, RunDoc, RunGateway, RunWorkers, RunAgents, and RunHome.",
+          "Uses dynamic ontology, context packs, and auditable workflows to connect LLMs with business operations.",
+          "Targets enterprise deployment with explicit permission boundaries, event streams, retrieval, and observability."
+        ],
+        "ja": [
+          "受注、書類、倉庫、輸送、リスク管理を横断する統合的な治理基盤を構築。",
+          "RunID、RunLoop、RunDoc、RunGateway、RunWorkers、RunAgents、RunHomeなどのモジュールで構成。",
+          "動的オントロジー、コンテキストパック、監査可能なワークフローでLLMと業務を接続。",
+          "権限境界、イベントストリーム、検索拡張、可観測性を重視した企業向け展開。"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "hetuos",
+    "name": "HetuOS",
+    "label": "HetuOS",
+    "theme": "hetuos",
+    "link": "",
+    "video": "",
+    "logo": "",
+    "statusTone": "ongoing",
+    "status": {
+      "zh": "进行中",
+      "en": "Ongoing",
+      "ja": "進行中"
+    },
+    "description": {
+      "zh": "面向城市社会治理的智能操作系统，支持多源数据汇聚、事件研判、协同处置与治理闭环，服务基层治理与公共服务场景。",
+      "en": "An intelligent operating system for urban social governance, supporting multi-source data integration, event analysis, collaborative response, and closed-loop governance for public-service scenarios.",
+      "ja": "都市社会ガバナンスに向けた知能オペレーティングシステム。多源データ統合、事案分析、協働対応、治理のクローズドループを支援。"
+    },
+    "papers": [],
+    "detail": {
+      "tagline": {
+        "zh": "面向城市社会治理与公共服务场景的智能操作系统。",
+        "en": "An intelligent operating system for urban social governance and public-service scenarios.",
+        "ja": "都市社会ガバナンスと公共サービスのための知能OS。"
+      },
+      "overview": {
+        "zh": "HetuOS 面向城市社会治理中的多源数据、事件研判、协同处置与治理闭环问题，探索将 AI 与基层治理流程结合，支撑公共服务与城市运行中的复杂协同。",
+        "en": "HetuOS explores how AI can support urban social governance through multi-source data integration, event analysis, collaborative response, and closed-loop governance workflows for public service and city operations.",
+        "ja": "HetuOSは、多源データ統合、事案分析、協働対応、閉ループ治理を通じて、都市社会ガバナンスと公共サービス、都市運営にAIを活用する方法を探ります。"
+      },
+      "highlights": {
+        "zh": [
+          "支持多源治理数据汇聚与结构化组织。",
+          "面向事件发现、研判、分派、处置与复盘的闭环治理流程。",
+          "强调跨部门协同、可解释处置依据与过程留痕。",
+          "服务基层治理、公共服务和城市运行管理等场景。"
+        ],
+        "en": [
+          "Integrates and structures multi-source governance data.",
+          "Supports closed-loop workflows from event discovery and analysis to dispatch, response, and review.",
+          "Emphasizes cross-department collaboration, explainable response evidence, and traceable processes.",
+          "Serves grassroots governance, public services, and city operations management."
+        ],
+        "ja": [
+          "多源治理データの統合と構造化を支援。",
+          "事案発見、分析、配分、対応、振り返りまでの閉ループを支援。",
+          "部門横断の協働、説明可能な対応根拠、プロセスの記録を重視。",
+          "基层治理、公共サービス、都市運営管理を対象。"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "deepling",
+    "name": "Deepling.tech",
+    "label": "DEEPLING",
+    "theme": "purple",
+    "link": "https://www.deepling.tech",
+    "video": "",
+    "logo": "/projects/deepling-logo.png",
+    "statusTone": "ongoing",
+    "status": {
+      "zh": "进行中",
+      "en": "Ongoing",
+      "ja": "進行中"
+    },
+    "description": {
+      "zh": "一个拥有独立人格、完全自动运营的AI毒舌科技评论自媒体。",
+      "en": "An AI-powered technology commentary platform with a distinct voice, known for sharp, witty, and fully automated tech reviews.",
+      "ja": "独自の人格を持ち、完全自動運営のAI毒舌テクノロジー評論メディア。"
+    },
+    "papers": [],
+    "detail": {
+      "tagline": {
+        "zh": "一个具备独立表达风格的 AI 科技评论与内容生产平台。",
+        "en": "An AI-powered technology commentary and content production platform.",
+        "ja": "AIによるテクノロジー評論とコンテンツ制作プラットフォーム。"
+      },
+      "overview": {
+        "zh": "Deepling.tech 探索 AI 驱动的科技内容生产方式，通过自动化选题、评论生成和网站发布形成具有辨识度的科技评论媒体。",
+        "en": "Deepling.tech explores AI-driven technology media production through automated topic discovery, commentary generation, and site publishing with a recognizable editorial voice.",
+        "ja": "Deepling.techは、自動的なトピック発見、評論生成、サイト公開を通じて、識別可能な編集スタイルを持つAI駆動型テクノロジーメディアを探索しています。"
+      },
+      "highlights": {
+        "zh": [
+          "面向科技趋势、产品和行业事件生成具有鲜明风格的评论内容。",
+          "探索从内容发现、观点组织到发布运营的自动化媒体工作流。",
+          "结合 LLM 网关、门户、身份认证和监控等基础设施支撑长期运行。"
+        ],
+        "en": [
+          "Generates distinctive commentary on technology trends, products, and industry events.",
+          "Explores automated media workflows from discovery and argument construction to publishing.",
+          "Runs on supporting infrastructure such as an LLM gateway, portal, authentication, and monitoring."
+        ],
+        "ja": [
+          "技術トレンド、製品、業界イベントに対する特徴的な評論を生成。",
+          "発見、論点構成、公開までの自動メディアワークフローを探索。",
+          "LLMゲートウェイ、ポータル、認証、監視などの基盤に支えられた運用。"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "deeptrans-studio",
+    "name": "DeepTrans Studio",
+    "label": "DeepTrans",
+    "theme": "green",
+    "link": "https://www.deeptrans.studio",
+    "video": "https://www.youtube.com/watch?v=ltrXg-NhHTo",
+    "logo": "/projects/deeptrans-logo.svg",
+    "statusTone": "completed",
+    "status": {
+      "zh": "已完成",
+      "en": "Completed",
+      "ja": "完了"
+    },
+    "description": {
+      "zh": "专业的深度翻译工作室，基于人工智能的高质量翻译平台，支持多语言文档的智能翻译与后期编辑。",
+      "en": "A professional AI-assisted translation platform for high-quality multilingual document translation and post-editing.",
+      "ja": "プロフェッショナルな深層翻訳スタジオ。AIを活用した高品質翻訳プラットフォームで、多言語文書のインテリジェント翻訳とポストエディットをサポート。"
+    },
+    "papers": [
+      {
+        "label": {
+          "zh": "CSCW '26 Demo Paper (CCF-A)",
+          "en": "CSCW '26 Demo Paper (CCF-A)",
+          "ja": "CSCW '26 Demo Paper (CCF-A)"
+        },
+        "href": {
+          "zh": "/publication",
+          "en": "/en/publication",
+          "ja": "/ja/publication"
+        }
+      },
+      {
+        "label": {
+          "zh": "ACL 2026 Paper (CCF-A)",
+          "en": "ACL 2026 Paper (CCF-A)",
+          "ja": "ACL 2026 Paper (CCF-A)"
+        },
+        "href": {
+          "zh": "/publication",
+          "en": "/en/publication",
+          "ja": "/ja/publication"
+        }
+      }
+    ],
+    "detail": {
+      "tagline": {
+        "zh": "面向专业翻译团队的 AI 辅助翻译与协作工作台。",
+        "en": "An AI-assisted translation and collaboration workbench for professional translation teams.",
+        "ja": "専門翻訳チーム向けのAI支援翻訳・協働ワークベンチ。"
+      },
+      "overview": {
+        "zh": "DeepTrans Studio 面向高质量多语言文档翻译和后期编辑，提供分段对齐编辑、团队记忆、术语管理、多智能体翻译与质量检查能力，让专家干预能够沉淀为团队可复用知识。",
+        "en": "DeepTrans Studio supports high-quality multilingual document translation and post-editing through segment-aligned editing, team memory, terminology management, multi-agent translation, and quality review, turning expert interventions into reusable team knowledge.",
+        "ja": "DeepTrans Studioは、セグメント対応編集、チームメモリ、用語管理、マルチエージェント翻訳、品質レビューにより、高品質な多言語文書翻訳とポストエディットを支援し、専門家の介入を再利用可能なチーム知識に変えます。"
+      },
+      "highlights": {
+        "zh": [
+          "提供面向译者和审校者的并行编辑、版本控制、实时预览与快捷操作。",
+          "支持术语抽取、质量评估、多引擎翻译与多智能体协作流程。",
+          "通过团队记忆和语义检索复用专家决策与翻译先例。",
+          "关联 CSCW '26 Demo 论文（CCF-A）和 ACL 2026 BabelDOC 系统论文（CCF-A）。"
+        ],
+        "en": [
+          "Provides parallel editing, version control, live preview, and efficient review workflows for translators and reviewers.",
+          "Supports terminology extraction, quality assessment, multi-engine translation, and multi-agent collaboration.",
+          "Uses team memory and semantic retrieval to reuse expert decisions and translation precedents.",
+          "Connected to a CSCW '26 Demo paper (CCF-A) and the ACL 2026 BabelDOC system paper (CCF-A)."
+        ],
+        "ja": [
+          "翻訳者・レビュー担当者向けに並行編集、バージョン管理、ライブプレビュー、効率的なレビューを提供。",
+          "用語抽出、品質評価、複数翻訳エンジン、マルチエージェント協働を支援。",
+          "チームメモリと意味検索により専門家の判断と翻訳先例を再利用。",
+          "CSCW '26 Demo論文（CCF-A）およびACL 2026 BabelDOCシステム論文（CCF-A）と関連。"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "deepmed-search",
+    "name": "DeepMed Search",
+    "label": "DeepMed",
+    "theme": "blue",
+    "link": "https://www.deepmedsearch.cloud",
+    "video": "https://youtu.be/4U4aok8yLpk",
+    "logo": "/projects/deepmed-logo.svg",
+    "statusTone": "completed",
+    "status": {
+      "zh": "已完成",
+      "en": "Completed",
+      "ja": "完了"
+    },
+    "description": {
+      "zh": "医学文献智能检索系统，利用深度学习和知识图谱技术，为医学研究人员提供精准的文献检索和推荐服务。",
+      "en": "An intelligent medical literature retrieval system that uses deep learning and knowledge graphs to support precise search and recommendation for medical researchers.",
+      "ja": "医学文献インテリジェント検索システム。深層学習と知識グラフ技術を活用し、医学研究者に精密な文献検索と推薦サービスを提供。"
+    },
+    "papers": [
+      {
+        "label": {
+          "zh": "IJCAI-ECAI 2026 Paper",
+          "en": "IJCAI-ECAI 2026 Paper",
+          "ja": "IJCAI-ECAI 2026 Paper"
+        },
+        "href": {
+          "zh": "/publication",
+          "en": "/en/publication",
+          "ja": "/ja/publication"
+        }
+      }
+    ],
+    "detail": {
+      "tagline": {
+        "zh": "面向医学深度研究的智能文献检索与验证平台。",
+        "en": "An intelligent medical literature retrieval and verification platform for deep medical research.",
+        "ja": "医学深層研究のための知的文献検索・検証プラットフォーム。"
+      },
+      "overview": {
+        "zh": "DeepMed Search 面向医学研究者的精确文献检索与推荐需求，结合深度学习、知识图谱与智能体式检索流程，支持医学证据发现和内省式验证。",
+        "en": "DeepMed Search supports precise literature search and recommendation for medical researchers by combining deep learning, knowledge graphs, and agentic retrieval workflows with introspective verification.",
+        "ja": "DeepMed Searchは、深層学習、知識グラフ、エージェント型検索ワークフロー、内省的検証を組み合わせ、医学研究者の精密な文献検索と推薦を支援します。"
+      },
+      "highlights": {
+        "zh": [
+          "利用深度学习和知识图谱提升医学文献检索与推荐质量。",
+          "面向 medical deep research 构建智能体式检索与分析流程。",
+          "强调内省式验证，帮助研究者判断检索结果和证据可靠性。",
+          "对应 IJCAI-ECAI 2026 Demonstrations Track 论文与演示视频。"
+        ],
+        "en": [
+          "Uses deep learning and knowledge graphs to improve medical literature retrieval and recommendation.",
+          "Builds an agentic workflow for medical deep research.",
+          "Emphasizes introspective verification of retrieved evidence and research results.",
+          "Associated with an IJCAI-ECAI 2026 Demonstrations Track paper and demo video."
+        ],
+        "ja": [
+          "深層学習と知識グラフにより医学文献検索と推薦を改善。",
+          "medical deep researchに向けたエージェント型ワークフローを構築。",
+          "検索された証拠と研究結果の内省的検証を重視。",
+          "IJCAI-ECAI 2026 Demonstrations Track論文および動画と関連。"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "chinese-law-translation",
+    "name": "ChineseLawTranslation",
+    "label": "CLT",
+    "theme": "orange",
+    "link": "https://www.chineselawtranslation.com",
+    "video": "",
+    "logo": "/projects/chineselaw-logo.png",
+    "statusTone": "completed",
+    "status": {
+      "zh": "已完成",
+      "en": "Completed",
+      "ja": "完了"
+    },
+    "description": {
+      "zh": "中国法律文献双语翻译项目，建立高质量的中英法律术语库，推动中国法律的国际化传播。",
+      "en": "A Chinese–English legal translation project that builds high-quality legal terminology and translation resources to support the international communication of Chinese law.",
+      "ja": "中国法律文献バイリンガル翻訳プロジェクト。高品質な中英法律用語データベースを構築し、中国法の国際的普及を推進。"
+    },
+    "papers": [
+      {
+        "label": {
+          "zh": "ARTI 2026 Paper",
+          "en": "ARTI 2026 Paper",
+          "ja": "ARTI 2026 Paper"
+        },
+        "href": {
+          "zh": "/publication",
+          "en": "/en/publication",
+          "ja": "/ja/publication"
+        }
+      },
+      {
+        "label": {
+          "zh": "ARTI 2025 Paper",
+          "en": "ARTI 2025 Paper",
+          "ja": "ARTI 2025 Paper"
+        },
+        "href": {
+          "zh": "/publication",
+          "en": "/en/publication",
+          "ja": "/ja/publication"
+        }
+      }
+    ],
+    "detail": {
+      "tagline": {
+        "zh": "面向中国法律国际传播的法律翻译资源与智能系统项目。",
+        "en": "A legal translation resource and intelligent-system project for the international communication of Chinese law.",
+        "ja": "中国法の国際発信に向けた法律翻訳資源と知能システムのプロジェクト。"
+      },
+      "overview": {
+        "zh": "ChineseLawTranslation 聚焦中国法律文本的中英翻译、法律术语映射和立法文本忠实度控制，建设高质量法律术语与翻译资源，并支撑法律翻译中的人机协同研究。",
+        "en": "ChineseLawTranslation focuses on Chinese-English legal translation, legal terminology mapping, and fidelity control for legislative texts, building high-quality terminology and translation resources while supporting human-AI collaboration research in legal translation.",
+        "ja": "ChineseLawTranslationは、中英法律翻訳、法律用語マッピング、立法テキストの忠実度制御に焦点を当て、高品質な用語・翻訳資源を構築し、法律翻訳における人間とAIの協働研究を支援します。"
+      },
+      "highlights": {
+        "zh": [
+          "建设高质量中英法律术语库与法律文献翻译资源。",
+          "支持中国法律文本的国际传播和跨语言理解。",
+          "关联 2026 ARTI 论文：立法文本翻译中的层级控制与忠实度工程。",
+          "关联 2025 ARTI 论文：面向多语言法律术语映射的人在回路多智能体框架。"
+        ],
+        "en": [
+          "Builds high-quality Chinese-English legal terminology and translation resources.",
+          "Supports international communication and cross-lingual understanding of Chinese law.",
+          "Related to a 2026 ARTI paper on hierarchical control for legislative translation fidelity.",
+          "Related to a 2025 ARTI paper on a human-in-the-loop multi-agent framework for multilingual legal terminology mapping."
+        ],
+        "ja": [
+          "高品質な中英法律用語と翻訳資源を構築。",
+          "中国法の国際発信と越境理解を支援。",
+          "2026年ARTI論文：立法翻訳の忠実度に向けた階層制御と関連。",
+          "2025年ARTI論文：多言語法律用語マッピングのための人間参加型マルチエージェント枠組みと関連。"
+        ]
+      }
+    }
+  }
+]

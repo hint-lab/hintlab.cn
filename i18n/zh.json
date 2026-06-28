@@ -102,33 +102,7 @@
     },
     "projects": {
         "title": "研究项目",
-        "subtitle": "我们实验室正在进行的主要研究项目",
-        "cards": [
-            {
-                "name": "Deepling.tech",
-                "description": "一个拥有独立人格、完全自动运营的AI毒舌科技评论自媒体。",
-                "logo": "/projects/deepling-logo.png",
-                "link": "https://www.deepling.tech"
-            },
-            {
-                "name": "DeepTrans Studio",
-                "description": "专业的深度翻译工作室，基于人工智能的高质量翻译平台，支持多语言文档的智能翻译与后期编辑。",
-                "logo": "/projects/deeptrans-logo.svg",
-                "link": "https://www.deeptrans.studio"
-            },
-            {
-                "name": "DeepMed Search",
-                "description": "医学文献智能检索系统，利用深度学习和知识图谱技术，为医学研究人员提供精准的文献检索和推荐服务。",
-                "logo": "/projects/deepmed-logo.svg",
-                "link": "https://www.deepmedsearch.cloud"
-            },
-            {
-                "name": "ChineseLawTranslation",
-                "description": "中国法律文献双语翻译项目，建立高质量的中英法律术语库，推动中国法律的国际化传播。",
-                "logo": "/projects/chineselaw-logo.png",
-                "link": "https://www.chineselawtranslation.com"
-            }
-        ]
+        "subtitle": "我们实验室正在进行的主要研究项目"
     },
     "expectations": {
         "title": "致新同学",
@@ -161,7 +135,7 @@
             "备注",
             "研究方向"
         ],
-        "rows": [ 
+        "rows": [
             [
                 "刘瑞斌",
                 "2025",
@@ -198,7 +172,10 @@
                 "多语言人机交互"
             ],
             [
-                "杨旗",
+                {
+                    "text": "杨旗",
+                    "href": "/people/yang_qi"
+                },
                 "2024",
                 "东莞理工学院",
                 "",
@@ -221,7 +198,7 @@
                 "刘茂林",
                 "2026",
                 "上海大学",
-                "携程",
+                "携程，上海",
                 {
                     "text": "硕士论文",
                     "href": "/thesis/liumaolin.pdf"
