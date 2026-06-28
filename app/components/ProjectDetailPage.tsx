@@ -71,6 +71,7 @@ export default function ProjectDetailPage({ t, locale, slug, homeHref }: Project
 
   const papers = project.papers || [];
   const detail = project.detail || {};
+  const sections = detail.sections || [];
   const embed = youtubeEmbed(project.video);
 
   return (
@@ -98,10 +99,17 @@ export default function ProjectDetailPage({ t, locale, slug, homeHref }: Project
                 </a>
               )}
               {papers.map((paper: any) => (
-                <a key={paper.label} href={paper.href} className="project-link">
-                  <FileText size={14} />
-                  {paper.label || L.paper}
-                </a>
+                paper.href ? (
+                  <a key={paper.label} href={paper.href} className="project-link">
+                    <FileText size={14} />
+                    {paper.label || L.paper}
+                  </a>
+                ) : (
+                  <span key={paper.label} className="project-link project-link-static">
+                    <FileText size={14} />
+                    {paper.label || L.paper}
+                  </span>
+                )
               ))}
             </div>
           </div>
@@ -133,6 +141,19 @@ export default function ProjectDetailPage({ t, locale, slug, homeHref }: Project
         </div>
       </section>
 
+      {sections.length > 0 && (
+        <section className="section section-alt project-detail-section">
+          <div className="container project-detail-sections">
+            {sections.map((section) => (
+              <article key={section.title} className="project-detail-panel">
+                <h2>{section.title}</h2>
+                <p>{section.body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
       {embed && (
         <section id="project-video" className="section section-alt project-detail-section">
           <div className="container">
@@ -155,7 +176,13 @@ export default function ProjectDetailPage({ t, locale, slug, homeHref }: Project
           <div className="project-output-list">
             {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer">{L.website}</a>}
             {project.video && <a href={project.video} target="_blank" rel="noopener noreferrer">{L.video}</a>}
-            {papers.map((paper: any) => <a key={paper.label} href={paper.href}>{paper.label || L.paper}</a>)}
+            {papers.map((paper: any) => (
+              paper.href ? (
+                <a key={paper.label} href={paper.href}>{paper.label || L.paper}</a>
+              ) : (
+                <span key={paper.label}>{paper.label || L.paper}</span>
+              )
+            ))}
           </div>
         </div>
       </section>

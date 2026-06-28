@@ -117,7 +117,7 @@ export default function PublicationPage({
                   </div>
                   <ul className="publication-list">
                     {byYear[year].map((entry) => (
-                      <li key={`${year}-${entry.id}`} className="publication-card">
+                      <li key={`${year}-${entry.id}`} id={entry.id} className="publication-card">
                         <div className="publication-main">
                           <div className="publication-badge">
                             {entry.abbr || ((entry as any).journal || (entry as any).booktitle || 'Paper').split(' ')[0]}

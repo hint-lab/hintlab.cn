@@ -37,6 +37,7 @@
     "abbr": "ACL",
     "booktitle": "In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics: System Demonstrations [CCF-A]",
     "year": 2026,
+    "url": "https://aclanthology.org/2026.acl-demo.54/",
     "areas": ["doc-understanding"]
   },
   {
@@ -87,6 +88,7 @@
     "abbr": "ARTI",
     "booktitle": "Artificial Intelligence and Law (SCI Q2/SSCI Q1)",
     "year": 2025,
+    "doi": "https://doi.org/10.1007/s10506-025-09442-8",
     "areas": ["hci"]
   },
   {

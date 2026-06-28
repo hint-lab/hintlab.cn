@@ -27,6 +27,10 @@ type ProjectSource = {
     tagline: Localized<string>;
     overview: Localized<string>;
     highlights: Localized<string[]>;
+    sections?: Array<{
+      title: Localized<string>;
+      body: Localized<string>;
+    }>;
   };
 };
 
@@ -49,6 +53,10 @@ export type ProjectView = {
     tagline: string;
     overview: string;
     highlights: string[];
+    sections: Array<{
+      title: string;
+      body: string;
+    }>;
   };
 };
 
@@ -78,6 +86,10 @@ export function getProjects(locale: Locale): ProjectView[] {
       tagline: pick(project.detail.tagline, locale),
       overview: pick(project.detail.overview, locale),
       highlights: pick(project.detail.highlights, locale),
+      sections: (project.detail.sections || []).map((section) => ({
+        title: pick(section.title, locale),
+        body: pick(section.body, locale),
+      })),
     },
   }));
 }

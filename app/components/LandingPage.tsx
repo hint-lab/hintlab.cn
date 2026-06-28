@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { ArrowRight, Brain, ExternalLink, FileText, Lightbulb, Mail, Menu, PlayCircle, Shield, X } from 'lucide-react';
 import LangSwitch from './LangSwitch';
 import SideToc from './SideToc';
@@ -41,6 +42,7 @@ function SectionHeading({ kicker, title, summary }: { kicker?: string; title: st
 }
 
 export default function LandingPage({ t, aboutHref, publicationHref, locale }: LandingPageProps) {
+  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
   // Display latest 4 publications on home
@@ -172,9 +174,30 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
                   : `/${locale}/projects/${project.slug}`
                 : '';
               const style = { class: `thumb-${project.theme}`, label: project.label };
+              const openDetail = () => {
+                if (detailHref) router.push(detailHref);
+              };
+              const openDetailByKeyboard = (event: React.KeyboardEvent<HTMLElement>) => {
+                if (!detailHref) return;
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault();
+                  router.push(detailHref);
+                }
+              };
+              const keepActionClick = (event: React.MouseEvent<HTMLElement>) => {
+                event.stopPropagation();
+              };
 
               return (
-                <article key={project.slug} className="project-card">
+                <article
+                  key={project.slug}
+                  className="project-card"
+                  role={detailHref ? 'link' : undefined}
+                  tabIndex={detailHref ? 0 : undefined}
+                  onClick={openDetail}
+                  onKeyDown={openDetailByKeyboard}
+                  aria-label={`${project.name} ${locale === 'zh' ? '详情' : locale === 'ja' ? '詳細' : 'details'}`}
+                >
                   <div className={`project-thumb ${style.class}`}>
                     {project.status && (
                       <span className={`project-thumb-status project-thumb-status-${project.statusTone || 'neutral'}`}>
@@ -189,28 +212,35 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
                     {(detailHref || project.link || project.video || papers.length > 0) && (
                       <div className="project-actions">
                         {detailHref && (
-                          <Link href={detailHref} className="project-link">
+                          <Link href={detailHref} className="project-link" onClick={keepActionClick}>
                             <ArrowRight size={14} />
                             {locale === 'zh' ? '详情' : locale === 'ja' ? '詳細' : 'Details'}
                           </Link>
                         )}
                         {project.link && (
-                          <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                          <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link" onClick={keepActionClick}>
                             <ExternalLink size={14} />
                             Website
                           </a>
                         )}
                         {project.video && (
-                          <a href={project.video} target="_blank" rel="noopener noreferrer" className="project-link">
+                          <a href={project.video} target="_blank" rel="noopener noreferrer" className="project-link" onClick={keepActionClick}>
                             <PlayCircle size={14} />
                             Video
                           </a>
                         )}
                         {papers.map((paper: any) => (
-                          <a key={`${paper.label}-${paper.href}`} href={paper.href} className="project-link">
-                            <FileText size={14} />
-                            {paper.label || 'Paper'}
-                          </a>
+                          paper.href ? (
+                            <a key={`${paper.label}-${paper.href}`} href={paper.href} className="project-link" onClick={keepActionClick}>
+                              <FileText size={14} />
+                              {paper.label || 'Paper'}
+                            </a>
+                          ) : (
+                            <span key={paper.label} className="project-link project-link-static" onClick={keepActionClick}>
+                              <FileText size={14} />
+                              {paper.label || 'Paper'}
+                            </span>
+                          )
                         ))}
                       </div>
                     )}
