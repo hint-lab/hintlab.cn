@@ -48,6 +48,24 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
   // Display latest 4 publications on home
   const homePubs = pubs.slice(0, 4);
   const projects = getProjects(locale);
+  const contactSummary =
+    locale === 'zh'
+      ? '如需了解实验室、合作研究或招生信息，请与我们联系。'
+      : locale === 'ja'
+        ? '研究室、共同研究、学生募集に関する問い合わせはこちら。'
+        : 'Questions about the lab, research collaboration, or student opportunities.';
+  const footerLinks =
+    locale === 'zh'
+      ? { home: '首页', research: '研究方向', projects: '项目', contact: '联系' }
+      : locale === 'ja'
+        ? { home: 'ホーム', research: '研究領域', projects: '研究プロジェクト', contact: '連絡先' }
+        : { home: 'Home', research: 'Research', projects: 'Projects', contact: 'Contact' };
+  const actionLabels =
+    locale === 'zh'
+      ? { website: '网站', video: '视频' }
+      : locale === 'ja'
+        ? { website: 'ウェブサイト', video: '動画' }
+        : { website: 'Website', video: 'Video' };
 
   const closeMenu = () => setMenuOpen(false);
 
@@ -220,13 +238,13 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
                         {project.link && (
                           <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link" onClick={keepActionClick}>
                             <ExternalLink size={14} />
-                            Website
+                            {actionLabels.website}
                           </a>
                         )}
                         {project.video && (
                           <a href={project.video} target="_blank" rel="noopener noreferrer" className="project-link" onClick={keepActionClick}>
                             <PlayCircle size={14} />
-                            Video
+                            {actionLabels.video}
                           </a>
                         )}
                         {papers.map((paper: any) => (
@@ -285,7 +303,7 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
         <div className="container">
           <SectionHeading
             title={t.contact.title}
-            summary={locale === 'zh' ? '如需了解实验室、合作研究或招生信息，请与我们联系。' : 'Questions about the lab, research collaboration, or student opportunities.'}
+            summary={contactSummary}
           />
 
           <div className="contact-panel">
@@ -373,10 +391,10 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
         <div className="container">
           <p className="footer-brand">© {new Date().getFullYear()} H!NT Lab · Shanghai University</p>
           <div className="footer-links">
-            <a href="#home">首页</a>
-            <a href="#research-areas">研究方向</a>
-            <a href="#projects">项目</a>
-            <a href="#contact">联系</a>
+            <a href="#home">{footerLinks.home}</a>
+            <a href="#research-areas">{footerLinks.research}</a>
+            <a href="#projects">{footerLinks.projects}</a>
+            <a href="#contact">{footerLinks.contact}</a>
           </div>
           <div className="footer-beian">
             <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">

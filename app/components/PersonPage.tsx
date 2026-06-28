@@ -25,7 +25,7 @@ const wordLabels: Record<Locale, {
 }> = {
   zh: { back: '← 返回主页', about: '关于我', research: '研究方向', publications: '论文成果', projects: '项目经历', home: '主页', about_short: '简介' },
   en: { back: '← Back to home', about: 'About', research: 'Research', publications: 'Publications', projects: 'Projects', home: 'Home', about_short: 'About' },
-  ja: { back: '← ホームに戻る', about: '自己紹介', research: '研究テーマ', publications: '研究業績', projects: 'プロジェクト', home: 'ホーム', about_short: '概要' },
+  ja: { back: '← ホームに戻る', about: 'プロフィール', research: '研究テーマ', publications: '研究業績', projects: 'プロジェクト', home: 'ホーム', about_short: '概要' },
 };
 
 function pick<T>(field: Localized<T> | undefined, locale: Locale): T | undefined {

@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'H!NT Lab | 实验室主页',
-  description: '人工智能、人机协同认知、自然语言处理实验室主页',
+  title: 'H!NT Lab',
+  description: 'Human-Intelligence iNTegration Lab',
   icons: [{ rel: 'icon', url: '/favicon.svg' }],
   metadataBase: new URL('https://www.hintlab.cn')
 };

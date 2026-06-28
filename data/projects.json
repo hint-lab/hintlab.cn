@@ -16,14 +16,14 @@
     "description": {
       "zh": "面向跨境物流治理的 AI 原生业务运行底座。",
       "en": "An AI-native operating foundation for cross-border logistics governance.",
-      "ja": "越境物流ガバナンスのためのAIネイティブ業務基盤。"
+      "ja": "越境物流の業務管理を支えるAIネイティブ基盤。"
     },
     "papers": [],
     "detail": {
       "tagline": {
         "zh": "面向企业与跨境物流治理的 AI 原生业务操作系统。",
         "en": "An AI-native operating system for enterprise and cross-border logistics governance.",
-        "ja": "企業および越境物流ガバナンスのためのAIネイティブ業務OS。"
+        "ja": "企業業務と越境物流管理のためのAIネイティブ業務OS。"
       },
       "overview": {
         "zh": "RunOS 的出发点不是做一个聊天机器人，而是解决企业业务链路中“信息散、责任散、证据散”的问题。项目围绕跨境物流中的订单、单证、仓储、运输、风控与协同流程，建设身份、流程、文档、网关、智能体和门户等模块，让大模型能力进入真实可审计的业务操作链。",
@@ -44,7 +44,7 @@
           "Targets enterprise deployment with explicit permission boundaries, event streams, retrieval, and observability."
         ],
         "ja": [
-          "受注、書類、倉庫、輸送、リスク管理を横断する統合的な治理基盤を構築。",
+          "受注、書類、倉庫、輸送、リスク管理を横断する統合的な業務管理基盤を構築。",
           "RunID、RunLoop、RunDoc、RunGateway、RunWorkers、RunAgents、RunHomeなどのモジュールで構成。",
           "動的オントロジー、コンテキストパック、監査可能なワークフローでLLMと業務を接続。",
           "権限境界、イベントストリーム、検索拡張、可観測性を重視した企業向け展開。"
@@ -84,7 +84,7 @@
           "body": {
             "zh": "目前项目已形成可运行的多模块系统原型，并在跨境物流业务中验证订单、单证、工作流、知识检索和智能体协同的端到端链路。该项目仍在进行中，后续重点是企业级稳定性、权限治理和业务指标验证。",
             "en": "The project has produced a running multi-module prototype and verified end-to-end flows across orders, documents, workflow, retrieval, and agent collaboration in logistics scenarios. It remains ongoing, with the next focus on production stability, governance, and business-metric validation.",
-            "ja": "複数モジュールからなる稼働プロトタイプを形成し、物流シナリオで受注、文書、ワークフロー、検索、エージェント協働の一連の流れを検証している。今後は安定性、権限治理、業務指標の検証を重視する。"
+            "ja": "複数モジュールからなる稼働プロトタイプを構築し、物流シナリオにおいて受注、文書、ワークフロー、検索、エージェント協働の一連の流れを検証している。今後は安定性、権限管理、業務指標の検証を重視する。"
           }
         }
       ]
@@ -119,7 +119,7 @@
       "overview": {
         "zh": "HetuOS 的研究对象是城市社会治理中的“发现、研判、分派、处置、复盘”链路。项目把多源治理数据结构化，结合智能研判、部门协同、过程留痕和反馈闭环，探索 AI 如何真正服务基层治理和公共服务，而不是停留在问答展示。",
         "en": "HetuOS focuses on the full loop of discovery, analysis, dispatch, response, and review in urban governance. It structures multi-source governance data and combines intelligent analysis, cross-agency collaboration, traceable processes, and feedback loops so AI can support real public-service work.",
-        "ja": "HetuOSは、都市治理における発見、分析、配分、対応、振り返りの一連の流れを対象とする。多源治理データを構造化し、知的分析、部門間協働、過程記録、フィードバックループを組み合わせる。"
+        "ja": "HetuOSは、都市ガバナンスにおける発見、分析、割り当て、対応、振り返りまでの一連の流れを対象とする。多様な行政・社会データを構造化し、知的分析、部門間協働、プロセス記録、フィードバックループを組み合わせる。"
       },
       "highlights": {
         "zh": [
@@ -135,10 +135,10 @@
           "Serves grassroots governance, public services, and city operations management."
         ],
         "ja": [
-          "多源治理データの統合と構造化を支援。",
+          "多様な行政・社会データの統合と構造化を支援。",
           "事案発見、分析、配分、対応、振り返りまでの閉ループを支援。",
           "部門横断の協働、説明可能な対応根拠、プロセスの記録を重視。",
-          "基层治理、公共サービス、都市運営管理を対象。"
+          "基層ガバナンス、公共サービス、都市運営管理を対象とする。"
         ]
       },
       "sections": [
@@ -151,7 +151,7 @@
           "body": {
             "zh": "基层治理并不缺少系统入口，真正困难在于数据口径不统一、责任链条不清楚、事件处置过程难以复盘。项目希望把 AI 放在治理流程内部，帮助工作人员更快理解事件、组织证据和协同处置。",
             "en": "Grassroots governance rarely lacks system entry points; the harder problems are inconsistent data definitions, unclear responsibility chains, and weak review of response processes. HetuOS places AI inside the governance workflow to support event understanding, evidence organization, and coordinated response.",
-            "ja": "基层治理では入口システムよりも、データ定義の不一致、責任関係の不明確さ、対応過程の振り返り不足が問題になる。HetuOSはAIを治理プロセス内に置き、事案理解、証拠整理、協働対応を支える。"
+            "ja": "基層ガバナンスでは、入口となるシステム以上に、データ定義の不一致、責任関係の不明確さ、対応過程の振り返り不足が問題となる。HetuOSはAIをガバナンスプロセスに組み込み、事案理解、証拠整理、協働対応を支える。"
           }
         },
         {
@@ -175,7 +175,7 @@
           "body": {
             "zh": "项目形成了城市治理智能操作系统的系统框架和场景原型，可支撑多源数据汇聚、事件闭环和协同处置流程。当前仍在进行中，重点是进一步沉淀治理知识、完善可解释机制和场景评测。",
             "en": "The project has produced a system framework and scenario prototypes for intelligent urban governance, supporting multi-source data integration, event loops, and collaborative response. It remains ongoing, with work continuing on governance knowledge, explainability, and scenario evaluation.",
-            "ja": "知能都市治理OSのフレームワークとシナリオプロトタイプを形成し、多源データ統合、事案ループ、協働対応を支援する。今後は治理知識、説明可能性、シナリオ評価を深める。"
+            "ja": "知能都市ガバナンスOSのフレームワークとシナリオプロトタイプを構築し、多様なデータの統合、事案処理のループ化、協働対応を支援する。今後はガバナンス知識、説明可能性、シナリオ評価を深める。"
           }
         }
       ]
@@ -198,19 +198,19 @@
     "description": {
       "zh": "一个持续运营的 AI 科技评论与内容生产平台。",
       "en": "A continuously operating AI technology commentary platform.",
-      "ja": "継続運営されるAIテクノロジー評論プラットフォーム。"
+      "ja": "継続運用型のAIテクノロジー評論プラットフォーム。"
     },
     "papers": [],
     "detail": {
       "tagline": {
         "zh": "一个具备独立表达风格的 AI 科技评论与内容生产平台。",
         "en": "An AI-powered technology commentary and content production platform.",
-        "ja": "AIによるテクノロジー評論とコンテンツ制作プラットフォーム。"
+        "ja": "AIによるテクノロジー評論・コンテンツ制作プラットフォーム。"
       },
       "overview": {
         "zh": "Deepling.tech 不是一次性生成文章的演示，而是一个长期运行的 AI 媒体实验。项目关心的问题包括：AI 如何发现值得评论的技术事件，如何在事实约束下形成观点，如何保持稳定的人格化表达，以及如何通过网站发布、监控和反馈持续迭代。",
         "en": "Deepling.tech is not a one-off article generator. It is a long-running AI media experiment studying how an AI system discovers worthwhile technology events, forms opinions under factual constraints, maintains a stable editorial persona, and improves through publishing, monitoring, and feedback.",
-        "ja": "Deepling.techは単発の記事生成デモではなく、長期運用されるAIメディア実験である。技術イベントの発見、事実制約下での意見形成、安定した編集人格、公開と監視による改善を扱う。"
+        "ja": "Deepling.techは単発の記事生成デモではなく、長期運用を前提としたAIメディア実験である。技術イベントの発見、事実制約下での論点形成、一貫した編集スタイル、公開後の観測と改善を扱う。"
       },
       "highlights": {
         "zh": [
@@ -226,7 +226,7 @@
         ],
         "ja": [
           "技術トレンド、製品、業界イベントに対する特徴的な評論を生成。",
-          "発見、論点構成、公開までの自動メディアワークフローを探索。",
+          "情報発見から論点構成、公開までを含む自動メディアワークフローを探索。",
           "LLMゲートウェイ、ポータル、認証、監視などの基盤に支えられた運用。"
         ]
       },
@@ -240,7 +240,7 @@
           "body": {
             "zh": "大量 AI 内容系统停留在单篇生成，缺少持续运营、风格一致、事实可控的验证。Deepling.tech 用真实网站作为实验场，观察 AI 是否能像一个有编辑判断的媒体一样长期工作。",
             "en": "Many AI content systems stop at single-article generation and do not test continuous operation, stable style, or factual control. Deepling.tech uses a real website as the testbed for whether AI can work like a media outlet with editorial judgment.",
-            "ja": "多くのAIコンテンツシステムは単発生成で止まり、継続運用、文体一貫性、事実制御を検証しない。Deepling.techは実サイトを実験場にする。"
+            "ja": "多くのAIコンテンツシステムは単発生成に留まり、継続運用、文体の一貫性、事実制御を検証しない。Deepling.techは実際のWebサイトを実験環境として用いる。"
           }
         },
         {
@@ -252,7 +252,7 @@
           "body": {
             "zh": "项目搭建了从信息源采集、话题筛选、提示词编排、评论生成、人工或自动审核到发布监控的流程，并把媒体人格、禁区、语气和事实约束沉淀为可配置规则。",
             "en": "The project builds a pipeline for source collection, topic selection, prompt orchestration, commentary generation, review, publishing, and monitoring. Editorial persona, forbidden zones, tone, and factual constraints are encoded as configurable rules.",
-            "ja": "情報源収集、トピック選択、プロンプト編成、評論生成、レビュー、公開、監視の流れを構築し、編集人格、禁止領域、語調、事実制約を設定可能なルールにする。"
+            "ja": "情報源収集、トピック選択、プロンプト設計、評論生成、レビュー、公開、モニタリングまでの流れを構築し、編集方針、禁止領域、語調、事実制約を設定可能なルールとして扱う。"
           }
         },
         {
@@ -264,7 +264,7 @@
           "body": {
             "zh": "项目已形成可访问的网站和自动化内容生产链路，为后续研究 AI 角色一致性、自动选题、事实检查和媒体运营提供长期样本。该项目暂无对应论文链接。",
             "en": "The project has produced a public site and an automated content pipeline, providing a long-running sample for studying AI persona consistency, topic selection, fact checking, and media operations. No paper link is available for this project yet.",
-            "ja": "公開サイトと自動コンテンツ生成パイプラインを形成し、AI人格一貫性、トピック選択、事実確認、メディア運用を研究する長期サンプルを提供する。現時点で論文リンクはない。"
+            "ja": "公開サイトと自動コンテンツ生成パイプラインを構築し、AIによる編集スタイルの一貫性、トピック選択、事実確認、メディア運用を研究する長期的な事例を提供する。現時点で論文リンクはない。"
           }
         }
       ]
@@ -324,7 +324,7 @@
       "overview": {
         "zh": "DeepTrans Studio 的驱动问题是：高质量翻译并不只取决于模型一次性输出，关键在于专家如何介入、团队如何共享判断、术语和风格如何保持一致。项目围绕多语言文档翻译和后期编辑，建设分段对齐编辑、团队记忆、术语管理、多智能体翻译与质量检查能力。",
         "en": "DeepTrans Studio starts from the observation that high-quality translation depends not only on one-shot model output, but also on expert intervention, shared team judgment, and consistent terminology and style. The project builds segment-aligned editing, team memory, terminology management, multi-agent translation, and quality review for multilingual document translation.",
-        "ja": "DeepTrans Studioは、高品質翻訳が一回のモデル出力だけでなく、専門家介入、チーム内判断共有、用語とスタイルの一貫性に依存するという問題から出発する。多言語文書翻訳に向けて、分節対応編集、チーム記憶、用語管理、マルチエージェント翻訳、品質確認を構築する。"
+        "ja": "DeepTrans Studioは、高品質な翻訳が一度のモデル出力だけでなく、専門家の介入、チーム内での判断共有、用語とスタイルの一貫性に依存するという問題意識から出発している。多言語文書翻訳に向けて、セグメント対応編集、チームメモリ、用語管理、マルチエージェント翻訳、品質確認を構築する。"
       },
       "highlights": {
         "zh": [
@@ -340,7 +340,7 @@
           "Connected to the ACL 2026 BabelDOC system paper; the CSCW '26 Demo paper does not yet have a public paper page."
         ],
         "ja": [
-          "翻訳者・レビュー担当者向けに並行編集、バージョン管理、ライブプレビュー、効率的なレビューを提供。",
+          "翻訳者・レビュー担当者向けに対訳編集、バージョン管理、ライブプレビュー、効率的なレビュー機能を提供。",
           "用語抽出、品質評価、複数翻訳エンジン、マルチエージェント協働を支援。",
           "チームメモリと意味検索により専門家の判断と翻訳先例を再利用。",
           "ACL 2026 BabelDOCシステム論文と関連。CSCW '26 Demo論文の公開ページは現時点で未確認。"
@@ -356,7 +356,7 @@
           "body": {
             "zh": "专业翻译的难点在于反复修订、术语一致、版式保持和团队知识复用。普通机器翻译只能给出结果，却很难解释为什么这样翻、如何让下一次翻译继承这次专家修改。",
             "en": "Professional translation is difficult because of repeated revision, terminology consistency, layout preservation, and reuse of team knowledge. Standard machine translation returns outputs but rarely captures why experts changed them or how future work should inherit those decisions.",
-            "ja": "専門翻訳では、反復修正、用語一貫性、レイアウト保持、チーム知識の再利用が難しい。通常の機械翻訳は結果を出すが、専門家修正の理由や次回への継承を扱いにくい。"
+            "ja": "専門翻訳では、反復修正、用語の一貫性、レイアウト保持、チーム知識の再利用が難しい。通常の機械翻訳は訳文を出力するが、専門家による修正の理由や次回への継承を扱いにくい。"
           }
         },
         {
@@ -368,7 +368,7 @@
           "body": {
             "zh": "系统实现了译文分段对齐、译后编辑、术语抽取与锁定、团队记忆检索、多智能体候选生成、质量检查和 PDF 版式保真相关能力，并把专家修改转化为团队可复用知识。",
             "en": "The system implements segment alignment, post-editing, terminology extraction and locking, team-memory retrieval, multi-agent candidate generation, quality checks, and layout-preserving PDF translation, turning expert edits into reusable team knowledge.",
-            "ja": "分節対応、ポストエディット、用語抽出と固定、チーム記憶検索、マルチエージェント候補生成、品質確認、PDFレイアウト保持翻訳を実装し、専門家修正を再利用可能な知識に変える。"
+            "ja": "セグメント対応、ポストエディット、用語抽出と固定、チームメモリ検索、マルチエージェントによる候補生成、品質確認、PDFレイアウト保持翻訳を実装し、専門家による修正を再利用可能な知識へと変換する。"
           }
         },
         {
@@ -380,7 +380,7 @@
           "body": {
             "zh": "项目产出了可用的翻译工作台和演示系统，并形成 CSCW '26 Demo 论文与 ACL 2026 BabelDOC 系统论文方向的研究成果。当前页面仅放置已可公开访问的 ACL 论文链接。",
             "en": "The project produced a usable translation workbench and demo system, with research outputs connected to a CSCW '26 Demo paper and the ACL 2026 BabelDOC system paper. This page links only to the publicly available ACL paper page.",
-            "ja": "利用可能な翻訳作業台とデモシステムを形成し、CSCW '26 Demo論文およびACL 2026 BabelDOCシステム論文につながる成果を得た。このページでは公開済みのACL論文のみリンクする。"
+            "ja": "利用可能な翻訳ワークベンチとデモシステムを構築し、CSCW '26 Demo論文およびACL 2026 BabelDOCシステム論文につながる成果を得た。このページでは公開済みのACL論文のみリンクする。"
           }
         }
       ]
@@ -403,7 +403,7 @@
     "description": {
       "zh": "面向医学深度研究的智能文献检索平台。",
       "en": "An intelligent literature search platform for medical deep research.",
-      "ja": "医学深層研究向けの知的文献検索プラットフォーム。"
+      "ja": "医学ディープリサーチ向けの知的文献検索プラットフォーム。"
     },
     "papers": [
       {
@@ -423,7 +423,7 @@
       "tagline": {
         "zh": "面向医学深度研究的智能文献检索与验证平台。",
         "en": "An intelligent medical literature retrieval and verification platform for deep medical research.",
-        "ja": "医学深層研究のための知的文献検索・検証プラットフォーム。"
+        "ja": "医学ディープリサーチのための知的文献検索・検証プラットフォーム。"
       },
       "overview": {
         "zh": "DeepMed Search 的研究动机来自医学研究中的高风险检索需求：研究者需要的不只是关键词命中文献，而是围绕临床或科研问题形成可追溯、可交叉验证的证据链。项目结合深度学习、知识图谱、医学 RAG 和智能体工作流，支持问题拆解、文献检索、证据归纳和内省式验证。",
@@ -445,7 +445,7 @@
         ],
         "ja": [
           "深層学習と知識グラフにより医学文献検索と推薦を改善。",
-          "medical deep researchに向けたエージェント型ワークフローを構築。",
+          "医学ディープリサーチに向けたエージェント型ワークフローを構築。",
           "検索された証拠と研究結果の内省的検証を重視。",
           "IJCAI-ECAI 2026 Demonstrations Trackの研究成果と関連。公開論文ページは現時点で未確認。"
         ]
@@ -484,7 +484,7 @@
           "body": {
             "zh": "项目产出了开源取向的医学深度研究平台和演示视频，并形成 IJCAI-ECAI 2026 Demonstrations Track 相关成果。由于公开论文页面尚未确认，本页暂不放论文链接。",
             "en": "The project produced an open-source-oriented platform for medical deep research and a demo video, with an output associated with the IJCAI-ECAI 2026 Demonstrations Track. Because no public paper page is confirmed yet, this page does not include a paper link.",
-            "ja": "オープンソース志向の医学深層研究プラットフォームとデモ動画を形成し、IJCAI-ECAI 2026 Demonstrations Track関連成果につながった。公開論文ページが未確認のため、ここには論文リンクを置かない。"
+            "ja": "オープンソース志向の医学ディープリサーチプラットフォームとデモ動画を構築し、IJCAI-ECAI 2026 Demonstrations Track関連成果につながった。公開論文ページが未確認のため、ここには論文リンクを置かない。"
           }
         }
       ]
@@ -544,7 +544,7 @@
       "overview": {
         "zh": "ChineseLawTranslation 的核心问题是：法律翻译不能只追求通顺，还必须保持概念边界、制度语境和立法表达的忠实度。项目从中英法律术语映射、法律文本翻译、立法忠实度控制和人机协同校验出发，建设法律翻译资源与智能辅助系统。",
         "en": "ChineseLawTranslation starts from a key constraint: legal translation must preserve conceptual boundaries, institutional context, and legislative fidelity, not merely fluency. The project works on Chinese-English terminology mapping, legal text translation, legislative fidelity control, and human-AI verification.",
-        "ja": "ChineseLawTranslationの中心課題は、法律翻訳が流暢さだけでなく、概念境界、制度文脈、立法表現の忠実度を守る必要がある点である。中英法律用語マッピング、法律文書翻訳、忠実度制御、人間AI検証に取り組む。"
+        "ja": "ChineseLawTranslationの中心課題は、法律翻訳において流暢さだけでなく、概念の境界、制度的文脈、立法表現への忠実性を保つ必要がある点にある。中英法律用語マッピング、法律文書翻訳、忠実度制御、人間とAIによる検証に取り組む。"
       },
       "highlights": {
         "zh": [
@@ -563,7 +563,7 @@
           "高品質な中英法律用語と翻訳資源を構築。",
           "中国法の国際発信と越境理解を支援。",
           "2026年ARTI論文：立法翻訳の忠実度に向けた階層制御と関連。公開リンクは未確認。",
-          "2025年ARTI論文：多言語法律用語マッピングのための人間参加型マルチエージェント枠組みと関連し、DOIリンクを提供。"
+          "2025年ARTI論文：多言語法律用語マッピングのための人間参加型マルチエージェント枠組みに関連し、DOIリンクを掲載。"
         ]
       },
       "sections": [
@@ -576,7 +576,7 @@
           "body": {
             "zh": "中国法律文本的对外传播需要稳定、准确、可解释的翻译资源。法律术语往往带有制度语境，直接套用通用翻译模型容易造成概念漂移、术语不一致和立法语义损失。",
             "en": "The international communication of Chinese law requires stable, accurate, and explainable translation resources. Legal terms carry institutional context, and generic translation models can introduce conceptual drift, inconsistent terminology, and loss of legislative meaning.",
-            "ja": "中国法の国際発信には、安定し正確で説明可能な翻訳資源が必要である。法律用語は制度文脈を持つため、汎用翻訳モデルでは概念ずれ、用語不一致、立法意味の損失が起こり得る。"
+            "ja": "中国法の国際発信には、安定し、正確で、説明可能な翻訳資源が必要である。法律用語は制度的文脈を伴うため、汎用翻訳モデルでは概念のずれ、用語の不一致、立法趣旨の損失が起こり得る。"
           }
         },
         {
@@ -588,7 +588,7 @@
           "body": {
             "zh": "项目建设中英法律术语库、双语语料和术语映射流程，设计人机协同的多智能体术语构建框架，并进一步研究面向立法文本的层级控制、忠实度检查和人工确认机制。",
             "en": "The project builds Chinese-English legal terminology, bilingual corpora, and terminology mapping workflows. It designs a human-in-the-loop multi-agent framework for terminology construction and studies hierarchical control, fidelity checking, and human confirmation for legislative translation.",
-            "ja": "中英法律用語庫、バイリンガルコーパス、用語マッピングワークフローを構築し、人間参加型マルチエージェント用語構築枠組みを設計する。さらに立法翻訳の階層制御、忠実度確認、人の承認を研究する。"
+            "ja": "中英法律用語集、バイリンガルコーパス、用語マッピングワークフローを構築し、人間参加型マルチエージェント用語構築フレームワークを設計する。さらに、立法翻訳における階層制御、忠実度確認、人による承認を研究する。"
           }
         },
         {
@@ -600,7 +600,7 @@
           "body": {
             "zh": "项目已形成法律术语资源、翻译系统实践和两项 ARTI 方向研究成果。其中 2025 年论文已有 DOI 页面，2026 年论文目前不放链接，避免把未公开条目伪装成可访问论文。",
             "en": "The project has produced legal terminology resources, translation-system practice, and two research outputs connected to Artificial Intelligence and Law. The 2025 paper has a DOI page; the 2026 paper is not linked until a public page is available.",
-            "ja": "法律用語資源、翻訳システム実践、Artificial Intelligence and Law関連の二つの研究成果を形成した。2025年論文にはDOIページがあり、2026年論文は公開ページ確認後にリンクする。"
+            "ja": "法律用語資源、翻訳システムの実践、Artificial Intelligence and Lawに関連する二つの研究成果を得た。2025年論文にはDOIページがあり、2026年論文は公開ページ確認後にリンクする。"
           }
         }
       ]
