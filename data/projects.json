@@ -301,18 +301,6 @@
           "en": "",
           "ja": ""
         }
-      },
-      {
-        "label": {
-          "zh": "ACL 2026 Paper (CCF-A)",
-          "en": "ACL 2026 Paper (CCF-A)",
-          "ja": "ACL 2026 Paper (CCF-A)"
-        },
-        "href": {
-          "zh": "https://aclanthology.org/2026.acl-demo.54/",
-          "en": "https://aclanthology.org/2026.acl-demo.54/",
-          "ja": "https://aclanthology.org/2026.acl-demo.54/"
-        }
       }
     ],
     "detail": {
@@ -378,9 +366,9 @@
             "ja": "成果"
           },
           "body": {
-            "zh": "项目产出了可用的翻译工作台和演示系统，并形成 CSCW '26 Demo 论文与 ACL 2026 BabelDOC 系统论文方向的研究成果。当前页面仅放置已可公开访问的 ACL 论文链接。",
-            "en": "The project produced a usable translation workbench and demo system, with research outputs connected to a CSCW '26 Demo paper and the ACL 2026 BabelDOC system paper. This page links only to the publicly available ACL paper page.",
-            "ja": "利用可能な翻訳ワークベンチとデモシステムを構築し、CSCW '26 Demo論文およびACL 2026 BabelDOCシステム論文につながる成果を得た。このページでは公開済みのACL論文のみリンクする。"
+            "zh": "项目产出了可用的翻译工作台和演示系统，并形成 CSCW '26 Demo 论文与 ACL 2026 BabelDOC 系统论文方向的研究成果。CSCW '26 Demo 论文目前尚无公开论文页，因此这里暂不放置论文外链。",
+            "en": "The project produced a usable translation workbench and demo system, with research outputs connected to a CSCW '26 Demo paper and the ACL 2026 BabelDOC system paper. The CSCW '26 Demo paper does not yet have a public paper page, so no paper link is shown here for now.",
+            "ja": "利用可能な翻訳ワークベンチとデモシステムを構築し、CSCW '26 Demo論文およびACL 2026 BabelDOCシステム論文につながる成果を得た。CSCW '26 Demo論文の公開ページは現時点で未確認のため、ここには論文リンクを置かない。"
           }
         }
       ]
