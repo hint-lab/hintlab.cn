@@ -1,12 +1,33 @@
 [
   {
+    "id": "todo2026beyond-multi-agent-translation",
+    "type": "journal",
+    "title": "Beyond Multi-Agent Translation: Engineering Fidelity in Legislative Text Translation via Hierarchical Control",
+    "authors": ["Meng, Lingyi", "Lian, Ziyang", "Wang, Hao*", "et. al."],
+    "abbr": "ARTI",
+    "journal": "Artificial Intelligence and Law (SCI Q2/SSCI Q1)",
+    "year": 2026,
+    "areas": ["hci"]
+  },
+  {
+    "id": "lian2026deeptrans",
+    "type": "inproceedings",
+    "title": "DeepTrans Studio: Turning Expert Interventions into Shared Team Knowledge in Agentic Translation Workflows",
+    "authors": ["Lian, Ziyang", "Zhang, Qingya", "Wang, Hao*", "Xiong, Huiwen", "Yang, Qi", "Meng, Lingyi", "Gu, Xiaoyi", "Wang, Rui"],
+    "abbr": "CSCW",
+    "booktitle": "Proceedings of Companion of the 2026 Computer-Supported Cooperative Work and Social Computing (CSCW '26)",
+    "year": 2026,
+    "areas": ["hci"]
+  },
+  {
     "id": "liu2026deepmed",
     "type": "inproceedings",
     "title": "DeepMed Search: An Open-Source Agentic Platform for Medical Deep Research with Introspective Verification",
     "authors": ["Liu, Maolin", "Xu, Fanyu", "Xu, Ruoqing", "Zhang, Jiahang", "Wang, Hao*", "Wang, Rui"],
     "abbr": "IJCAI",
     "booktitle": "The 35th International Joint Conference on Artificial Intelligence, Demonstrations Track (IJCAI-ECAI 2026, CCF-B)",
-    "year": 2026
+    "year": 2026,
+    "areas": ["hci"]
   },
   {
     "id": "qi2026babeldoc",

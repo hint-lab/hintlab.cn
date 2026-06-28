@@ -45,7 +45,7 @@
     },
     "about": {
         "title": "About",
-        "p1": "Dr. Hao Wang served as a Lecturer in the Department of Intelligence Science and Technology at Shanghai University from 2019 to 2024, and has been an Associate Professor since 2024. He is currently seconded to the Putuo District Data Bureau / Administrative Approval Service Center in Shanghai, where he serves as Deputy Director. He received a doctoral fellowship from the China Scholarship Council and earned his M.Sc. (2014) and Ph.D. (2019) from Waseda University, Japan. He has worked at Microsoft Research Asia, Toshiba Global R&D, and NTT Communication Science Laboratories. He has published more than 40 papers in international conferences and journals, including ACL, EMNLP, COLING, and CogSci. More than 30 of these papers have appeared in SCI/SSCI/A&HCI-indexed venues or CCF-recommended conferences. He has led a completed Shanghai Municipal Science and Technology Commission Sailing Program project, an NSFC Young Scientists Fund project at the AI interdisciplinary interface, and five industry collaboration projects. As a key member, he has also contributed to several NSFC major and general projects, the National Key R&D Program, and special projects on social governance. He has served as a long-term PC member and reviewer for leading AI and NLP venues, including ICLR, ICML, NeurIPS, ACL, EMNLP, and AAAI, as well as journals such as TKDD, TNNLS, and NLE. His research interests include artificial intelligence, human–AI collaborative cognition, and natural language processing, with applications in medical and other high-stakes documents.",
+        "p1": "Dr. Hao Wang served as a Lecturer in the Department of Intelligence Science and Technology at Shanghai University from 2019 to 2024, and has been an Associate Professor since 2024. He is currently seconded to the Putuo District Data Bureau / Administrative Approval Service Center in Shanghai, where he serves as Deputy Director. He received a doctoral fellowship from the China Scholarship Council and earned his M.Sc. (2014) and Ph.D. (2019) from Waseda University, Japan. He has worked at Microsoft Research Asia, Toshiba Global R&D, and NTT Communication Science Laboratories. He has published more than 40 papers in international conferences and journals, including ACL, COLING, EMNLP, IJCAI, and CSCW. More than 30 of these papers have appeared in SCI/SSCI/A&HCI-indexed venues or CCF-recommended conferences. He has led a completed Shanghai Municipal Science and Technology Commission Sailing Program project, an NSFC Young Scientists Fund project at the AI interdisciplinary interface, and five industry collaboration projects. As a key member, he has also contributed to several NSFC major and general projects, the National Key R&D Program, and special projects on social governance. He has served as a long-term PC member and reviewer for leading AI and NLP venues, including ICLR, ICML, NeurIPS, ACL, EMNLP, and AAAI, as well as journals such as TKDD, TNNLS, and NLE. His research interests include artificial intelligence, human–AI collaborative cognition, and natural language processing, with applications in medical and other high-stakes documents.",
         "p2": "We welcome students with backgrounds in NLP, as well as students from linguistics, cognitive science, psychology, and related fields. International students are also welcome. Please note that Shanghai University currently offers Chinese-taught programs only, so international applicants are expected to hold an HSK Level 5 certificate."
     },
     "profile": {
@@ -185,13 +185,6 @@
                 "Dongguan University of Technology",
                 "",
                 "Multi-Document Understanding"
-            ],
-            [
-                "Liu Maolin",
-                "2023",
-                "Shanghai University",
-                "",
-                "Multi-Agent Medical RAG"
             ]
         ]
     },
@@ -206,6 +199,17 @@
             "Note"
         ],
         "rows": [
+            [
+                "Liu Maolin",
+                "2026",
+                "Shanghai University",
+                "Trip.com Group",
+                {
+                    "text": "Master's Thesis",
+                    "href": "/thesis/liumaolin.pdf"
+                },
+                "SHU undergraduate"
+            ],
             [
                 "Chen Bin",
                 "2025",
