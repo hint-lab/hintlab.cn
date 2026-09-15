@@ -45,8 +45,9 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
-  // Display latest 4 publications on home
-  const homePubs = pubs.slice(0, 4);
+  // Keep the homepage selection and order independent of publication dates.
+  const homePubs = ['qi2026babeldoc', 'lian2026deeptrans', 'liu2026deepmed']
+    .flatMap((id) => pubs.filter((pub) => pub.id === id));
   const projects = getProjects(locale);
   const contactSummary =
     locale === 'zh'
@@ -274,7 +275,7 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
         <div className="container">
           <SectionHeading
             title={t.nav.publications}
-            summary={locale === 'zh' ? '实验室近年发表的代表性学术论文' : locale === 'ja' ? '近年の代表的な研究成果' : 'Selected research publications from our lab'}
+            summary={locale === 'zh' ? '精选成果：ACL、CSCW 与 IJCAI 代表性论文' : locale === 'ja' ? '注目の研究成果：ACL・CSCW・IJCAIの代表的な論文' : 'Featured publications at ACL, CSCW, and IJCAI'}
           />
 
           <div className="pub-list">
