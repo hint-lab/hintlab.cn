@@ -1,5 +1,30 @@
 [
   {
+    "id": "meng2026deontic-drift",
+    "type": "journal",
+    "title": "Deontic Drift in Japanese Translations of the Chinese Civil Code: A Human–LLM Comparison of Deontic Marker Distributions",
+    "authors": ["Meng, Lingyi", "Wang, Hao*"],
+    "abbr": "SAGE Open",
+    "journal": "Sage Open (SSCI Q1, Accepted)",
+    "year": 2026,
+    "acceptedDate": "2026-09-14",
+    "areas": ["hci"]
+  },
+  {
+    "id": "zhu2026s2-cognn",
+    "type": "journal",
+    "title": "S2-CoGNN: A heterogeneous graph representation learning framework based on spectral-spatial synergy and reliable structure distillation",
+    "authors": ["Zhu, Xiaoying", "Li, Weimin", "Wang, Hao", "Pan, Quanke", "Wang, Can"],
+    "abbr": "KBS",
+    "journal": "Knowledge-Based Systems (SCI Q1/CCF-C)",
+    "year": 2026,
+    "volume": "352",
+    "number": "Part B",
+    "pages": "116990",
+    "doi": "https://doi.org/10.1016/j.knosys.2026.116990",
+    "areas": ["social-networks"]
+  },
+  {
     "id": "todo2026beyond-multi-agent-translation",
     "type": "journal",
     "title": "Beyond Multi-Agent Translation: Engineering Fidelity in Legislative Text Translation via Hierarchical Control",
