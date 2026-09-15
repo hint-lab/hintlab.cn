@@ -278,15 +278,15 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
           />
 
           <div className="pub-list">
-            {homePubs.map((e, idx) => (
-              <div key={idx} className="pub-item">
+            {homePubs.map((e) => (
+              <a key={e.id} className="pub-item" href={e.doi || e.url || `${publicationHref}#${e.id}`}>
                 <div className="pub-year">{e.year}</div>
                 <div className="pub-title">{e.title}</div>
                 <div className="pub-venue">{(e as any).abbr || (e as any).journal || (e as any).booktitle || ''}</div>
                 <div className="card-arrow">
                   <ArrowRight size={18} />
                 </div>
-              </div>
+              </a>
             ))}
           </div>
 

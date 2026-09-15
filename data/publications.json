@@ -32,6 +32,7 @@
     "abbr": "ARTI",
     "journal": "Artificial Intelligence and Law (SCI Q2/SSCI Q1)",
     "year": 2026,
+    "doi": "https://doi.org/10.1007/s10506-026-09529-2",
     "areas": ["hci"]
   },
   {
@@ -42,6 +43,7 @@
     "abbr": "CSCW",
     "booktitle": "Proceedings of Companion of the 2026 Computer-Supported Cooperative Work and Social Computing (CSCW '26 Demo, CCF-A)",
     "year": 2026,
+    "url": "https://arxiv.org/abs/2606.29727",
     "areas": ["hci"]
   },
   {
@@ -52,6 +54,7 @@
     "abbr": "IJCAI",
     "booktitle": "The 35th International Joint Conference on Artificial Intelligence, Demonstrations Track (IJCAI-ECAI 2026, CCF-B)",
     "year": 2026,
+    "url": "https://arxiv.org/abs/2606.29746",
     "areas": ["hci"]
   },
   {
@@ -73,6 +76,7 @@
     "abbr": "KSEM",
     "booktitle": "In Proceedings of the 19th International Conference on Knowledge Science, Engineering and Management [CCF-C]",
     "year": 2026,
+    "doi": "https://doi.org/10.1007/978-981-92-2852-2_13",
     "areas": ["collaborative-cognition"]
   },
   {
@@ -83,6 +87,7 @@
     "abbr": "IPM",
     "booktitle": "Information Processing & Management (SCI Q1/SSCI Q1) [CCF-B]",
     "year": 2026,
+    "doi": "https://doi.org/10.1016/j.ipm.2026.104709",
     "areas": ["social-networks"]
   },
   {
@@ -93,6 +98,7 @@
     "abbr": "NEUCO",
     "booktitle": "Neurocomputing (SCI Q2) [CCF-C]",
     "year": 2026,
+    "doi": "https://doi.org/10.1016/j.neucom.2026.133131",
     "areas": ["doc-understanding"]
   },
   {
@@ -103,6 +109,7 @@
     "abbr": "TALLIP",
     "booktitle": "ACM Transactions on Asian and Low-Resource Language Information Processing (SCI) [CCF-C]",
     "year": 2025,
+    "doi": "https://doi.org/10.1145/3774933",
     "areas": ["doc-understanding"]
   },
   {
@@ -124,6 +131,7 @@
     "abbr": "ICIP",
     "booktitle": "In Proceedings of 2025 IEEE International Conference on Image Processing [CCF-C]",
     "year": 2025,
+    "doi": "https://doi.org/10.1109/icip55913.2025.11084588",
     "areas": ["collaborative-cognition"]
   },
   {
@@ -134,6 +142,7 @@
     "abbr": "ICIP",
     "booktitle": "In Proceedings of 2025 IEEE International Conference on Image Processing [CCF-C]",
     "year": 2025,
+    "doi": "https://doi.org/10.1109/icip55913.2025.11084436",
     "areas": ["doc-understanding"]
   },
   {
@@ -144,6 +153,7 @@
     "abbr": "CogSci",
     "booktitle": "In Proceedings of the 47th Annual Meeting of the Cognitive Science Society [CCF-B]",
     "year": 2025,
+    "url": "https://repositories.cdlib.org/uc/item/6mx1z1r4",
     "areas": ["collaborative-cognition"]
   },
   {
@@ -154,6 +164,7 @@
     "abbr": "ICDAR",
     "booktitle": "Proceedings of the International Conference on Document Analysis and Recognition [CCF-C]",
     "year": 2025,
+    "doi": "https://doi.org/10.1007/978-3-032-04614-7_12",
     "areas": ["hci"]
   },
   {
@@ -164,6 +175,7 @@
     "abbr": "ICDAR",
     "booktitle": "Proceedings of the International Conference on Document Analysis and Recognition [CCF-C]",
     "year": 2025,
+    "doi": "https://doi.org/10.1007/978-3-032-04614-7_14",
     "areas": ["doc-understanding"]
   },
   {
@@ -174,6 +186,7 @@
     "abbr": "ESWA",
     "journal": "Expert Systems with Applications (SCI Q1) [CCF-C]",
     "year": 2025,
+    "doi": "https://doi.org/10.1016/j.eswa.2024.125407",
     "areas": ["social-networks"]
   },
   {
@@ -184,6 +197,7 @@
     "abbr": "CCPE",
     "journal": "Concurr. Comput. Pract. Exp. (SCI) [CCF-C]",
     "year": 2024,
+    "doi": "https://doi.org/10.1002/cpe.8029",
     "areas": ["social-networks"]
   },
   {
@@ -194,6 +208,7 @@
     "abbr": "COLING",
     "booktitle": "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation [CCF-B]",
     "year": 2024,
+    "url": "https://aclanthology.org/2024.lrec-main.1439/",
     "areas": ["doc-understanding"]
   },
   {
@@ -204,6 +219,7 @@
     "abbr": "JSEKE",
     "journal": "Int. J. Softw. Eng. Knowl. Eng. (SCI) [CCF-C]",
     "year": 2023,
+    "doi": "https://doi.org/10.1142/s0218194023500201",
     "areas": ["social-networks"]
   },
   {
@@ -214,6 +230,7 @@
     "abbr": "EMNLP",
     "booktitle": "The 2023 Conference on Empirical Methods in Natural Language Processing, Main (CAAI-A) [CCF-B]",
     "year": 2023,
+    "url": "https://aclanthology.org/2023.emnlp-main.973/",
     "areas": ["doc-understanding"]
   },
   {
@@ -224,6 +241,7 @@
     "abbr": "EMNLP",
     "booktitle": "The 2023 Conference on Empirical Methods in Natural Language Processing, Findings (CAAI-A) [CCF-B]",
     "year": 2023,
+    "url": "https://aclanthology.org/2023.findings-emnlp.344/",
     "areas": ["collaborative-cognition"]
   },
   {
@@ -234,6 +252,7 @@
     "abbr": "SEKE",
     "booktitle": "The 35th International Conference on Software Engineering and Knowledge Engineering [CCF-C]",
     "year": 2023,
+    "doi": "https://doi.org/10.18293/seke2023-201",
     "areas": ["social-networks"]
   },
   {
@@ -244,6 +263,7 @@
     "abbr": "NLE",
     "journal": "Natural Language Engineering (SCI/A&HCI/SSCI Q1)",
     "year": 2023,
+    "doi": "https://doi.org/10.1017/s1351324923000050",
     "areas": ["social-networks"]
   },
   {
@@ -254,6 +274,7 @@
     "abbr": "NCAA",
     "journal": "Neural Computing and Applications (SCI Q2) [CCF-C]",
     "year": 2022,
+    "doi": "https://doi.org/10.1007/s00521-022-07923-w",
     "areas": ["social-networks"]
   },
   {
@@ -264,6 +285,7 @@
     "abbr": "NLE",
     "journal": "Natural Language Engineering (SCI/A&HCI/SSCI Q1)",
     "year": 2022,
+    "doi": "https://doi.org/10.1017/s135132492200033x",
     "areas": ["doc-understanding"]
   },
   {
@@ -274,6 +296,7 @@
     "abbr": "PRICAI",
     "booktitle": "The 19th Pacific Rim International Conference on Artificial Intelligence [CCF-C]",
     "year": 2022,
+    "doi": "https://doi.org/10.1007/978-3-031-20862-1_31",
     "areas": ["doc-understanding"]
   },
   {
@@ -284,6 +307,7 @@
     "abbr": "ES",
     "journal": "Expert Systems (SCI) [CCF-C]",
     "year": 2021,
+    "doi": "https://doi.org/10.1111/exsy.12888",
     "areas": ["social-networks"]
   },
   {
@@ -294,6 +318,7 @@
     "abbr": "PAKDD",
     "booktitle": "Pacific-Asia Conference on Knowledge Discovery and Data Mining [CCF-C]",
     "year": 2021,
+    "doi": "https://doi.org/10.1007/978-3-030-75762-5_28",
     "areas": ["social-networks"]
   },
   {
@@ -304,6 +329,7 @@
     "abbr": "ICTAI",
     "journal": "The 33rd IEEE International Conference on Tools with Artificial Intelligence [CCF-C]",
     "year": 2021,
+    "doi": "https://doi.org/10.1109/ictai52525.2021.00099",
     "areas": ["social-networks"]
   },
   {
@@ -314,6 +340,7 @@
     "abbr": "CCPE",
     "journal": "Concurrency and Computation: Practice and Experience (SCI) [CCF-C]",
     "year": 2021,
+    "doi": "https://doi.org/10.1002/cpe.6572",
     "areas": ["social-networks"]
   },
   {
@@ -324,6 +351,7 @@
     "abbr": "TALLIP",
     "journal": "ACM Transactions on Asian and Low-Resource Language Information Processing (SCI) [CCF-C]",
     "year": 2020,
+    "doi": "https://doi.org/10.1145/3402885",
     "areas": ["social-networks"]
   },
   {
@@ -334,6 +362,7 @@
     "abbr": "CCPE",
     "journal": "Concurrency and Computation: Practice and Experience (SCI)",
     "year": 2020,
+    "doi": "https://doi.org/10.1002/cpe.6104",
     "areas": ["social-networks"]
   },
   {
@@ -344,6 +373,7 @@
     "abbr": "ES",
     "journal": "Expert Systems (SCI Q2) [CCF-C]",
     "year": 2020,
+    "doi": "https://doi.org/10.1111/exsy.12603",
     "areas": ["social-networks"]
   },
   {
@@ -354,6 +384,7 @@
     "abbr": "ICONIP",
     "booktitle": "International Conference on Neural Information Processing [CCF-C]",
     "year": 2020,
+    "doi": "https://doi.org/10.1007/978-3-030-63820-7_80",
     "areas": ["social-networks"]
   },
   {
@@ -364,6 +395,7 @@
     "abbr": "CCPE",
     "journal": "Concurrency and Computation: Practice and Experience (SCI)",
     "year": 2020,
+    "doi": "https://doi.org/10.1002/cpe.5696",
     "areas": ["social-networks"]
   },
   {
@@ -374,6 +406,7 @@
     "abbr": "JWE",
     "journal": "Journal of Web Engineering (SCI)",
     "year": 2020,
+    "doi": "https://doi.org/10.13052/jwe1540-9589.19562",
     "areas": ["social-networks"]
   },
   {
@@ -384,6 +417,7 @@
     "abbr": "ICTAI",
     "journal": "The 31st IEEE International Conference on Tools with Artificial Intelligence [CCF-C]",
     "year": 2019,
+    "doi": "https://doi.org/10.1109/ictai.2019.00227",
     "areas": ["social-networks"]
   },
   {
@@ -394,6 +428,7 @@
     "abbr": "ICTAI",
     "booktitle": "The 31st IEEE International Conference on Tools with Artificial Intelligence [CCF-C]",
     "year": 2019,
+    "doi": "https://doi.org/10.1109/ictai.2019.00210",
     "areas": ["social-networks"]
   }
 ]

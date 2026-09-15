@@ -292,14 +292,14 @@
     "papers": [
       {
         "label": {
-          "zh": "CSCW '26 Demo Paper (CCF-A)",
-          "en": "CSCW '26 Demo Paper (CCF-A)",
-          "ja": "CSCW '26 Demo Paper (CCF-A)"
+          "zh": "CSCW '26 Demo Paper (CCF-A) · arXiv",
+          "en": "CSCW '26 Demo Paper (CCF-A) · arXiv",
+          "ja": "CSCW '26 Demo Paper (CCF-A) · arXiv"
         },
         "href": {
-          "zh": "",
-          "en": "",
-          "ja": ""
+          "zh": "https://arxiv.org/abs/2606.29727",
+          "en": "https://arxiv.org/abs/2606.29727",
+          "ja": "https://arxiv.org/abs/2606.29727"
         }
       }
     ],
@@ -319,19 +319,19 @@
           "提供面向译者和审校者的并行编辑、版本控制、实时预览与快捷操作。",
           "支持术语抽取、质量评估、多引擎翻译与多智能体协作流程。",
           "通过团队记忆和语义检索复用专家决策与翻译先例。",
-          "已关联 ACL 2026 BabelDOC 系统论文；CSCW '26 Demo 论文目前尚无公开论文页。"
+          "已关联 ACL 2026 BabelDOC 系统论文；CSCW '26 Demo 论文提供 arXiv 预印本。"
         ],
         "en": [
           "Provides parallel editing, version control, live preview, and efficient review workflows for translators and reviewers.",
           "Supports terminology extraction, quality assessment, multi-engine translation, and multi-agent collaboration.",
           "Uses team memory and semantic retrieval to reuse expert decisions and translation precedents.",
-          "Connected to the ACL 2026 BabelDOC system paper; the CSCW '26 Demo paper does not yet have a public paper page."
+          "Connected to the ACL 2026 BabelDOC system paper; the CSCW '26 Demo paper is available as an arXiv preprint."
         ],
         "ja": [
           "翻訳者・レビュー担当者向けに対訳編集、バージョン管理、ライブプレビュー、効率的なレビュー機能を提供。",
           "用語抽出、品質評価、複数翻訳エンジン、マルチエージェント協働を支援。",
           "チームメモリと意味検索により専門家の判断と翻訳先例を再利用。",
-          "ACL 2026 BabelDOCシステム論文と関連。CSCW '26 Demo論文の公開ページは現時点で未確認。"
+          "ACL 2026 BabelDOCシステム論文と関連。CSCW '26 Demo論文のarXivプレプリントを公開。"
         ]
       },
       "sections": [
@@ -366,9 +366,9 @@
             "ja": "成果"
           },
           "body": {
-            "zh": "项目产出了可用的翻译工作台和演示系统，并形成 CSCW '26 Demo 论文与 ACL 2026 BabelDOC 系统论文方向的研究成果。CSCW '26 Demo 论文目前尚无公开论文页，因此这里暂不放置论文外链。",
-            "en": "The project produced a usable translation workbench and demo system, with research outputs connected to a CSCW '26 Demo paper and the ACL 2026 BabelDOC system paper. The CSCW '26 Demo paper does not yet have a public paper page, so no paper link is shown here for now.",
-            "ja": "利用可能な翻訳ワークベンチとデモシステムを構築し、CSCW '26 Demo論文およびACL 2026 BabelDOCシステム論文につながる成果を得た。CSCW '26 Demo論文の公開ページは現時点で未確認のため、ここには論文リンクを置かない。"
+            "zh": "项目产出了可用的翻译工作台和演示系统，并形成 CSCW '26 Demo 论文与 ACL 2026 BabelDOC 系统论文方向的研究成果。CSCW '26 Demo 论文提供 arXiv 预印本链接。",
+            "en": "The project produced a usable translation workbench and demo system, with research outputs connected to a CSCW '26 Demo paper and the ACL 2026 BabelDOC system paper. The CSCW '26 Demo paper is linked through its arXiv preprint.",
+            "ja": "利用可能な翻訳ワークベンチとデモシステムを構築し、CSCW '26 Demo論文およびACL 2026 BabelDOCシステム論文につながる成果を得た。CSCW '26 Demo論文のarXivプレプリントへのリンクを掲載。"
           }
         }
       ]
@@ -396,14 +396,14 @@
     "papers": [
       {
         "label": {
-          "zh": "IJCAI-ECAI 2026 Paper",
-          "en": "IJCAI-ECAI 2026 Paper",
-          "ja": "IJCAI-ECAI 2026 Paper"
+          "zh": "IJCAI-ECAI 2026 Paper · arXiv",
+          "en": "IJCAI-ECAI 2026 Paper · arXiv",
+          "ja": "IJCAI-ECAI 2026 Paper · arXiv"
         },
         "href": {
-          "zh": "",
-          "en": "",
-          "ja": ""
+          "zh": "https://arxiv.org/abs/2606.29746",
+          "en": "https://arxiv.org/abs/2606.29746",
+          "ja": "https://arxiv.org/abs/2606.29746"
         }
       }
     ],
@@ -423,19 +423,19 @@
           "利用深度学习和知识图谱提升医学文献检索与推荐质量。",
           "面向 medical deep research 构建智能体式检索与分析流程。",
           "强调内省式验证，帮助研究者判断检索结果和证据可靠性。",
-          "对应 IJCAI-ECAI 2026 Demonstrations Track 研究成果；目前尚无公开论文页。"
+          "对应 IJCAI-ECAI 2026 Demonstrations Track 研究成果，提供 arXiv 预印本。"
         ],
         "en": [
           "Uses deep learning and knowledge graphs to improve medical literature retrieval and recommendation.",
           "Builds an agentic workflow for medical deep research.",
           "Emphasizes introspective verification of retrieved evidence and research results.",
-          "Associated with an IJCAI-ECAI 2026 Demonstrations Track result; no public paper page is available yet."
+          "Associated with an IJCAI-ECAI 2026 Demonstrations Track result, available as an arXiv preprint."
         ],
         "ja": [
           "深層学習と知識グラフにより医学文献検索と推薦を改善。",
           "医学ディープリサーチに向けたエージェント型ワークフローを構築。",
           "検索された証拠と研究結果の内省的検証を重視。",
-          "IJCAI-ECAI 2026 Demonstrations Trackの研究成果と関連。公開論文ページは現時点で未確認。"
+          "IJCAI-ECAI 2026 Demonstrations Trackの研究成果と関連し、arXivプレプリントを公開。"
         ]
       },
       "sections": [
@@ -470,9 +470,9 @@
             "ja": "成果"
           },
           "body": {
-            "zh": "项目产出了开源取向的医学深度研究平台和演示视频，并形成 IJCAI-ECAI 2026 Demonstrations Track 相关成果。由于公开论文页面尚未确认，本页暂不放论文链接。",
-            "en": "The project produced an open-source-oriented platform for medical deep research and a demo video, with an output associated with the IJCAI-ECAI 2026 Demonstrations Track. Because no public paper page is confirmed yet, this page does not include a paper link.",
-            "ja": "オープンソース志向の医学ディープリサーチプラットフォームとデモ動画を構築し、IJCAI-ECAI 2026 Demonstrations Track関連成果につながった。公開論文ページが未確認のため、ここには論文リンクを置かない。"
+            "zh": "项目产出了开源取向的医学深度研究平台和演示视频，并形成 IJCAI-ECAI 2026 Demonstrations Track 相关成果。本页提供论文的 arXiv 预印本链接。",
+            "en": "The project produced an open-source-oriented platform for medical deep research and a demo video, with an output associated with the IJCAI-ECAI 2026 Demonstrations Track. An arXiv preprint link is provided.",
+            "ja": "オープンソース志向の医学ディープリサーチプラットフォームとデモ動画を構築し、IJCAI-ECAI 2026 Demonstrations Track関連成果につながった。論文のarXivプレプリントへのリンクを掲載。"
           }
         }
       ]
@@ -505,9 +505,9 @@
           "ja": "ARTI 2026 Paper"
         },
         "href": {
-          "zh": "",
-          "en": "",
-          "ja": ""
+          "zh": "https://doi.org/10.1007/s10506-026-09529-2",
+          "en": "https://doi.org/10.1007/s10506-026-09529-2",
+          "ja": "https://doi.org/10.1007/s10506-026-09529-2"
         }
       },
       {
@@ -538,19 +538,19 @@
         "zh": [
           "建设高质量中英法律术语库与法律文献翻译资源。",
           "支持中国法律文本的国际传播和跨语言理解。",
-          "关联 2026 ARTI 论文：立法文本翻译中的层级控制与忠实度工程；该论文尚无公开链接。",
+          "关联 2026 ARTI 论文：立法文本翻译中的层级控制与忠实度工程，并提供正式 DOI 链接。",
           "关联 2025 ARTI 论文：面向多语言法律术语映射的人在回路多智能体框架，并提供 DOI 链接。"
         ],
         "en": [
           "Builds high-quality Chinese-English legal terminology and translation resources.",
           "Supports international communication and cross-lingual understanding of Chinese law.",
-          "Related to a 2026 ARTI paper on hierarchical control for legislative translation fidelity; no public link is available yet.",
+          "Related to a 2026 ARTI paper on hierarchical control for legislative translation fidelity, with its official DOI link provided.",
           "Related to a 2025 ARTI paper on a human-in-the-loop multi-agent framework for multilingual legal terminology mapping, with DOI link provided."
         ],
         "ja": [
           "高品質な中英法律用語と翻訳資源を構築。",
           "中国法の国際発信と越境理解を支援。",
-          "2026年ARTI論文：立法翻訳の忠実度に向けた階層制御と関連。公開リンクは未確認。",
+          "2026年ARTI論文：立法翻訳の忠実度に向けた階層制御と関連し、正式なDOIリンクを掲載。",
           "2025年ARTI論文：多言語法律用語マッピングのための人間参加型マルチエージェント枠組みに関連し、DOIリンクを掲載。"
         ]
       },
@@ -586,9 +586,9 @@
             "ja": "成果"
           },
           "body": {
-            "zh": "项目已形成法律术语资源、翻译系统实践和两项 ARTI 方向研究成果。其中 2025 年论文已有 DOI 页面，2026 年论文目前不放链接，避免把未公开条目伪装成可访问论文。",
-            "en": "The project has produced legal terminology resources, translation-system practice, and two research outputs connected to Artificial Intelligence and Law. The 2025 paper has a DOI page; the 2026 paper is not linked until a public page is available.",
-            "ja": "法律用語資源、翻訳システムの実践、Artificial Intelligence and Lawに関連する二つの研究成果を得た。2025年論文にはDOIページがあり、2026年論文は公開ページ確認後にリンクする。"
+            "zh": "项目已形成法律术语资源、翻译系统实践和两项 ARTI 方向研究成果。2025 年与 2026 年论文均提供正式 DOI 链接。",
+            "en": "The project has produced legal terminology resources, translation-system practice, and two research outputs connected to Artificial Intelligence and Law. Both the 2025 and 2026 papers have official DOI links.",
+            "ja": "法律用語資源、翻訳システムの実践、Artificial Intelligence and Lawに関連する二つの研究成果を得た。2025年と2026年の両論文に正式なDOIリンクを掲載。"
           }
         }
       ]

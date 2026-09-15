@@ -132,7 +132,7 @@ export default function PublicationPage({
                             </a>
                           ) : (entry as any).url ? (
                             <a href={(entry as any).url} target="_blank" rel="noopener noreferrer" className="publication-link">
-                              {urlLabel}
+                              {(entry as any).url.startsWith('https://arxiv.org/') ? 'arXiv' : urlLabel}
                             </a>
                           ) : entry.doi ? (
                             <a href={entry.doi} target="_blank" rel="noopener noreferrer" className="publication-link">
