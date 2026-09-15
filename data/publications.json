@@ -1,5 +1,18 @@
 [
   {
+    "id": "yao2027dssg",
+    "type": "journal",
+    "title": "DSSG: Decoupled structural synergy for cross-view generative heterogeneous graph representation learning",
+    "authors": ["Yao, Min", "Li, Weimin", "Liu, Fangfang", "Pan, Quanke", "Wang, Hao", "Wang, Can"],
+    "abbr": "INS",
+    "journal": "Information Sciences (SCI Q1/CCF-B)",
+    "year": 2027,
+    "volume": "758",
+    "pages": "123993",
+    "doi": "https://doi.org/10.1016/j.ins.2026.123993",
+    "areas": ["social-networks"]
+  },
+  {
     "id": "meng2026deontic-drift",
     "type": "journal",
     "title": "Deontic Drift in Japanese Translations of the Chinese Civil Code: A Human–LLM Comparison of Deontic Marker Distributions",
