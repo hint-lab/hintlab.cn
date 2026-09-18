@@ -396,14 +396,26 @@
     "papers": [
       {
         "label": {
-          "zh": "IJCAI-ECAI 2026 Paper · arXiv",
-          "en": "IJCAI-ECAI 2026 Paper · arXiv",
-          "ja": "IJCAI-ECAI 2026 Paper · arXiv"
+          "zh": "IJCAI-ECAI 2026 正式论文",
+          "en": "IJCAI-ECAI 2026 Proceedings",
+          "ja": "IJCAI-ECAI 2026 正式論文"
         },
         "href": {
-          "zh": "https://arxiv.org/abs/2606.29746",
-          "en": "https://arxiv.org/abs/2606.29746",
-          "ja": "https://arxiv.org/abs/2606.29746"
+          "zh": "https://www.ijcai.org/proceedings/2026/978",
+          "en": "https://www.ijcai.org/proceedings/2026/978",
+          "ja": "https://www.ijcai.org/proceedings/2026/978"
+        }
+      },
+      {
+        "label": {
+          "zh": "IJCAI-ECAI 2026 PDF",
+          "en": "IJCAI-ECAI 2026 PDF",
+          "ja": "IJCAI-ECAI 2026 PDF"
+        },
+        "href": {
+          "zh": "https://www.ijcai.org/proceedings/2026/0978.pdf",
+          "en": "https://www.ijcai.org/proceedings/2026/0978.pdf",
+          "ja": "https://www.ijcai.org/proceedings/2026/0978.pdf"
         }
       }
     ],
@@ -423,19 +435,19 @@
           "利用深度学习和知识图谱提升医学文献检索与推荐质量。",
           "面向 medical deep research 构建智能体式检索与分析流程。",
           "强调内省式验证，帮助研究者判断检索结果和证据可靠性。",
-          "对应 IJCAI-ECAI 2026 Demonstrations Track 研究成果，提供 arXiv 预印本。"
+          "论文已收录于 IJCAI-ECAI 2026 Demonstrations Track 正式论文集。"
         ],
         "en": [
           "Uses deep learning and knowledge graphs to improve medical literature retrieval and recommendation.",
           "Builds an agentic workflow for medical deep research.",
           "Emphasizes introspective verification of retrieved evidence and research results.",
-          "Associated with an IJCAI-ECAI 2026 Demonstrations Track result, available as an arXiv preprint."
+          "Published in the official IJCAI-ECAI 2026 Demonstrations Track proceedings."
         ],
         "ja": [
           "深層学習と知識グラフにより医学文献検索と推薦を改善。",
           "医学ディープリサーチに向けたエージェント型ワークフローを構築。",
           "検索された証拠と研究結果の内省的検証を重視。",
-          "IJCAI-ECAI 2026 Demonstrations Trackの研究成果と関連し、arXivプレプリントを公開。"
+          "IJCAI-ECAI 2026 Demonstrations Trackの正式論文集に収録。"
         ]
       },
       "sections": [
@@ -470,9 +482,9 @@
             "ja": "成果"
           },
           "body": {
-            "zh": "项目产出了开源取向的医学深度研究平台和演示视频，并形成 IJCAI-ECAI 2026 Demonstrations Track 相关成果。本页提供论文的 arXiv 预印本链接。",
-            "en": "The project produced an open-source-oriented platform for medical deep research and a demo video, with an output associated with the IJCAI-ECAI 2026 Demonstrations Track. An arXiv preprint link is provided.",
-            "ja": "オープンソース志向の医学ディープリサーチプラットフォームとデモ動画を構築し、IJCAI-ECAI 2026 Demonstrations Track関連成果につながった。論文のarXivプレプリントへのリンクを掲載。"
+            "zh": "项目产出了开源取向的医学深度研究平台和演示视频，论文已收录于 IJCAI-ECAI 2026 Demonstrations Track。本页提供正式论文集页面和 PDF 链接。",
+            "en": "The project produced an open-source-oriented platform for medical deep research and a demo video. The paper is published in the IJCAI-ECAI 2026 Demonstrations Track proceedings, with links to the official paper page and PDF.",
+            "ja": "オープンソース志向の医学ディープリサーチプラットフォームとデモ動画を構築。論文はIJCAI-ECAI 2026 Demonstrations Trackに収録され、正式論文ページとPDFへのリンクを掲載。"
           }
         }
       ]
@@ -517,9 +529,9 @@
           "ja": "ARTI 2025 Paper"
         },
         "href": {
-          "zh": "https://doi.org/10.1007/s10506-025-09442-8",
-          "en": "https://doi.org/10.1007/s10506-025-09442-8",
-          "ja": "https://doi.org/10.1007/s10506-025-09442-8"
+          "zh": "https://doi.org/10.1007/s10506-025-09490-6",
+          "en": "https://doi.org/10.1007/s10506-025-09490-6",
+          "ja": "https://doi.org/10.1007/s10506-025-09490-6"
         }
       }
     ],

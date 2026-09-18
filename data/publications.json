@@ -67,7 +67,7 @@
     "abbr": "IJCAI",
     "booktitle": "The 35th International Joint Conference on Artificial Intelligence, Demonstrations Track (IJCAI-ECAI 2026, CCF-B)",
     "year": 2026,
-    "url": "https://arxiv.org/abs/2606.29746",
+    "url": "https://www.ijcai.org/proceedings/2026/978",
     "areas": ["hci"]
   },
   {
@@ -78,7 +78,7 @@
     "abbr": "ACL",
     "booktitle": "In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics: System Demonstrations [CCF-A]",
     "year": 2026,
-    "url": "https://aclanthology.org/2026.acl-demo.54/",
+    "url": "https://aclanthology.org/2026.acl-demo.25/",
     "areas": ["doc-understanding"]
   },
   {
@@ -133,7 +133,7 @@
     "abbr": "ARTI",
     "booktitle": "Artificial Intelligence and Law (SCI Q2/SSCI Q1)",
     "year": 2025,
-    "doi": "https://doi.org/10.1007/s10506-025-09442-8",
+    "doi": "https://doi.org/10.1007/s10506-025-09490-6",
     "areas": ["hci"]
   },
   {
@@ -150,7 +150,7 @@
   {
     "id": "chen2025fc-render",
     "type": "inproceedings",
-    "title": "FC-RENDER: Adaptive Font- and Color-Aware Text Ddiffusion Model",
+    "title": "FC-RENDER: Adaptive Font- and Color-Aware Text Diffusion Model",
     "authors": ["Chen, Bin", "Wang, Hao*", "Zhang, Xilin", "Zhu, Pinpin"],
     "abbr": "ICIP",
     "booktitle": "In Proceedings of 2025 IEEE International Conference on Image Processing [CCF-C]",
