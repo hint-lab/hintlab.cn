@@ -356,6 +356,22 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
           <SectionHeading title={t.expectations.title} />
           <div style={{ maxWidth: '800px', margin: '0 auto' }}>
             {t.expectations.paragraphs.map((p: string, idx: number) => {
+              if (idx === 0) {
+                return (
+                  <figure key={idx} className="contribution-figure">
+                    <figcaption>{p}</figcaption>
+                    <a href="/images/github-contributions-2026-09-22.png" target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src="/images/github-contributions-2026-09-22.png"
+                        alt={p}
+                        width={1566}
+                        height={432}
+                        className="contribution-image"
+                      />
+                    </a>
+                  </figure>
+                );
+              }
               const isLast = idx === t.expectations.paragraphs.length - 1;
               const isQuestion = idx >= t.expectations.paragraphs.length - 4 && idx < t.expectations.paragraphs.length - 1 && p.endsWith('？');
               if (isQuestion) {
