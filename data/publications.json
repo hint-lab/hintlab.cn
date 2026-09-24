@@ -13,6 +13,16 @@
     "areas": ["social-networks"]
   },
   {
+    "id": "yang2026drift-proof-rag",
+    "type": "inproceedings",
+    "title": "Drift-Proof RAG: Contrastive Hypothesis and Debate for Robust Rare Disease Diagnosis",
+    "authors": ["Yang, Qi", "Wang, Hao*", "Liu, Maolin", "Liu, Ruibin"],
+    "abbr": "BIBM",
+    "booktitle": "2026 IEEE International Conference on Bioinformatics and Biomedicine (IEEE BIBM 2026, Accepted)",
+    "year": 2026,
+    "areas": ["collaborative-cognition"]
+  },
+  {
     "id": "meng2026deontic-drift",
     "type": "journal",
     "title": "Deontic Drift in Japanese Translations of the Chinese Civil Code: A Human–LLM Comparison of Deontic Marker Distributions",
