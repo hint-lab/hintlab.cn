@@ -13,6 +13,19 @@
     "areas": ["social-networks"]
   },
   {
+    "id": "jiang2026triple-fusion",
+    "type": "journal",
+    "title": "Multimodal Global Semantics-Based Triple-Fusion Branch Framework for Fake News Detection",
+    "authors": ["Jiang, Yue", "Li, Weimin", "Feng, Yifan", "Wang, Hao", "Pan, Quanke", "Luvembe, Alex Munyole", "Jin, Qun"],
+    "abbr": "TCSS",
+    "journal": "IEEE Transactions on Computational Social Systems",
+    "year": 2026,
+    "pages": "1-15",
+    "doi": "https://doi.org/10.1109/TCSS.2026.3732070",
+    "url": "https://ieeexplore.ieee.org/document/11711414",
+    "areas": ["social-networks"]
+  },
+  {
     "id": "yang2026drift-proof-rag",
     "type": "inproceedings",
     "title": "Drift-Proof RAG: Contrastive Hypothesis and Debate for Robust Rare Disease Diagnosis",
