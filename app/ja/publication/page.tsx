@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 export default function PublicationJA() {
   return (
     <PublicationPage
+      locale="ja"
       title="研究業績"
       summary="研究室の代表的な論文・国際会議成果を年度別に整理しています。"
       homeHref="/ja"

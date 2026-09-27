@@ -1520,6 +1520,7 @@ img {
 
 .publication-main {
   flex: 1;
+  min-width: 0;
 }
 
 .publication-badge {
@@ -1549,11 +1550,23 @@ img {
   line-height: 1.6;
 }
 
+.publication-card-details {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
 .publication-actions {
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
 }
 
 .publication-link {
+  display: inline-flex;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1588,6 +1601,10 @@ img {
   .publication-card {
     flex-direction: column;
     gap: 20px;
+  }
+  .publication-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 

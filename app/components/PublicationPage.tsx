@@ -5,7 +5,29 @@ import Link from 'next/link';
 import pubs from '../../data/publications.json';
 import LangSwitch from './LangSwitch';
 
-type Pub = typeof pubs[number] & { areas?: string[]; doi?: string };
+type Pub = typeof pubs[number] & {
+  areas?: string[];
+  doi?: string;
+  journal?: string;
+  booktitle?: string;
+  volume?: string;
+  number?: string;
+  pages?: string;
+  articleNumber?: string;
+  series?: string;
+  status?: string;
+  acceptedDate?: string;
+  publishedDate?: string;
+  printYear?: number;
+  url?: string;
+  html?: string;
+};
+
+const detailLabels = {
+  zh: { volume: '卷', number: '期', pages: '页码', article: '文章编号', accepted: '已录用', online: '在线发表', acceptedDate: '录用日期', published: '发表日期', printYear: '纸本年份' },
+  en: { volume: 'Vol.', number: 'No.', pages: 'Pages', article: 'Article', accepted: 'Accepted', online: 'Online publication', acceptedDate: 'Accepted', published: 'Published', printYear: 'Print year' },
+  ja: { volume: '巻', number: '号', pages: 'ページ', article: '論文番号', accepted: '採録済み', online: 'オンライン公開', acceptedDate: '採録日', published: '公開日', printYear: '冊子刊行年' },
+};
 
 type PublicationPageProps = {
   title: string;
@@ -23,14 +45,30 @@ type PublicationPageProps = {
   filterCogLabel: string;
   filterSocialLabel: string;
   emptyCategoryLabel: string;
+  locale?: keyof typeof detailLabels;
   langScope?: 'site' | 'about';
 };
 
 function buildMeta(entry: Pub): string {
   const authors = Array.isArray(entry.authors) ? entry.authors.join(', ') : '';
-  const venue = (entry as any).journal || (entry as any).booktitle || '';
+  const venue = entry.journal || entry.booktitle || '';
   const parts = [authors, venue].filter(Boolean);
   return parts.join(' · ');
+}
+
+function buildDetails(entry: Pub, locale: keyof typeof detailLabels): string {
+  const labels = detailLabels[locale];
+  return [
+    entry.status === 'accepted' && labels.accepted,
+    entry.status === 'early-access' && labels.online,
+    entry.series,
+    entry.volume && `${labels.volume} ${entry.volume}`,
+    entry.number && (entry.number.startsWith('Part ') ? entry.number : `${labels.number} ${entry.number}`),
+    entry.articleNumber ? `${labels.article} ${entry.articleNumber}` : entry.pages && `${labels.pages} ${entry.pages.replace(/-+/g, '–')}`,
+    entry.acceptedDate && `${labels.acceptedDate} ${entry.acceptedDate}`,
+    entry.publishedDate && `${labels.published} ${entry.publishedDate}`,
+    entry.printYear && `${labels.printYear} ${entry.printYear}`,
+  ].filter(Boolean).join(' · ');
 }
 
 export default function PublicationPage({
@@ -49,6 +87,7 @@ export default function PublicationPage({
   filterCogLabel,
   filterSocialLabel,
   emptyCategoryLabel,
+  locale = 'zh',
   langScope = 'site',
 }: PublicationPageProps) {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -124,21 +163,26 @@ export default function PublicationPage({
                           </div>
                           <h3 className="publication-card-title">{entry.title}</h3>
                           <p className="publication-card-meta">{buildMeta(entry)}</p>
+                          {buildDetails(entry, locale) && (
+                            <p className="publication-card-details">{buildDetails(entry, locale)}</p>
+                          )}
                         </div>
                         <div className="publication-actions">
-                          {(entry as any).html ? (
-                            <a href={(entry as any).html} target="_blank" rel="noopener noreferrer" className="publication-link">
+                          {entry.html && (
+                            <a href={entry.html} target="_blank" rel="noopener noreferrer" className="publication-link">
                               {pdfLabel}
                             </a>
-                          ) : (entry as any).url ? (
-                            <a href={(entry as any).url} target="_blank" rel="noopener noreferrer" className="publication-link">
-                              {(entry as any).url.startsWith('https://arxiv.org/') ? 'arXiv' : urlLabel}
+                          )}
+                          {entry.url && entry.url !== entry.html && (
+                            <a href={entry.url} target="_blank" rel="noopener noreferrer" className="publication-link">
+                              {entry.url.startsWith('https://arxiv.org/') ? 'arXiv' : urlLabel}
                             </a>
-                          ) : entry.doi ? (
+                          )}
+                          {entry.doi && entry.doi !== entry.url && (
                             <a href={entry.doi} target="_blank" rel="noopener noreferrer" className="publication-link">
                               {doiLabel}
                             </a>
-                          ) : null}
+                          )}
                         </div>
                       </li>
                     ))}

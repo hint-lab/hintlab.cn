@@ -3,6 +3,7 @@ import PublicationPage from '../../components/PublicationPage';
 export default function PublicationEN() {
   return (
     <PublicationPage
+      locale="en"
       title="Publications"
       summary="A year-organized list of representative papers and conference output from the lab."
       homeHref="/en"
