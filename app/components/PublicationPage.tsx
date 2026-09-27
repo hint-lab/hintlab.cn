@@ -19,6 +19,7 @@ type Pub = typeof pubs[number] & {
   acceptedDate?: string;
   publishedDate?: string;
   printYear?: number;
+  jcrYear?: number;
   url?: string;
   html?: string;
 };
@@ -64,10 +65,12 @@ function buildDetails(entry: Pub, locale: keyof typeof detailLabels): string {
     entry.series,
     entry.volume && `${labels.volume} ${entry.volume}`,
     entry.number && (entry.number.startsWith('Part ') ? entry.number : `${labels.number} ${entry.number}`),
-    entry.articleNumber ? `${labels.article} ${entry.articleNumber}` : entry.pages && `${labels.pages} ${entry.pages.replace(/-+/g, '–')}`,
+    entry.articleNumber && `${labels.article} ${entry.articleNumber}`,
+    entry.pages && entry.pages !== entry.articleNumber && `${labels.pages} ${entry.pages.replace(/-+/g, '–')}`,
     entry.acceptedDate && `${labels.acceptedDate} ${entry.acceptedDate}`,
     entry.publishedDate && `${labels.published} ${entry.publishedDate}`,
     entry.printYear && `${labels.printYear} ${entry.printYear}`,
+    entry.jcrYear && `JCR ${entry.jcrYear}`,
   ].filter(Boolean).join(' · ');
 }
 
