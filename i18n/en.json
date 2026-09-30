@@ -45,7 +45,7 @@
     },
     "about": {
         "title": "About",
-        "p1": "Dr. Hao Wang served as a Lecturer in the Department of Intelligence Science and Technology at Shanghai University from 2019 to 2024, and has been an Associate Professor since 2024. Since 2025, he has been seconded to the Putuo District Data Bureau in Shanghai, serving as Deputy Director of the Administrative Approval Center and Deputy Director of the Urban Operations Center. He received a doctoral fellowship from the China Scholarship Council and earned his M.Sc. (2014) and Ph.D. (2019) from Waseda University, Japan. He has worked at Microsoft Research Asia, Toshiba Global R&D, and NTT Communication Science Laboratories. He has published more than 40 papers in international conferences and journals, including ACL, COLING, EMNLP, IJCAI, and CSCW. More than 30 of these papers have appeared in SCI/SSCI/A&HCI-indexed venues or CCF-recommended conferences. He has led a completed Shanghai Municipal Science and Technology Commission Sailing Program project, an NSFC Young Scientists Fund project at the AI interdisciplinary interface, and five industry collaboration projects. As a key member, he has also contributed to several NSFC major and general projects, the National Key R&D Program, and special projects on social governance. He has served as a long-term PC member and reviewer for leading AI and NLP venues, including ICLR, ICML, NeurIPS, ACL, EMNLP, and AAAI, as well as journals such as TKDD, TNNLS, and NLE. His research interests include artificial intelligence, human–AI collaborative cognition, and natural language processing, with applications in medical and other high-stakes documents.",
+        "p1": "Dr. Hao Wang served as a Lecturer in the Department of Intelligence Science and Technology at Shanghai University from 2019 to 2024, and has been an Associate Professor since 2024. Since 2025, he has been seconded to the Putuo District Data Bureau in Shanghai, serving as Deputy Director of the Administrative Approval Center and Deputy Director of the Urban Operations Center. He received a doctoral fellowship from the China Scholarship Council and earned his M.Sc. (2014) and Ph.D. (2019) from Waseda University, Japan. He has worked at Microsoft Research Asia, Toshiba Global R&D, and NTT Communication Science Laboratories. He has published more than 40 papers in international conferences and journals, including ACL, COLING, EMNLP, IJCAI, and CSCW. More than 30 of these papers have appeared in SCI/SSCI/A&HCI-indexed venues or CCF-recommended conferences. He has led a completed Shanghai Municipal Science and Technology Commission Sailing Program project, an NSFC Young Scientists Fund project at the AI interdisciplinary interface, and five industry collaboration projects. As a key member, he has also contributed to several NSFC major and general projects, the National Key R&D Program, and special projects on social governance. His research interests include artificial intelligence, human–AI collaborative cognition, and natural language processing, with applications in medical and other high-stakes documents.",
         "p2": "We welcome students with backgrounds in NLP, as well as students from linguistics, cognitive science, psychology, and related fields. International students are also welcome. Please note that Shanghai University currently offers Chinese-taught programs only, so international applicants are expected to hold an HSK Level 5 certificate."
     },
     "profile": {
@@ -304,5 +304,39 @@
         "emailLabel": "Email",
         "email": "wang-hao@shu.edu.cn"
     },
-    "footer": "© {year} H!NT Lab. All rights reserved."
+    "footer": "© {year} H!NT Lab. All rights reserved.",
+    "services": {
+        "title": "Professional Service",
+        "list": [
+            {
+                "label": "Editorial Board",
+                "text": "Editorial Board Member, Humanities and Social Sciences Communications (HSSC), covering AI and social governance, law and artificial intelligence, linguistics, and related areas.",
+                "href": "https://www.nature.com/palcomms/editors"
+            },
+            {
+                "label": "Adjunct Teaching",
+                "text": "Part-time Instructor, Language Data Science Micro-program, School of Foreign Languages, Shanghai Jiao Tong University.",
+                "href": ""
+            },
+            {
+                "label": "Conference Service",
+                "text": "Long-term program committee member or reviewer for ICLR, ICML, NeurIPS, ACL, EMNLP, AAAI, and other international conferences.",
+                "href": ""
+            },
+            {
+                "label": "Journal Reviewing",
+                "text": "Reviewer for TKDD, TNNLS, NLE, and other journals.",
+                "href": ""
+            }
+        ]
+    },
+    "awards": {
+        "title": "Honors & Awards",
+        "list": [
+            {
+                "text": "ACL 2026 Outstanding Reviewer Award",
+                "href": "https://2026.aclweb.org/program/outstanding_reviewers/"
+            }
+        ]
+    }
 }

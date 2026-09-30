@@ -1,5 +1,6 @@
 'use client';
 
+import ProfileServiceSections from '../../../components/ProfileServiceSections';
 import LangSwitch from '../../../components/LangSwitch';
 import Link from 'next/link';
 import SideToc from '../../../components/SideToc';
@@ -72,6 +73,8 @@ export default function WangHaoPageEN() {
                     </div>
                 </div>
             </section>
+
+            <ProfileServiceSections locale="en" />
 
             <section id="courses" className="section section-alt">
                 <div className="container">
@@ -194,6 +197,8 @@ export default function WangHaoPageEN() {
 
             <SideToc items={[
                 { id: 'about', label: t.nav.about },
+                { id: 'services', label: t.services.title },
+                { id: 'awards', label: t.awards.title },
                 { id: 'courses', label: t.nav.courses },
                 { id: 'research', label: t.nav.research },
                 { id: 'insights', label: t.nav.insights },
