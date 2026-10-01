@@ -92,14 +92,26 @@
     },
     "research": {
         "title": "研究方向",
-        "bullets": [
-            "人类与大语言模型协同认知（学硕、女生优先）",
-            "人智融合的组织社会",
-            "人机具身协作"
-        ],
-        "notePrefix": "目前的名额充足（2～3名），欢迎感兴趣的同学",
+        "notePrefix": "目前名额充足（2～3名），欢迎感兴趣的同学",
         "contactCta": "【点击这里】",
-        "noteSuffix": "联系。"
+        "noteSuffix": "联系。",
+        "directions": [
+            {
+                "title": "人类与大语言模型协同认知 (Human-AI Co-Cognition)",
+                "description": "探讨人脑与大模型的交互边界，研究深层推理与医学/法律文档理解。",
+                "note": "（注：本方向优先招收学术型硕士，鼓励女生在 AI 交叉领域发挥细腻敏锐的特长）"
+            },
+            {
+                "title": "人智融合的组织社会 (AI-Native Society & Governance)",
+                "description": "结合城市治理、政务审批与物流自动化场景，研究多智能体（Multi-Agent）在复杂组织架构中的协作机制与基础设施建设。",
+                "note": ""
+            },
+            {
+                "title": "人机具身协作 (Embodied AI & Brain-Computer Interface)",
+                "description": "基于脑电（EEG）等生理信号，探索下一代具身控制与 AI UI 设计，让机器更自然地理解人类意图。",
+                "note": ""
+            }
+        ]
     },
     "projects": {
         "title": "研究项目",
@@ -123,8 +135,8 @@
     "insights": {
         "title": "一点感悟",
         "quoteLines": [
-            "见过山海，过尽悲欢，",
-            "众生皆空，熙熙利往。"
+            "敲最硬核的代码，",
+            "做有人文温情的人工智能。"
         ]
     },
     "students": {

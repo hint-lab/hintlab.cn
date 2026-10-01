@@ -96,12 +96,18 @@ export default function WangHaoPage() {
             <section id="research" className="section">
                 <div className="container">
                     <SectionHeading title={t.research.title} />
-                    <ul className="list">
-                        {t.research.bullets.map((b, idx) => (<li key={idx}>{b}</li>))}
-                    </ul>
-                    <p style={{ marginTop: '24px', color: 'var(--color-muted)' }}>
+                    <p style={{ color: 'var(--color-muted)' }}>
                         {t.research.notePrefix} <a href="#" onClick={(e) => { e.preventDefault(); setShowContactModal(true); }} style={{ color: 'var(--color-primary)', fontWeight: '600' }}>{t.research.contactCta}</a> {t.research.noteSuffix}
                     </p>
+                    <ul className="list">
+                        {t.research.directions.map((direction) => (
+                            <li key={direction.title}>
+                                <strong>{direction.title}</strong>
+                                <p>{direction.description}</p>
+                                {direction.note && <p style={{ color: 'var(--color-muted)' }}>{direction.note}</p>}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </section>
 

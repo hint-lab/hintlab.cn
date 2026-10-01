@@ -74,14 +74,26 @@
     },
     "research": {
         "title": "Research",
-        "bullets": [
-            "Human–LLM Collaborative Cognition (academic master's applicants; female applicants preferred)",
-            "Organizations and Society in Human–AI Integration",
-            "Human–Machine Embodied Collaboration"
-        ],
         "notePrefix": "Open positions: 2–3. If you are interested, please",
         "contactCta": "contact us",
-        "noteSuffix": "."
+        "noteSuffix": ".",
+        "directions": [
+            {
+                "title": "Human-AI Co-Cognition",
+                "description": "Explore the boundaries of interaction between the human brain and large language models, focusing on deep reasoning and medical/legal document understanding.",
+                "note": "Note: Priority is given to applicants for academic master's programs. Female students are encouraged to bring their nuanced and perceptive strengths to interdisciplinary AI research."
+            },
+            {
+                "title": "AI-Native Society & Governance",
+                "description": "Study multi-agent collaboration mechanisms and infrastructure in complex organizations, drawing on urban governance, administrative approvals, and logistics automation.",
+                "note": ""
+            },
+            {
+                "title": "Embodied AI & Brain-Computer Interface",
+                "description": "Use EEG and other physiological signals to explore next-generation embodied control and AI UI design, enabling machines to understand human intent more naturally.",
+                "note": ""
+            }
+        ]
     },
     "projects": {
         "title": "Research Projects",
@@ -105,8 +117,8 @@
     "insights": {
         "title": "Insights",
         "quoteLines": [
-            "Rigorous research, grounded in real problems and shaped by human–AI collaboration.",
-            "Seek truth, stay grounded, and move forward one step at a time."
+            "Write hardcore code.",
+            "Build AI with human warmth."
         ]
     },
     "students": {
