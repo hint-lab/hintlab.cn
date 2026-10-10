@@ -276,7 +276,7 @@
     "label": "DeepTrans",
     "theme": "green",
     "link": "https://www.deeptrans.studio",
-    "video": "https://www.youtube.com/watch?v=ltrXg-NhHTo",
+    "video": "https://youtu.be/cNpafhHAEjg",
     "logo": "/projects/deeptrans-logo.svg",
     "statusTone": "completed",
     "status": {
@@ -292,14 +292,14 @@
     "papers": [
       {
         "label": {
-          "zh": "CSCW '26 Demo Paper (CCF-A) · arXiv",
-          "en": "CSCW '26 Demo Paper (CCF-A) · arXiv",
-          "ja": "CSCW '26 Demo Paper (CCF-A) · arXiv"
+          "zh": "CSCW '26 Demo 正式论文 (CCF-A)",
+          "en": "CSCW '26 Demo Proceedings (CCF-A)",
+          "ja": "CSCW '26 Demo 正式論文 (CCF-A)"
         },
         "href": {
-          "zh": "https://arxiv.org/abs/2606.29727",
-          "en": "https://arxiv.org/abs/2606.29727",
-          "ja": "https://arxiv.org/abs/2606.29727"
+          "zh": "https://doi.org/10.1145/3785651.3831415",
+          "en": "https://doi.org/10.1145/3785651.3831415",
+          "ja": "https://doi.org/10.1145/3785651.3831415"
         }
       }
     ],
@@ -319,19 +319,19 @@
           "提供面向译者和审校者的并行编辑、版本控制、实时预览与快捷操作。",
           "支持术语抽取、质量评估、多引擎翻译与多智能体协作流程。",
           "通过团队记忆和语义检索复用专家决策与翻译先例。",
-          "已关联 ACL 2026 BabelDOC 系统论文；CSCW '26 Demo 论文提供 arXiv 预印本。"
+          "已关联 ACL 2026 BabelDOC 系统论文；CSCW '26 Demo 论文已于 2026-10-10 正式出版，页码 519–521。"
         ],
         "en": [
           "Provides parallel editing, version control, live preview, and efficient review workflows for translators and reviewers.",
           "Supports terminology extraction, quality assessment, multi-engine translation, and multi-agent collaboration.",
           "Uses team memory and semantic retrieval to reuse expert decisions and translation precedents.",
-          "Connected to the ACL 2026 BabelDOC system paper; the CSCW '26 Demo paper is available as an arXiv preprint."
+          "Connected to the ACL 2026 BabelDOC system paper; the CSCW '26 Demo paper was published on 2026-10-10, pages 519–521."
         ],
         "ja": [
           "翻訳者・レビュー担当者向けに対訳編集、バージョン管理、ライブプレビュー、効率的なレビュー機能を提供。",
           "用語抽出、品質評価、複数翻訳エンジン、マルチエージェント協働を支援。",
           "チームメモリと意味検索により専門家の判断と翻訳先例を再利用。",
-          "ACL 2026 BabelDOCシステム論文と関連。CSCW '26 Demo論文のarXivプレプリントを公開。"
+          "ACL 2026 BabelDOCシステム論文と関連。CSCW '26 Demo論文は2026-10-10に正式刊行（519–521ページ）。"
         ]
       },
       "sections": [
@@ -366,9 +366,9 @@
             "ja": "成果"
           },
           "body": {
-            "zh": "项目产出了可用的翻译工作台和演示系统，并形成 CSCW '26 Demo 论文与 ACL 2026 BabelDOC 系统论文方向的研究成果。CSCW '26 Demo 论文提供 arXiv 预印本链接。",
-            "en": "The project produced a usable translation workbench and demo system, with research outputs connected to a CSCW '26 Demo paper and the ACL 2026 BabelDOC system paper. The CSCW '26 Demo paper is linked through its arXiv preprint.",
-            "ja": "利用可能な翻訳ワークベンチとデモシステムを構築し、CSCW '26 Demo論文およびACL 2026 BabelDOCシステム論文につながる成果を得た。CSCW '26 Demo論文のarXivプレプリントへのリンクを掲載。"
+            "zh": "项目产出了可用的翻译工作台和演示系统，并形成 CSCW '26 Demo 论文与 ACL 2026 BabelDOC 系统论文方向的研究成果。CSCW '26 Demo 论文已于 2026-10-10 由 ACM 正式出版，收录于 CSCW Companion '26，页码 519–521；DOI：10.1145/3785651.3831415。",
+            "en": "The project produced a usable translation workbench and demo system, with research outputs connected to a CSCW '26 Demo paper and the ACL 2026 BabelDOC system paper. ACM published the CSCW '26 Demo paper on 2026-10-10 in CSCW Companion '26, pages 519–521; DOI: 10.1145/3785651.3831415.",
+            "ja": "利用可能な翻訳ワークベンチとデモシステムを構築し、CSCW '26 Demo論文およびACL 2026 BabelDOCシステム論文につながる成果を得た。CSCW '26 Demo論文は2026-10-10にACMより正式刊行され、CSCW Companion '26に収録（519–521ページ）。DOI：10.1145/3785651.3831415。"
           }
         }
       ]

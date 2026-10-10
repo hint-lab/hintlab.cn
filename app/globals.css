@@ -1688,6 +1688,20 @@ img {
   letter-spacing: 0.02em;
 }
 
+@media (max-width: 980px) {
+  .pub-item {
+    grid-template-columns: 60px minmax(0, 1fr) 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pub-item {
+    grid-template-columns: 48px minmax(0, 1fr) 32px;
+    gap: 12px;
+    padding: 16px 0;
+  }
+}
+
 .view-all-wrap {
   margin-top: 48px;
   display: flex;

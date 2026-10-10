@@ -1,6 +1,6 @@
 # 2026 年论文信息核对
 
-核对日期：2026-09-27。范围为 `data/publications.json` 中归入 2026 年的 11 篇论文；同步维护 `public/papers.bib`。另为 2027 年 DSSG 已有的文章编号 123993 增加字段类型标记，避免新详情行将其误显示为页码；不更改该篇书目信息。
+核对日期：2026-09-27；DeepTrans Studio 出版信息于 2026-10-11 更新。范围为 `data/publications.json` 中归入 2026 年的 11 篇论文；同步维护 `public/papers.bib`。另为 2027 年 DSSG 已有的文章编号 123993 增加字段类型标记，避免新详情行将其误显示为页码；不更改该篇书目信息。
 
 ## 逐篇结果
 
@@ -11,7 +11,7 @@
 | Deontic Drift | 保留两位作者、Hao Wang 通讯作者、SSCI Q1、2026-09-14 录用日期；页面显示录用日期 | [Sage Open](https://journals.sagepub.com/home/sgo)；本轮精确标题搜索和 Crossref 查询未找到相符记录，仍缺 DOI、卷期和文章编号。录用信息来自此前用户提供的资料。 |
 | S2-CoGNN | 确认作者、352 卷、Part B、文章编号 116990、DOI；补出版社链接 | [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0950705126017168)、[Crossref](https://api.crossref.org/works/10.1016/j.knosys.2026.116990)。Part B 沿用既有记录；Crossref 仅提供卷号，不能据此删除已知分册。 |
 | Beyond Multi-Agent Translation | 补齐 6 位作者，替换作者 TODO / et al.；确认 Hao Wang 通讯作者；补 2026-06-24 录用和 2026-07-02 在线发表日期、出版社链接；BibTeX 移除过时的 Accepted 状态 | [Springer 正式页面](https://link.springer.com/article/10.1007/s10506-026-09529-2)、[Crossref](https://api.crossref.org/works/10.1007/s10506-026-09529-2)。尚未分配卷期页码。保留原 ID / BibTeX key，避免破坏既有锚点和引用。 |
-| DeepTrans Studio | 确认全部 8 位作者与已录用 Demo 状态；补 arXiv PDF 和 eprint 信息；移除错误的 `pages = {4}` | [作者提交的 arXiv 记录](https://arxiv.org/abs/2606.29727)。“4 pages”是预印本长度，不是会议论文集页码。本轮未确认 ACM DOI 和正式分页，继续保留 arXiv。 |
+| DeepTrans Studio | 2026-10-11 补正式论文集名称、CSCW Companion '26、519–521 页、2026-10-10 出版日期、DOI 和 ACM 正式链接；移除已录用状态；BibTeX 补 ISBN、3 页及会议地点 | [ACM 正式记录](https://doi.org/10.1145/3785651.3831415)、[出版社提交的 Crossref 元数据](https://api.crossref.org/works/10.1145/3785651.3831415)及用户提供的 ACM BibTeX。保留既有 8 位作者顺序和 Hao Wang 通讯作者标记；ACM 元数据中张清雅、熊慧雯的姓/名字段颠倒，本站沿用已确认的 `Zhang, Qingya`、`Xiong, Huiwen`。ACM 页面和 PDF 的自动访问返回 403，PDF 入口继续保留[作者预印本](https://arxiv.org/pdf/2606.29727)。 |
 | DeepMed Search | 网站补齐 DOI、8453–8457 页、官方 PDF；作者 JiaHang 大小写与会议记录一致；BibTeX 补通讯作者说明 | [IJCAI](https://www.ijcai.org/proceedings/2026/978)。 |
 | BabelDOC | 补 DOI、253–262 页、2026-07 发表月份、官方 PDF、完整论文集名；BibTeX 补编辑、地点和通讯作者说明 | [ACL Anthology](https://aclanthology.org/2026.acl-demo.25/)。Anthology 将第一作者拆为 `Qi, Yang`；本站保留既有、用户确认的杨琪姓名 `Yang, Qi`，未自动交换姓与名。 |
 | QAlign-RAG | 补 LNCS 16632 卷、163–175 页、2026-07-12 在线日期、Springer 链接；新增完整 BibTeX | [Springer](https://link.springer.com/chapter/10.1007/978-981-92-2852-2_13)、[Crossref](https://api.crossref.org/works/10.1007/978-981-92-2852-2_13)。在线/会议年份是 2026，出版社引用和纸本年份是 2027；网站仍归入 2026，同时显示纸本年份，BibTeX 使用出版社引用年份 2027 并注明在线日期。 |
@@ -34,5 +34,5 @@
 - 中、英、日页面展示已有卷期、页码或文章编号、录用/发表日期和在线状态；文章编号不显示成页码。
 - PDF、正式页面和 DOI 链接可同时显示，避免原来的互斥逻辑隐藏已补链接。
 - 保留所有既有作者顺序及通讯作者星号，不从 Crossref 的作者排列推断通讯作者。
-- 尚待正式出版信息的条目：TCSS（卷期）、BIBM（正式链接/DOI/页码）、Sage Open（正式链接/DOI/卷期/文章编号）、Beyond Multi-Agent Translation（卷期页码）、DeepTrans Studio（ACM DOI/正式分页）。
+- 尚待正式出版信息的条目：TCSS（卷期）、BIBM（正式链接/DOI/页码）、Sage Open（正式链接/DOI/卷期/文章编号）、Beyond Multi-Agent Translation（卷期页码）。
 - 不运行 `scripts/convert-bib.mjs` 覆盖目录；它尚未支持本站全部状态、分类和日期字段。两份数据目前继续显式同步。
