@@ -150,6 +150,7 @@ Place PDF files in `public/publications/` and update the i18n files.
 #### Update Team Information
 
 Edit the student/alumni tables in the i18n files under the `students` or `alumni` sections.
+The homepage and Wang Hao's profile share `students.rows`; the homepage student count is calculated automatically from this list.
 
 ### Contributing
 
@@ -316,6 +317,7 @@ hintlab.cn/
 #### 更新团队信息
 
 在国际化文件的 `students` 或 `alumni` 部分编辑学生/校友表格。
+实验室首页与王昊个人主页共用 `students.rows` 名单，首页在读人数按名单自动统计。
 
 ### 贡献指南
 

@@ -123,6 +123,7 @@
     },
     "students": {
         "title": "Graduate Students",
+        "summary": "Our lab currently has {count} graduate students.",
         "columns": [
             "Name",
             "Entry Year",

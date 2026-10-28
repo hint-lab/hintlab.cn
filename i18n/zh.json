@@ -141,6 +141,7 @@
     },
     "students": {
         "title": "在读研究生",
+        "summary": "目前共有 {count} 位在读研究生。",
         "columns": [
             "姓名",
             "入学年份",

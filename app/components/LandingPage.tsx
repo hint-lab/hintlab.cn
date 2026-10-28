@@ -84,6 +84,7 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
             <a href="#research-areas" onClick={closeMenu}>{t.labIntro.researchTitle}</a>
             <a href="#projects" onClick={closeMenu}>{t.nav.projects}</a>
             <Link href={publicationHref} onClick={closeMenu}>{t.nav.publications}</Link>
+            <a href="#students" onClick={closeMenu}>{t.nav.students}</a>
             <a href="#contact" onClick={closeMenu}>{t.nav.contact}</a>
           </nav>
 
@@ -300,7 +301,36 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
         </div>
       </section>
 
-      <section id="contact" className="section">
+      <section id="students" className="section">
+        <div className="container">
+          <SectionHeading
+            title={t.students.title}
+            summary={t.students.summary.replace('{count}', String(t.students.rows.length))}
+          />
+          <div className="table-wrap student-table-wrap" tabIndex={0} role="region" aria-label={t.students.title}>
+            <table className="table student-table">
+              <thead>
+                <tr>
+                  {t.students.columns.map((column) => <th key={column} scope="col">{column}</th>)}
+                </tr>
+              </thead>
+              <tbody>
+                {t.students.rows.map((row, rowIndex) => (
+                  <tr key={rowIndex}>
+                    {row.map((cell, columnIndex) => (
+                      <td key={columnIndex}>
+                        {typeof cell === 'object' ? <Link href={cell.href}>{cell.text}</Link> : cell}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="section section-alt">
         <div className="container">
           <SectionHeading
             title={t.contact.title}
@@ -351,7 +381,7 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
         </div>
       </section>
 
-      <section id="expectations" className="section section-alt">
+      <section id="expectations" className="section">
         <div className="container">
           <SectionHeading title={t.expectations.title} />
           <div style={{ maxWidth: '800px', margin: '0 auto' }}>
@@ -411,6 +441,7 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
             <a href="#home">{footerLinks.home}</a>
             <a href="#research-areas">{footerLinks.research}</a>
             <a href="#projects">{footerLinks.projects}</a>
+            <a href="#students">{t.nav.students}</a>
             <a href="#contact">{footerLinks.contact}</a>
           </div>
           <div className="footer-beian">
@@ -432,6 +463,7 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
           { id: 'home', label: t.nav.home },
           { id: 'research-areas', label: t.labIntro.researchTitle },
           { id: 'projects', label: t.nav.projects },
+          { id: 'students', label: t.nav.students },
           { id: 'contact', label: t.nav.contact },
           { id: 'expectations', label: t.expectations.title },
         ]}
