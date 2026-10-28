@@ -127,7 +127,7 @@
         "columns": [
             "Name",
             "Entry Year",
-            "Undergraduate Institution",
+            "Undergraduate Institution / Employer",
             "Note",
             "Research"
         ],
@@ -152,6 +152,27 @@
                 "Wuhan University of Science and Technology",
                 "Recommended",
                 "Human–AI Collaborative Control Theory"
+            ],
+            [
+                "Lin Ruiyang",
+                "2026",
+                "Qingdao University",
+                "Full-time",
+                "Supply Chain Desktop Agent"
+            ],
+            [
+                "Liu Linhao",
+                "2026",
+                "芯曜鑫技术（上海）有限公司 / Shanghai Maritime University",
+                "Part-time",
+                "AI4Indus"
+            ],
+            [
+                "Cao Yifan",
+                "2026",
+                "Chongming District Science and Technology Innovation Service Center / Shanghai Polytechnic University",
+                "Part-time",
+                "AI Agents for Government Services"
             ],
             [
                 "Liu Ruibin",
