@@ -48,8 +48,14 @@
     "abbr": "SAGE Open",
     "journal": "Sage Open (SSCI Q1)",
     "year": 2026,
-    "status": "accepted",
     "acceptedDate": "2026-09-14",
+    "publishedDate": "2026-10-21",
+    "volume": "16",
+    "number": "4",
+    "articleNumber": "21582440261499300",
+    "doi": "https://doi.org/10.1177/21582440261499300",
+    "url": "https://journals.sagepub.com/doi/10.1177/21582440261499300",
+    "html": "https://journals.sagepub.com/doi/pdf/10.1177/21582440261499300",
     "areas": ["hci"]
   },
   {
