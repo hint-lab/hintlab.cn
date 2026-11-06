@@ -253,13 +253,84 @@
     }
   },
   {
+    "slug": "eeg-ui-design",
+    "name": {
+      "zh": "脑电 UI 设计",
+      "en": "EEG UI Design",
+      "ja": "脳波 UI デザイン"
+    },
+    "label": "EEG UI",
+    "theme": "purple",
+    "link": "",
+    "video": "",
+    "logo": "",
+    "statusTone": "ongoing",
+    "status": {
+      "zh": "探索中",
+      "en": "Exploratory",
+      "ja": "探索段階"
+    },
+    "description": {
+      "zh": "探索融合脑电信号、用户反馈与大模型能力的 AI 交互界面。",
+      "en": "Exploring AI interfaces that combine EEG signals, user feedback, and large language models.",
+      "ja": "脳波信号、ユーザーのフィードバック、大規模言語モデルを組み合わせたAIインターフェースを探究する。"
+    },
+    "papers": [],
+    "detail": {
+      "tagline": {
+        "zh": "把脑电反馈融入 AI 界面设计，探索用户状态、意图表达与交互反馈的联系。",
+        "en": "Bringing EEG feedback into AI interface design to explore user state, intent expression, and interaction feedback.",
+        "ja": "脳波のフィードバックをAIインターフェースの設計に取り入れ、ユーザーの状態、意図の表現、対話の応答を探る。"
+      },
+      "overview": {
+        "zh": "脑电 UI 设计围绕脑电（EEG）信号在界面设计中的作用，探索如何将生理反馈、用户的显式意图表达与大模型交互结合。研究计划关注界面何时提示、如何反馈，以及如何让用户校正系统判断，从而设计更自然、可解释、由用户掌控的 AI 界面。",
+        "en": "EEG UI Design explores how EEG signals can inform interface design alongside physiological feedback, explicit user intent, and interaction with large language models. Planned research examines when an interface should prompt, how it should respond, and how users can correct system interpretations to support understandable, user-controlled AI interaction.",
+        "ja": "脳波 UI デザインは、脳波（EEG）信号をインターフェース設計にどう生かすかを探り、生理的なフィードバック、ユーザーによる明示的な意図の表現、大規模言語モデルとの対話を組み合わせる。提示のタイミング、応答方法、ユーザーによる判断の修正を研究し、理解しやすくユーザーが主導できるAIインターフェースを目指す。"
+      },
+      "highlights": {
+        "zh": [
+          "探索脑电反馈与显式操作相结合的交互原型。",
+          "研究用户状态与界面提示、反馈节奏、自适应呈现之间的关系。",
+          "结合大模型能力，设计用户能够确认和纠正的交互反馈。",
+          "通过实验评价任务体验、界面可理解性与用户控制感。"
+        ],
+        "en": [
+          "Explore interaction prototypes combining EEG feedback and explicit user actions.",
+          "Study relationships between user state, prompts, feedback timing, and adaptive presentation.",
+          "Design LLM-assisted feedback that users can confirm and correct.",
+          "Evaluate task experience, interface comprehensibility, and user control through experiments."
+        ],
+        "ja": [
+          "脳波のフィードバックと明示的な操作を組み合わせた対話の試作を行う。",
+          "ユーザーの状態と、提示、応答のタイミング、適応的な表示の関係を研究する。",
+          "大規模言語モデルを用い、ユーザーが確認・修正できるフィードバックを設計する。",
+          "実験を通じてタスク体験、分かりやすさ、ユーザーの操作感を評価する。"
+        ]
+      },
+      "sections": [
+        {
+          "title": {
+            "zh": "当前阶段与研究计划",
+            "en": "Current Stage and Research Plan",
+            "ja": "現在の段階と研究計画"
+          },
+          "body": {
+            "zh": "项目处于探索阶段，拟从脑电反馈的交互表达与小规模界面原型入手，逐步设计可重复的用户实验，并依据实际观察调整研究问题。后续将补充界面演示、实验记录和研究成果。",
+            "en": "The project is exploratory. Planned work starts with interaction concepts for EEG feedback and small interface prototypes, develops repeatable user experiments, and refines research questions through observation. Interface demonstrations, experiment records, and research outputs will be added as work progresses.",
+            "ja": "プロジェクトは探索段階にある。脳波のフィードバックの表現と小規模なインターフェースの試作から始め、再現可能なユーザー実験を設計し、観察に基づいて研究課題を具体化する計画である。今後、画面デモ、実験記録、研究成果を掲載する。"
+          }
+        }
+      ]
+    }
+  },
+  {
     "slug": "embodied-robotics",
     "name": {
-      "zh": "机器狗与具身智能",
-      "en": "Robot Dogs & Embodied AI",
-      "ja": "四足歩行ロボットと身体性AI"
+      "zh": "具身平行操作",
+      "en": "Embodied Parallel Operation",
+      "ja": "身体性パラレル操作"
     },
-    "label": "Embodied AI",
+    "label": "Parallel Ops",
     "theme": "green",
     "link": "",
     "video": "",
@@ -271,40 +342,40 @@
       "ja": "探索段階"
     },
     "description": {
-      "zh": "依托实验室现有机器狗，探索意图表达、机器人交互与人机具身协作。",
-      "en": "Exploring intent expression, robot interaction, and embodied collaboration with the lab's robot dog platform.",
-      "ja": "研究室の四足歩行ロボットを用い、意図の表現、ロボットとの対話、人と機械の身体的協働を探究する。"
+      "zh": "依托实验室现有机器狗，探索人在回路的具身平行操作与交互控制。",
+      "en": "Exploring human-in-the-loop embodied parallel operation and interactive control with the lab's robot dog platform.",
+      "ja": "研究室の四足歩行ロボットを用い、人が関与する身体性パラレル操作と対話的な制御を探究する。"
     },
     "papers": [],
     "detail": {
       "tagline": {
-        "zh": "以机器狗为实体平台，探索从意图表达、状态反馈到协作行动的人机交互。",
-        "en": "Exploring human–robot interaction from intent expression and state feedback to collaborative action.",
-        "ja": "四足歩行ロボットを実機基盤に、意図の表現、状態の提示、協働行動をつなぐインタラクションを探究する。"
+        "zh": "连接人的操作、虚实交互界面与机器狗行动反馈的具身协作探索。",
+        "en": "Connecting human operation, physical–virtual interfaces, and robot action feedback in embodied collaboration.",
+        "ja": "人の操作、実空間と仮想空間のインターフェース、ロボットの行動フィードバックをつなぐ身体的協働を探究する。"
       },
       "overview": {
-        "zh": "项目依托实验室已有的机器狗，拟开展面向人机交互与具身协作的研究。研究关注人如何清晰表达任务意图、理解机器人的当前状态与行动反馈，以及如何在协作过程中保留有效的人工控制。目前以研究方向梳理和实验设计为起点，逐步探索适合真实机器人场景的交互方式。",
-        "en": "Using the lab's existing robot dog, this exploratory project plans to study human–robot interaction and embodied collaboration. It focuses on how people express task intent, understand robot state and action feedback, and retain effective human control during collaboration. Initial work centers on defining research questions and designing experiments for interaction with a physical robot.",
-        "ja": "研究室が保有する四足歩行ロボットを用いて、人とロボットのインタラクションと身体的協働を研究する計画である。人がタスクの意図を伝え、ロボットの状態や行動へのフィードバックを理解し、協働の中で適切に操作へ介入できる方法に着目する。研究課題の整理と実験設計を出発点とし、実機に適した対話方法を探究する。"
+        "zh": "具身平行操作以实验室现有机器狗为实体平台，围绕人在回路的操作与协作开展探索。研究计划关注人的操作如何映射为机器人行动、机器状态如何返回操作界面，以及人在观察、引导和接管过程中的交互体验。拟结合沉浸式交互与虚实对应的操作场景，逐步设计和评估可重复的协作任务。",
+        "en": "Embodied Parallel Operation uses the lab's robot dog as a physical platform for studying human-in-the-loop operation and collaboration. Planned research examines how human actions map to robot behavior, how robot state is returned to the interface, and how people observe, guide, and take over control. Immersive interaction and physical–virtual correspondence provide directions for designing repeatable collaborative tasks.",
+        "ja": "身体性パラレル操作は、研究室の四足歩行ロボットを実機基盤とし、人が関与する操作と協働を探究する。人の操作をロボットの行動にどう対応付けるか、状態を操作画面へどう返すか、観察・誘導・操作介入をどう支援するかを研究する計画である。没入型の対話と実空間・仮想空間の対応を手掛かりに、再現可能な協働タスクを設計・評価する。"
       },
       "highlights": {
         "zh": [
-          "以实验室现有机器狗为平台，设计面向真实环境的交互实验。",
-          "探索自然语言、手势或沉浸式界面等任务意图表达方式。",
-          "研究机器人状态反馈、任务确认与人工接管的交互设计。",
-          "通过协作任务观察，评估交互清晰度、可控性与人机协作体验。"
+          "以现有机器狗开展具身交互与平行操作的实验设计。",
+          "探索操作映射、机器人状态同步和动作反馈的呈现方式。",
+          "研究沉浸式操作界面中的任务确认、人工接管与协作控制。",
+          "通过小规模任务评价操作清晰度、控制感和人机协作体验。"
         ],
         "en": [
-          "Design interaction experiments around the lab's physical robot dog platform.",
-          "Explore task-intent expression through language, gestures, or immersive interfaces.",
-          "Study interaction design for robot state feedback, task confirmation, and human takeover.",
-          "Evaluate interaction clarity, controllability, and collaboration experience through task-based observation."
+          "Design embodied interaction and parallel-operation experiments using the lab's robot dog.",
+          "Explore action mapping, robot state synchronization, and action-feedback presentation.",
+          "Study task confirmation, human takeover, and collaborative control in immersive interfaces.",
+          "Evaluate operational clarity, sense of control, and collaboration experience through small tasks."
         ],
         "ja": [
-          "研究室の実機を用い、現実環境に向けたインタラクション実験を設計する。",
-          "自然言語、ジェスチャー、没入型インターフェースによるタスク意図の表現を探る。",
-          "状態の提示、タスクの確認、人による操作介入のインタラクションを研究する。",
-          "協働タスクの観察を通じて、分かりやすさ、制御可能性、協働体験を評価する。"
+          "研究室の実機を用い、身体的な対話とパラレル操作の実験を設計する。",
+          "操作の対応付け、状態の同期、行動フィードバックの提示方法を探る。",
+          "没入型の操作画面におけるタスク確認、人の操作介入、協調制御を研究する。",
+          "小規模なタスクを通じて、操作の分かりやすさ、制御感、協働体験を評価する。"
         ]
       },
       "sections": [
@@ -315,9 +386,9 @@
             "ja": "研究の出発点"
           },
           "body": {
-            "zh": "当智能体从屏幕走向真实环境，人的意图、机器人的行动和环境中的反馈需要建立更直接的联系。项目希望借助机器狗这一实体平台，研究人如何理解、引导并与机器人协作，让具身智能研究与实验室的人机交互、协同认知方向衔接。",
-            "en": "Moving AI from a screen into a physical environment raises questions about the connection between human intent, robot action, and environmental feedback. The robot dog provides a platform for studying how people understand, guide, and collaborate with robots, connecting embodied AI with the lab's work on interaction and collaborative cognition.",
-            "ja": "AIが画面から現実環境へ進むとき、人の意図、ロボットの行動、環境からのフィードバックをどう結び付けるかが課題となる。四足歩行ロボットを通じて、人がロボットを理解し、導き、協働する方法を研究し、身体性AIを研究室のインタラクションと協調認知の研究につなぐ。"
+            "zh": "人在操作真实机器人时，需要持续理解机器人所处的状态，并让操作意图与行动反馈保持对应。项目希望借助机器狗平台，探索虚实交互界面如何支持这种对应关系，以及人如何在协作过程中保持清晰的观察、引导与接管能力。",
+            "en": "Operating a physical robot requires people to understand its state and maintain a connection between their actions and the resulting feedback. This project explores how physical–virtual interfaces can support that correspondence and help people observe, guide, and take over collaborative operation.",
+            "ja": "実機を操作する人は、ロボットの状態を継続的に理解し、自分の操作と行動のフィードバックを対応付ける必要がある。実空間と仮想空間のインターフェースがその対応をどう支え、観察、誘導、操作介入をどう助けるかを探究する。"
           }
         },
         {
@@ -327,9 +398,9 @@
             "ja": "現在の段階と今後の計画"
           },
           "body": {
-            "zh": "项目处于探索阶段，计划从基础交互和小规模协作任务入手，逐步形成可重复的实验流程，并依据设备能力与实验观察调整研究问题。后续将随实际进展补充实机照片、交互演示、实验记录和研究成果。",
-            "en": "The project is exploratory. Planned work starts with basic interaction and small collaborative tasks, develops repeatable experimental procedures, and refines research questions according to device capabilities and observations. Hardware photos, interaction demonstrations, experiment records, and research outputs will be added as the work progresses.",
-            "ja": "プロジェクトは探索段階にある。基本的な対話と小規模な協働タスクから始め、再現可能な実験手順を整え、機器の能力と観察結果に応じて研究課題を具体化する計画である。今後の進捗に合わせて、実機写真、対話デモ、実験記録、研究成果を掲載する。"
+            "zh": "项目处于探索阶段，计划从基础操作映射、状态反馈和小规模协作任务入手，依据设备能力与实验观察逐步完善操作流程。后续将随实际进展补充实机照片、平行操作演示、实验记录和研究成果。",
+            "en": "The project is exploratory. Planned work starts with basic action mapping, state feedback, and small collaborative tasks, refining the operation workflow according to device capabilities and observations. Hardware photos, parallel-operation demonstrations, experiment records, and research outputs will be added as work progresses.",
+            "ja": "プロジェクトは探索段階にある。基本的な操作の対応付け、状態の提示、小規模な協働タスクから始め、機器の能力と観察に応じて操作手順を整える計画である。今後、実機写真、パラレル操作のデモ、実験記録、研究成果を掲載する。"
           }
         }
       ]
