@@ -170,22 +170,24 @@ export default function ProjectDetailPage({ t, locale, slug, homeHref }: Project
         </section>
       )}
 
-      <section className="section project-detail-section">
-        <div className="container">
-          <h2 className="project-detail-heading">{L.outputs}</h2>
-          <div className="project-output-list">
-            {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer">{L.website}</a>}
-            {project.video && <a href={project.video} target="_blank" rel="noopener noreferrer">{L.video}</a>}
-            {papers.map((paper: any) => (
-              paper.href ? (
-                <a key={paper.label} href={paper.href}>{paper.label || L.paper}</a>
-              ) : (
-                <span key={paper.label}>{paper.label || L.paper}</span>
-              )
-            ))}
+      {(project.link || project.video || papers.length > 0) && (
+        <section className="section project-detail-section">
+          <div className="container">
+            <h2 className="project-detail-heading">{L.outputs}</h2>
+            <div className="project-output-list">
+              {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer">{L.website}</a>}
+              {project.video && <a href={project.video} target="_blank" rel="noopener noreferrer">{L.video}</a>}
+              {papers.map((paper: any) => (
+                paper.href ? (
+                  <a key={paper.label} href={paper.href}>{paper.label || L.paper}</a>
+                ) : (
+                  <span key={paper.label}>{paper.label || L.paper}</span>
+                )
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </main>
   );
 }

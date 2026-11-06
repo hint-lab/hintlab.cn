@@ -253,6 +253,89 @@
     }
   },
   {
+    "slug": "embodied-robotics",
+    "name": {
+      "zh": "机器狗与具身智能",
+      "en": "Robot Dogs & Embodied AI",
+      "ja": "四足歩行ロボットと身体性AI"
+    },
+    "label": "Embodied AI",
+    "theme": "green",
+    "link": "",
+    "video": "",
+    "logo": "",
+    "statusTone": "ongoing",
+    "status": {
+      "zh": "探索中",
+      "en": "Exploratory",
+      "ja": "探索段階"
+    },
+    "description": {
+      "zh": "依托实验室现有机器狗，探索意图表达、机器人交互与人机具身协作。",
+      "en": "Exploring intent expression, robot interaction, and embodied collaboration with the lab's robot dog platform.",
+      "ja": "研究室の四足歩行ロボットを用い、意図の表現、ロボットとの対話、人と機械の身体的協働を探究する。"
+    },
+    "papers": [],
+    "detail": {
+      "tagline": {
+        "zh": "以机器狗为实体平台，探索从意图表达、状态反馈到协作行动的人机交互。",
+        "en": "Exploring human–robot interaction from intent expression and state feedback to collaborative action.",
+        "ja": "四足歩行ロボットを実機基盤に、意図の表現、状態の提示、協働行動をつなぐインタラクションを探究する。"
+      },
+      "overview": {
+        "zh": "项目依托实验室已有的机器狗，拟开展面向人机交互与具身协作的研究。研究关注人如何清晰表达任务意图、理解机器人的当前状态与行动反馈，以及如何在协作过程中保留有效的人工控制。目前以研究方向梳理和实验设计为起点，逐步探索适合真实机器人场景的交互方式。",
+        "en": "Using the lab's existing robot dog, this exploratory project plans to study human–robot interaction and embodied collaboration. It focuses on how people express task intent, understand robot state and action feedback, and retain effective human control during collaboration. Initial work centers on defining research questions and designing experiments for interaction with a physical robot.",
+        "ja": "研究室が保有する四足歩行ロボットを用いて、人とロボットのインタラクションと身体的協働を研究する計画である。人がタスクの意図を伝え、ロボットの状態や行動へのフィードバックを理解し、協働の中で適切に操作へ介入できる方法に着目する。研究課題の整理と実験設計を出発点とし、実機に適した対話方法を探究する。"
+      },
+      "highlights": {
+        "zh": [
+          "以实验室现有机器狗为平台，设计面向真实环境的交互实验。",
+          "探索自然语言、手势或沉浸式界面等任务意图表达方式。",
+          "研究机器人状态反馈、任务确认与人工接管的交互设计。",
+          "通过协作任务观察，评估交互清晰度、可控性与人机协作体验。"
+        ],
+        "en": [
+          "Design interaction experiments around the lab's physical robot dog platform.",
+          "Explore task-intent expression through language, gestures, or immersive interfaces.",
+          "Study interaction design for robot state feedback, task confirmation, and human takeover.",
+          "Evaluate interaction clarity, controllability, and collaboration experience through task-based observation."
+        ],
+        "ja": [
+          "研究室の実機を用い、現実環境に向けたインタラクション実験を設計する。",
+          "自然言語、ジェスチャー、没入型インターフェースによるタスク意図の表現を探る。",
+          "状態の提示、タスクの確認、人による操作介入のインタラクションを研究する。",
+          "協働タスクの観察を通じて、分かりやすさ、制御可能性、協働体験を評価する。"
+        ]
+      },
+      "sections": [
+        {
+          "title": {
+            "zh": "研究出发点",
+            "en": "Research Motivation",
+            "ja": "研究の出発点"
+          },
+          "body": {
+            "zh": "当智能体从屏幕走向真实环境，人的意图、机器人的行动和环境中的反馈需要建立更直接的联系。项目希望借助机器狗这一实体平台，研究人如何理解、引导并与机器人协作，让具身智能研究与实验室的人机交互、协同认知方向衔接。",
+            "en": "Moving AI from a screen into a physical environment raises questions about the connection between human intent, robot action, and environmental feedback. The robot dog provides a platform for studying how people understand, guide, and collaborate with robots, connecting embodied AI with the lab's work on interaction and collaborative cognition.",
+            "ja": "AIが画面から現実環境へ進むとき、人の意図、ロボットの行動、環境からのフィードバックをどう結び付けるかが課題となる。四足歩行ロボットを通じて、人がロボットを理解し、導き、協働する方法を研究し、身体性AIを研究室のインタラクションと協調認知の研究につなぐ。"
+          }
+        },
+        {
+          "title": {
+            "zh": "当前阶段与后续计划",
+            "en": "Current Stage and Next Steps",
+            "ja": "現在の段階と今後の計画"
+          },
+          "body": {
+            "zh": "项目处于探索阶段，计划从基础交互和小规模协作任务入手，逐步形成可重复的实验流程，并依据设备能力与实验观察调整研究问题。后续将随实际进展补充实机照片、交互演示、实验记录和研究成果。",
+            "en": "The project is exploratory. Planned work starts with basic interaction and small collaborative tasks, develops repeatable experimental procedures, and refines research questions according to device capabilities and observations. Hardware photos, interaction demonstrations, experiment records, and research outputs will be added as the work progresses.",
+            "ja": "プロジェクトは探索段階にある。基本的な対話と小規模な協働タスクから始め、再現可能な実験手順を整え、機器の能力と観察結果に応じて研究課題を具体化する計画である。今後の進捗に合わせて、実機写真、対話デモ、実験記録、研究成果を掲載する。"
+          }
+        }
+      ]
+    }
+  },
+  {
     "slug": "deepling",
     "name": "Deepling.tech",
     "label": "DEEPLING",
