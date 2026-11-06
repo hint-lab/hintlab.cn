@@ -1395,7 +1395,7 @@ img {
     min-height: 180px;
     padding: 14px;
   }
-  .project-thumb {
+  .project-card .project-thumb {
     width: 104px;
     min-height: 152px;
     padding: 14px;

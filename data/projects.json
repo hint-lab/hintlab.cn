@@ -182,6 +182,77 @@
     }
   },
   {
+    "slug": "sea-law",
+    "name": {
+      "zh": "东南亚法律语料库",
+      "en": "Southeast Asia Legal Corpus",
+      "ja": "東南アジア法令コーパス"
+    },
+    "label": "SEA-LAW",
+    "theme": "blue",
+    "link": "https://sea-law.hintlab.cn/",
+    "video": "",
+    "logo": "",
+    "statusTone": "ongoing",
+    "status": {
+      "zh": "进行中",
+      "en": "Ongoing",
+      "ja": "進行中"
+    },
+    "description": {
+      "zh": "面向东南亚法律研究的多语语料库与原文对照工作台。",
+      "en": "A multilingual corpus and parallel-reading workbench for Southeast Asian legal research.",
+      "ja": "東南アジア法研究のための多言語コーパスと原文対照ワークベンチ。"
+    },
+    "papers": [],
+    "detail": {
+      "tagline": {
+        "zh": "连接东南亚法源、法律文献与多语对照阅读的研究工作台。",
+        "en": "A research workbench connecting Southeast Asian legal sources, documents, and multilingual parallel reading.",
+        "ja": "東南アジアの法源、法律文献、多言語対照読解をつなぐ研究ワークベンチ。"
+      },
+      "overview": {
+        "zh": "东南亚法律语料库围绕区域内 11 国组织法律文献与来源线索，为跨语言法律研究提供统一的检索和阅读入口。项目分别记录法律原文、译本与版本信息，在多语对照中保留来源、译者及文本处理与核验状态，支持研究者回到具体文献检查依据。",
+        "en": "The Southeast Asia Legal Corpus organizes legal documents and source records across 11 countries, providing a shared entry point for cross-language legal research. It records originals, translations, and editions separately, retaining provenance, translator information, and processing and review status for document-level verification.",
+        "ja": "東南アジア法令コーパスは、域内11か国の法律文献と法源情報を整理し、言語を横断する法研究に検索と読解の入口を提供する。原文、訳文、版情報を個別に記録し、出典、翻訳者、処理・確認状況を保持することで、文献に立ち返った検証を支援する。"
+      },
+      "highlights": {
+        "zh": [
+          "按国家、法律领域、文献类型、语言和文本状态组织检索与筛选。",
+          "支持原文与中文、日文、英文版本的分栏对照，保留缺译和版本待核信息。",
+          "提供条号定位、PDF 页码与文献深链接，结合文本条件支持按条或按页阅读。",
+          "分别呈现来源、文本提取和内容核验状态，持续推进资料采集与人工复核。"
+        ],
+        "en": [
+          "Search and filter by country, legal topic, document type, language, and text status.",
+          "Read originals alongside Chinese, Japanese, and English versions, with translation gaps and unresolved editions visible.",
+          "Navigate through article identifiers, PDF pages, and document deep links as supported by each text.",
+          "Keep source provenance, extraction status, and content review distinct as collection and review continue."
+        ],
+        "ja": [
+          "国、法分野、文献種別、言語、テキスト状態による検索と絞り込み。",
+          "原文と中国語・日本語・英語版を並列表示し、未翻訳や版の未確認情報を保持。",
+          "文献の状態に応じて条番号、PDFページ、文献への直接リンクで移動。",
+          "出典、抽出状態、内容確認を区別し、資料収集と人手による確認を継続。"
+        ]
+      },
+      "sections": [
+        {
+          "title": {
+            "zh": "研究与建设方向",
+            "en": "Research and Development",
+            "ja": "研究と整備の方向"
+          },
+          "body": {
+            "zh": "项目正在推进法源采集、扫描文献识别、篇章结构整理和多语版本对应，为区域法律比较、法律翻译与文档理解研究积累可追溯的资料。目录收录、文本可读与译文核验分别记录；各语种和文献的建设进度以工作台中的实际状态为准。",
+            "en": "Ongoing work covers source collection, scanned-document recognition, document structure, and multilingual edition correspondence for comparative law, legal translation, and document-understanding research. Catalog inclusion, text availability, and translation review are tracked separately, with progress recorded per document and language.",
+            "ja": "法源収集、スキャン文献の文字認識、文書構造の整理、多言語版の対応付けを進め、比較法、法律翻訳、文書理解研究のための追跡可能な資料を蓄積する。目録収録、本文の利用可能性、訳文確認を個別に記録し、整備状況は文献・言語ごとに示す。"
+          }
+        }
+      ]
+    }
+  },
+  {
     "slug": "deepling",
     "name": "Deepling.tech",
     "label": "DEEPLING",
@@ -265,6 +336,86 @@
             "zh": "项目已形成可访问的网站和自动化内容生产链路，为后续研究 AI 角色一致性、自动选题、事实检查和媒体运营提供长期样本。该项目暂无对应论文链接。",
             "en": "The project has produced a public site and an automated content pipeline, providing a long-running sample for studying AI persona consistency, topic selection, fact checking, and media operations. No paper link is available for this project yet.",
             "ja": "公開サイトと自動コンテンツ生成パイプラインを構築し、AIによる編集スタイルの一貫性、トピック選択、事実確認、メディア運用を研究する長期的な事例を提供する。現時点で論文リンクはない。"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "slug": "babeldoc",
+    "name": "BabelDOC",
+    "label": "BabelDOC",
+    "theme": "orange",
+    "link": "https://github.com/funstory-ai/BabelDOC",
+    "video": "https://youtu.be/chwrlApH7a4",
+    "logo": "",
+    "statusTone": "ongoing",
+    "status": {
+      "zh": "持续维护",
+      "en": "Active Development",
+      "ja": "継続開発"
+    },
+    "description": {
+      "zh": "基于中间表示的 PDF 翻译框架，兼顾译文质量与原始版式。",
+      "en": "An intermediate-representation framework for PDF translation with layout preservation.",
+      "ja": "中間表現を用いて原文のレイアウトを保持するPDF翻訳フレームワーク。"
+    },
+    "papers": [
+      {
+        "label": {
+          "zh": "ACL '26 系统演示论文 (CCF-A)",
+          "en": "ACL '26 System Demonstrations (CCF-A)",
+          "ja": "ACL '26 システムデモ論文 (CCF-A)"
+        },
+        "href": {
+          "zh": "https://aclanthology.org/2026.acl-demo.25/",
+          "en": "https://aclanthology.org/2026.acl-demo.25/",
+          "ja": "https://aclanthology.org/2026.acl-demo.25/"
+        }
+      }
+    ],
+    "detail": {
+      "tagline": {
+        "zh": "让跨语言 PDF 阅读保留文档结构、公式与版式线索。",
+        "en": "Preserving document structure, formulas, and layout cues in cross-language PDF reading.",
+        "ja": "言語を越えたPDF読解で、文書構造、数式、レイアウトの手掛かりを保持する。"
+      },
+      "overview": {
+        "zh": "BabelDOC 面向科学论文等版式丰富的 PDF 文档，将视觉布局信息与语义内容组织为中间表示，使翻译过程能够利用跨页上下文、术语表和公式占位信息，再通过自适应排版将译文放回原文布局。开源工具提供命令行与 Python 接口，也可集成到文档翻译应用中。",
+        "en": "BabelDOC uses an intermediate representation to separate visual layout metadata from semantic content in visually rich PDFs. Translation can use cross-page context, terminology, and formula placeholders before adaptive typesetting places the translated content back into the original layout. The open-source toolkit offers a command-line interface and Python API for integration into translation applications.",
+        "ja": "BabelDOCは、科学論文などのPDFから視覚的レイアウト情報と意味内容を中間表現として分離する。ページをまたぐ文脈、用語集、数式のプレースホルダーを翻訳に用い、自動組版で訳文を元のレイアウトに再配置する。コマンドラインとPython APIを備え、文書翻訳アプリへの組み込みにも対応する。"
+      },
+      "highlights": {
+        "zh": [
+          "通过中间表示分离文档语义与视觉布局，衔接解析、翻译和重排版。",
+          "支持术语提取、跨页上下文、术语约束生成和公式占位处理。",
+          "提供开源命令行与 Python API，便于嵌入翻译工具及研究流程。",
+          "相关成果发表于 ACL 2026 System Demonstrations，提供论文与演示视频。"
+        ],
+        "en": [
+          "Connect parsing, translation, and typesetting through a shared intermediate representation.",
+          "Support terminology extraction, cross-page context, glossary constraints, and formula placeholders.",
+          "Provide an open-source CLI and Python API for translation tools and research workflows.",
+          "Presented at ACL 2026 System Demonstrations, with a paper and demonstration video."
+        ],
+        "ja": [
+          "中間表現を介して文書解析、翻訳、組版を接続。",
+          "用語抽出、ページ間文脈、用語制約、数式のプレースホルダーを活用。",
+          "翻訳ツールや研究フローに組み込めるオープンソースのCLIとPython APIを提供。",
+          "ACL 2026 System Demonstrationsで発表し、論文とデモ動画を公開。"
+        ]
+      },
+      "sections": [
+        {
+          "title": {
+            "zh": "研究产出与开源实践",
+            "en": "Research and Open Source",
+            "ja": "研究成果とオープンソース"
+          },
+          "body": {
+            "zh": "论文从版式保真、视觉质量、术语一致性与翻译精度等方面评估文档翻译效果。项目持续通过开源工具与下游应用探索文档级翻译，让文档理解研究进入真实的跨语言阅读场景。",
+            "en": "The paper evaluates layout fidelity, visual quality, terminology consistency, and translation precision. The open-source toolkit and downstream applications bring document-understanding research into practical cross-language reading workflows.",
+            "ja": "論文では、レイアウトの忠実度、視覚的品質、用語の一貫性、翻訳精度を評価している。オープンソースのツールと関連アプリを通じて、文書理解研究を実際の多言語読解に結び付ける。"
           }
         }
       ]

@@ -10,7 +10,7 @@ type Localized<T> = {
 
 type ProjectSource = {
   slug: string;
-  name: string;
+  name: string | Localized<string>;
   label: string;
   theme: string;
   link?: string;
@@ -69,7 +69,7 @@ function pick<T>(field: Localized<T>, locale: Locale): T {
 export function getProjects(locale: Locale): ProjectView[] {
   return projectSources.map((project) => ({
     slug: project.slug,
-    name: project.name,
+    name: typeof project.name === 'string' ? project.name : pick(project.name, locale),
     label: project.label,
     theme: project.theme,
     link: project.link || '',
