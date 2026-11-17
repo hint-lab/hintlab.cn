@@ -1965,8 +1965,8 @@ img {
 @media (max-width: 768px) {
   .site-footer .footer-links { flex-wrap: wrap; }
   .mission-hero { min-height: 100svh; padding: 126px 0 64px; }
-  .mission-hero .hero-bg { object-position: 55% center; }
-  .mission-hero .hero-overlay { background: linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.44) 40%, rgba(0, 0, 0, 0.48) 72%, rgba(0, 0, 0, 0.2)); }
+  .mission-hero .hero-bg { object-position: 68% center; }
+  .mission-hero .hero-overlay { background: linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.64) 36%, rgba(0, 0, 0, 0.66) 66%, rgba(0, 0, 0, 0.18)); }
   .mission-hero .hero-title { font-size: clamp(2rem, 7.6vw, 3.2rem); }
   .hero-eyebrow { font-size: 10px; letter-spacing: 0.1em; }
   .mission-hero .hero-description { font-size: 15px; display: block; overflow: visible; }
