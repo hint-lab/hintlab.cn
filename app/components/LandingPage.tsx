@@ -43,7 +43,7 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
   const teamHref = `${homeHref}team`;
   const projectsHref = `${homeHref}projects`;
   const footerLinks = { home: t.nav.home, research: t.nav.research, projects: t.nav.projects, contact: t.nav.contact };
-  const contactSummary = locale === 'zh' ? '研究合作、开放问题、招生与参与方式，欢迎带着具体的观察与我们交流。' : locale === 'ja' ? '共同研究、未解決の問い、学生募集や参加方法について、お気軽にご連絡ください。' : 'Get in touch about research, open questions, student opportunities, or ways to participate.';
+  const contactSummary = locale === 'zh' ? '欢迎咨询研究合作、招生及实验室服务。' : locale === 'ja' ? '共同研究、学生募集、研究室サービスについてお問い合わせください。' : 'Contact us about research collaboration, graduate study, or lab services.';
   const closeMenu = () => setMenuOpen(false);
   const projectLinks = (slugs: string[]) => (
     <div className="research-project-links">
@@ -118,7 +118,7 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
 
       <section id="projects" className="section">
         <div className="container">
-          <SectionHeading kicker="02 · Systems" title={t.projects.title} summary={t.projects.subtitle} />
+          <SectionHeading kicker="02 · Projects" title={t.projects.title} summary={t.projects.subtitle} />
           <div className="projects-grid">{featuredProjects.map((project) => <ProjectCard key={project.slug} project={project} locale={locale} />)}</div>
           <div className="view-all-wrap"><Link className="btn btn-light" href={projectsHref}>{t.projects.all.replace('{count}', String(projects.length))}<ArrowRight size={16} /></Link></div>
         </div>
@@ -126,7 +126,7 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
 
       <section id="publications" className="section section-alt">
         <div className="container">
-          <SectionHeading kicker="03 · Evidence" title={t.nav.publications} summary={locale === 'zh' ? '精选成果：ACL、CSCW 与 IJCAI 代表性论文' : locale === 'ja' ? 'ACL・CSCW・IJCAIの代表的な論文' : 'Selected publications at ACL, CSCW, and IJCAI'} />
+          <SectionHeading kicker="03 · Publications" title={t.nav.publications} summary={locale === 'zh' ? '近期代表性论文' : locale === 'ja' ? '最近の主な論文' : 'Selected recent papers'} />
           <div className="pub-list">
             {homePubs.map((entry) => (
               <a key={entry.id} className="pub-item" href={entry.doi || entry.url || `${publicationHref}#${entry.id}`}>
@@ -159,7 +159,7 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
 
       <section id="students" className="section section-alt">
         <div className="container">
-          <SectionHeading kicker="05 · People" title={t.team.title} summary={t.team.summary.replace('{count}', String(t.students.rows.length))} />
+          <SectionHeading kicker="05 · Team" title={t.team.title} summary={t.team.summary.replace('{count}', String(t.students.rows.length))} />
           <div className="team-preview">
             {[6, 7, 11].map((index) => {
               const row = t.students.rows[index];

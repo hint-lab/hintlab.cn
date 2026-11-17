@@ -14,9 +14,9 @@
       "ja": "進行中"
     },
     "description": {
-      "zh": "面向跨境物流治理的 AI 原生业务运行底座。",
-      "en": "An AI-native operating foundation for cross-border logistics governance.",
-      "ja": "越境物流の業務管理を支えるAIネイティブ基盤。"
+      "zh": "连接跨境物流中的业务流程、文档与智能体。",
+      "en": "Connects workflows, documents, and agents in cross-border logistics.",
+      "ja": "越境物流の業務プロセス・文書・エージェントをつなぐシステム。"
     },
     "papers": [],
     "detail": {
@@ -137,9 +137,9 @@
       "ja": "進行中"
     },
     "description": {
-      "zh": "面向城市社会治理与公共服务的智能操作系统。",
-      "en": "An intelligent operating system for urban governance and public services.",
-      "ja": "都市社会ガバナンスと公共サービスのための知能OS。"
+      "zh": "面向城市治理的事件研判与协同处置系统。",
+      "en": "A system for event analysis and coordinated response in urban governance.",
+      "ja": "都市ガバナンスの事案分析と連携対応を支援するシステム。"
     },
     "papers": [],
     "detail": {
@@ -264,9 +264,9 @@
       "ja": "進行中"
     },
     "description": {
-      "zh": "面向东南亚法律研究的多语语料库与原文对照工作台。",
-      "en": "A multilingual corpus and parallel-reading workbench for Southeast Asian legal research.",
-      "ja": "東南アジア法研究のための多言語コーパスと原文対照ワークベンチ。"
+      "zh": "汇集东南亚法律文献，支持多语言检索与原文对照。",
+      "en": "Legal documents from Southeast Asia, with multilingual search and parallel reading.",
+      "ja": "東南アジアの法律文献を集め、多言語検索と原文対照を支援。"
     },
     "papers": [],
     "detail": {
@@ -702,16 +702,16 @@
       "ja": "継続保守"
     },
     "description": {
-      "zh": "基于中间表示的 PDF 翻译框架，兼顾译文质量与原始版式。",
-      "en": "An intermediate-representation framework for PDF translation with layout preservation.",
-      "ja": "中間表現を用いて原文のレイアウトを保持するPDF翻訳フレームワーク。"
+      "zh": "保留文档版式的开源 PDF 翻译工具。",
+      "en": "An open-source PDF translation tool that preserves document layout.",
+      "ja": "文書のレイアウトを保つオープンソースのPDF翻訳ツール。"
     },
     "papers": [
       {
         "label": {
-          "zh": "ACL '26 系统演示论文 (CCF-A)",
-          "en": "ACL '26 System Demonstrations (CCF-A)",
-          "ja": "ACL '26 システムデモ論文 (CCF-A)"
+          "zh": "ACL 2026 系统演示论文",
+          "en": "ACL 2026 System Demo paper",
+          "ja": "ACL 2026 システムデモ論文"
         },
         "href": {
           "zh": "https://aclanthology.org/2026.acl-demo.25/",
@@ -814,16 +814,16 @@
       "ja": "成果公開済み"
     },
     "description": {
-      "zh": "面向专业翻译团队的 AI 协作工作台。",
-      "en": "An AI collaboration workbench for professional translation teams.",
-      "ja": "専門翻訳チーム向けのAI協働ワークベンチ。"
+      "zh": "支持译后编辑、术语管理与团队协作的翻译工作台。",
+      "en": "A translation workbench with post-editing, terminology management, and team collaboration.",
+      "ja": "ポストエディット・用語管理・チーム協働を支援する翻訳環境。"
     },
     "papers": [
       {
         "label": {
-          "zh": "CSCW '26 Demo 正式论文 (CCF-A)",
-          "en": "CSCW '26 Demo Proceedings (CCF-A)",
-          "ja": "CSCW '26 Demo 正式論文 (CCF-A)"
+          "zh": "CSCW 2026 Demo 论文",
+          "en": "CSCW 2026 Demo paper",
+          "ja": "CSCW 2026 デモ論文"
         },
         "href": {
           "zh": "https://doi.org/10.1145/3785651.3831415",
@@ -974,33 +974,21 @@
       "ja": "成果公開済み"
     },
     "description": {
-      "zh": "面向医学深度研究的智能文献检索平台。",
-      "en": "An intelligent literature search platform for medical deep research.",
-      "ja": "医学ディープリサーチ向けの知的文献検索プラットフォーム。"
+      "zh": "支持医学文献检索、证据整理与核验的研究工具。",
+      "en": "A research tool for medical literature search, evidence synthesis, and verification.",
+      "ja": "医学文献の検索・根拠の整理・検証を支援する研究ツール。"
     },
     "papers": [
       {
         "label": {
-          "zh": "IJCAI-ECAI 2026 正式论文",
-          "en": "IJCAI-ECAI 2026 Proceedings",
-          "ja": "IJCAI-ECAI 2026 正式論文"
+          "zh": "IJCAI 2026 Demo 论文",
+          "en": "IJCAI 2026 Demo paper",
+          "ja": "IJCAI 2026 デモ論文"
         },
         "href": {
           "zh": "https://www.ijcai.org/proceedings/2026/978",
           "en": "https://www.ijcai.org/proceedings/2026/978",
           "ja": "https://www.ijcai.org/proceedings/2026/978"
-        }
-      },
-      {
-        "label": {
-          "zh": "IJCAI-ECAI 2026 PDF",
-          "en": "IJCAI-ECAI 2026 PDF",
-          "ja": "IJCAI-ECAI 2026 PDF"
-        },
-        "href": {
-          "zh": "https://www.ijcai.org/proceedings/2026/0978.pdf",
-          "en": "https://www.ijcai.org/proceedings/2026/0978.pdf",
-          "ja": "https://www.ijcai.org/proceedings/2026/0978.pdf"
         }
       },
       {
@@ -1091,9 +1079,9 @@
             "ja": "成果"
           },
           "body": {
-            "zh": "项目产出了开源取向的医学深度研究平台和演示视频，论文已收录于 IJCAI-ECAI 2026 Demonstrations Track。本页提供正式论文集页面和 PDF 链接。",
-            "en": "The project produced an open-source-oriented platform for medical deep research and a demo video. The paper is published in the IJCAI-ECAI 2026 Demonstrations Track proceedings, with links to the official paper page and PDF.",
-            "ja": "オープンソース志向の医学ディープリサーチプラットフォームとデモ動画を構築。論文はIJCAI-ECAI 2026 Demonstrations Trackに収録され、正式論文ページとPDFへのリンクを掲載。"
+            "zh": "项目已形成医学文献检索平台与演示视频，相关论文发表于 IJCAI 2026 Demonstrations Track。论文页提供摘要、引用信息与 PDF 下载。",
+            "en": "The project provides a medical literature research platform and a demonstration video, with a paper in the IJCAI 2026 Demonstrations Track. The paper page includes the abstract, citation details, and a PDF download.",
+            "ja": "医学文献の調査環境とデモ動画を公開し、IJCAI 2026 Demonstrations Trackで論文を発表しました。論文ページで概要・引用情報・PDFを確認できます。"
           }
         }
       ]

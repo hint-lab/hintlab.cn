@@ -16,24 +16,24 @@
     "hero": {
         "title": "Bring intelligence into the real world.",
         "subtitle": "Multimodal Understanding · Human–AI Collaboration · Complex Systems",
-        "ctaLearn": "Explore our research",
+        "ctaLearn": "View research projects",
         "ctaEmail": "Join us",
         "eyebrow": "H!NT LAB · HUMAN–AI INTELLIGENCE"
     },
     "labIntro": {
         "title": "H!NT Lab",
-        "p1": "We study how people and AI understand, decide, and create together in complex, open, and uncertain real-world environments.",
-        "researchTitle": "Three directions, one shared question",
-        "researchIntro": "How can intelligent systems collaborate reliably when information is incomplete, human judgment is essential, and environments and rules keep changing?",
+        "p1": "We study how people and AI understand information, make decisions, and solve problems together in real tasks.",
+        "researchTitle": "Research areas",
+        "researchIntro": "How can people and AI work together reliably with incomplete information and changing environments?",
         "areas": [
             {
                 "icon": "FileText",
                 "title": "Understand complex information",
                 "subtitle": "Multimodal document understanding",
-                "description": "How can fragmented, heterogeneous, multilingual information become traceable and verifiable knowledge?",
+                "description": "How can we understand information across formats and languages while keeping its sources verifiable?",
                 "bullets": [
-                    "Preserve document structure, meaning, and provenance",
-                    "Connect retrieval, translation, and verification"
+                    "Document structure and meaning",
+                    "Cross-language retrieval, translation, and verification"
                 ],
                 "projectSlugs": [
                     "babeldoc",
@@ -46,11 +46,11 @@
             {
                 "icon": "Lightbulb",
                 "title": "Build collaborative systems",
-                "subtitle": "Human-in-the-loop organizational intelligence",
-                "description": "How can agents work reliably within organizations, permissions, workflows, and human oversight?",
+                "subtitle": "Human-in-the-loop systems",
+                "description": "How can agents follow business rules and complete tasks under human supervision?",
                 "bullets": [
-                    "Connect actions to responsibility and evidence",
-                    "Study confirmation, handover, and operational feedback"
+                    "Identity, permissions, and workflows",
+                    "Human confirmation, takeover, and feedback"
                 ],
                 "projectSlugs": [
                     "runos",
@@ -60,12 +60,12 @@
             },
             {
                 "icon": "Brain",
-                "title": "Explore human–AI integration",
+                "title": "Explore human–AI interaction",
                 "subtitle": "Collaborative cognition and embodied interaction",
-                "description": "How do human cognitive states, intentions, and machine reasoning jointly shape complex system behavior?",
+                "description": "How can AI respond to human states and intentions while keeping people in control?",
                 "bullets": [
-                    "Enable people to understand, correct, and guide AI",
-                    "Explore collaboration through EEG interfaces and robot operation"
+                    "EEG feedback and interface design",
+                    "Robot operation and collaborative control"
                 ],
                 "projectSlugs": [
                     "eeg-ui-design",
@@ -73,7 +73,7 @@
                 ]
             }
         ],
-        "synergy": "From information to action, and back to human understanding and feedback, these directions test one another in real tasks. Law, medicine, logistics, urban governance, and embodied interaction offer different windows onto the same question."
+        "synergy": "We study these questions in law, medicine, logistics, urban governance, and robot interaction."
     },
     "about": {
         "title": "About",
@@ -128,8 +128,8 @@
         ]
     },
     "projects": {
-        "title": "Featured research projects",
-        "subtitle": "Working systems make research questions concrete. Papers, code, and demonstrations make progress inspectable.",
+        "title": "Research projects",
+        "subtitle": "",
         "all": "View all {count} projects",
         "indexTitle": "Research projects",
         "indexSummary": "Explore the questions, system designs, public evidence, and boundaries of each project.",
@@ -410,26 +410,26 @@
         ]
     },
     "community": {
-        "title": "From research to co-creation",
-        "summary": "Research, educational practice, and infrastructure support one another, with distinct ways to participate.",
+        "title": "Research and co-creation",
+        "summary": "",
         "items": [
             {
                 "name": "H!NT Lab",
-                "role": "Research questions · Publications · Research training",
-                "description": "Investigate shared scientific questions through implemented systems and inspectable research outputs.",
-                "action": "Explore research projects"
+                "role": "Research · Graduate training",
+                "description": "Research on human–AI collaboration, with papers, open-source tools, and working systems.",
+                "action": "View research projects"
             },
             {
                 "name": "H!NT SPACE",
-                "role": "Co-creation · Real needs · Educational experiments",
-                "description": "An open practice space for teachers and students to turn everyday questions into work that people can try and improve.",
-                "action": "Visit the co-creation space"
+                "role": "Teacher–student co-creation · Learning through practice",
+                "description": "A space for teachers and students to share real needs, join projects, and turn ideas into useful tools.",
+                "action": "Visit H!NT SPACE"
             },
             {
                 "name": "Lab Services",
-                "role": "Identity and permissions · Internal apps · Research infrastructure",
-                "description": "Internal services supporting collaboration and research, accessed according to membership, application permissions, and actual needs.",
-                "action": "Ask about service access"
+                "role": "Internal apps · Research tools",
+                "description": "Internal applications and research tools for lab members, with access based on permissions.",
+                "action": "Ask about access"
             }
         ]
     },
@@ -437,7 +437,7 @@
         "title": "Team",
         "nav": "Team",
         "summary": "Our lab currently has {count} graduate students.",
-        "all": "Meet the full team",
+        "all": "View all members",
         "lead": "Lab lead",
         "cohort": "Class of {year}",
         "direction": "Research interest",
@@ -446,20 +446,20 @@
         "back": "Back to home"
     },
     "openQuestions": {
-        "title": "Questions we are still working on",
-        "summary": "These questions guide our ongoing research. New observations, counterexamples, and collaborations are welcome.",
+        "title": "Open questions",
+        "summary": "We welcome discussion and collaboration on these questions.",
         "items": [
             {
-                "title": "What makes organizational behavior reliable?",
-                "body": "When several agents share a workflow, how should permissions and evidence be organized so people can confirm, correct, and take over?",
+                "title": "How can multiple agents collaborate reliably?",
+                "body": "When agents work together, how should permissions and evidence be organized so people can correct mistakes and take over?",
                 "slugs": [
                     "runos",
                     "hetuos"
                 ]
             },
             {
-                "title": "How can rules evolve in an open system?",
-                "body": "As documents, knowledge, and environments change, how can rules and system memory be revised while preserving provenance and a reviewable process?",
+                "title": "How can systems adapt to changing information and rules?",
+                "body": "As documents and knowledge change, how can rules and memory be updated while keeping a record of what changed and why?",
                 "slugs": [
                     "sea-law",
                     "deeptrans-studio",
@@ -467,8 +467,8 @@
                 ]
             },
             {
-                "title": "Where are the boundaries of human–AI collaboration?",
-                "body": "When should a system act, ask, or wait? How can real tasks reveal effects on human control, cognitive load, and collaboration reliability?",
+                "title": "When should AI act, and when should people decide?",
+                "body": "When should a system execute, ask, or wait? How should we assess reliability, cognitive load, and human control?",
                 "slugs": [
                     "eeg-ui-design",
                     "embodied-robotics",
@@ -476,6 +476,6 @@
                 ]
             }
         ],
-        "cta": "Join us with a question"
+        "cta": "Get involved"
     }
 }
