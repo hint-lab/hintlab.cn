@@ -78,7 +78,7 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
       </header>
 
       <section id="home" className="hero mission-hero">
-        <Image src="/hero-monolith-gray-20261117.webp" alt="" fill sizes="100vw" className="hero-bg" priority />
+        <Image src="/hero-monolith-gray-small-20261117.webp" alt="" fill sizes="100vw" className="hero-bg" priority />
         <div className="hero-overlay" />
         <div className="container">
           <div className="hero-content">
