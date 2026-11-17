@@ -580,7 +580,7 @@
     "name": "DeepTrans Studio",
     "label": "DeepTrans",
     "theme": "green",
-    "link": "https://www.deeptrans.studio",
+    "link": "https://deeptrans.hintlab.cn",
     "video": "https://youtu.be/cNpafhHAEjg",
     "logo": "/projects/deeptrans-logo.svg",
     "statusTone": "completed",
@@ -605,6 +605,30 @@
           "zh": "https://doi.org/10.1145/3785651.3831415",
           "en": "https://doi.org/10.1145/3785651.3831415",
           "ja": "https://doi.org/10.1145/3785651.3831415"
+        }
+      },
+      {
+        "label": {
+          "zh": "BabelDOC · ACL 2026",
+          "en": "BabelDOC · ACL 2026",
+          "ja": "BabelDOC · ACL 2026"
+        },
+        "href": {
+          "zh": "https://aclanthology.org/2026.acl-demo.25/",
+          "en": "https://aclanthology.org/2026.acl-demo.25/",
+          "ja": "https://aclanthology.org/2026.acl-demo.25/"
+        }
+      },
+      {
+        "label": {
+          "zh": "HL-Trans · Artificial Intelligence and Law 2026",
+          "en": "HL-Trans · Artificial Intelligence and Law 2026",
+          "ja": "HL-Trans · Artificial Intelligence and Law 2026"
+        },
+        "href": {
+          "zh": "https://link.springer.com/article/10.1007/s10506-026-09529-2",
+          "en": "https://link.springer.com/article/10.1007/s10506-026-09529-2",
+          "ja": "https://link.springer.com/article/10.1007/s10506-026-09529-2"
         }
       }
     ],
@@ -684,7 +708,7 @@
     "name": "DeepMed Search",
     "label": "DeepMed",
     "theme": "blue",
-    "link": "https://www.deepmedsearch.cloud",
+    "link": "https://deepmed.hintlab.cn",
     "video": "https://youtu.be/4U4aok8yLpk",
     "logo": "/projects/deepmed-logo.svg",
     "statusTone": "completed",
@@ -721,6 +745,30 @@
           "zh": "https://www.ijcai.org/proceedings/2026/0978.pdf",
           "en": "https://www.ijcai.org/proceedings/2026/0978.pdf",
           "ja": "https://www.ijcai.org/proceedings/2026/0978.pdf"
+        }
+      },
+      {
+        "label": {
+          "zh": "QAlign-RAG · KSEM 2026",
+          "en": "QAlign-RAG · KSEM 2026",
+          "ja": "QAlign-RAG · KSEM 2026"
+        },
+        "href": {
+          "zh": "https://link.springer.com/chapter/10.1007/978-981-92-2852-2_13",
+          "en": "https://link.springer.com/chapter/10.1007/978-981-92-2852-2_13",
+          "ja": "https://link.springer.com/chapter/10.1007/978-981-92-2852-2_13"
+        }
+      },
+      {
+        "label": {
+          "zh": "Drift-Proof RAG · BIBM 2026（已录用）",
+          "en": "Drift-Proof RAG · BIBM 2026 (accepted)",
+          "ja": "Drift-Proof RAG · BIBM 2026（採録）"
+        },
+        "href": {
+          "zh": "https://www.hintlab.cn/publication/",
+          "en": "https://www.hintlab.cn/publication/",
+          "ja": "https://www.hintlab.cn/publication/"
         }
       }
     ],
