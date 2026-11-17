@@ -160,7 +160,6 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
       <section id="students" className="section section-alt">
         <div className="container">
           <SectionHeading kicker="05 · People" title={t.team.title} summary={t.team.summary.replace('{count}', String(t.students.rows.length))} />
-          <Link className="team-lead-link" href={aboutHref}>{t.team.lead} · {t.profile.name}<ArrowRight size={16} /></Link>
           <div className="team-preview">
             {[6, 7, 11].map((index) => {
               const row = t.students.rows[index];

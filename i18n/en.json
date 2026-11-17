@@ -434,9 +434,9 @@
         ]
     },
     "team": {
-        "title": "Ask questions. Build and test together.",
+        "title": "Team",
         "nav": "Team",
-        "summary": "Different backgrounds bring different questions. We have {count} graduate students; here are a few of their research interests.",
+        "summary": "Our lab currently has {count} graduate students.",
         "all": "Meet the full team",
         "lead": "Lab lead",
         "cohort": "Class of {year}",
