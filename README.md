@@ -150,7 +150,7 @@ Place PDF files in `public/publications/` and update the i18n files.
 #### Update Team Information
 
 Edit the student/alumni tables in the i18n files under the `students` or `alumni` sections.
-The homepage and Wang Hao's profile share `students.rows`; the homepage student count is calculated automatically from this list.
+The team pages (`/team`, `/en/team`, `/ja/team`), homepage preview, and Wang Hao's profile share `students.rows`; counts are calculated from this list. Full project indexes are at `/projects`, `/en/projects`, and `/ja/projects`. Each project has localized `research` fields: `question`, `hypothesis`, `system`, `evidence`, `limitations`, and `openProblems`. Keep hypotheses separate from findings, and link only evidence that exists. Homepage mission, research map, community links, and open questions live in `i18n/*.json`.
 
 ### Contributing
 
@@ -317,7 +317,7 @@ hintlab.cn/
 #### 更新团队信息
 
 在国际化文件的 `students` 或 `alumni` 部分编辑学生/校友表格。
-实验室首页与王昊个人主页共用 `students.rows` 名单，首页在读人数按名单自动统计。
+团队页（`/team`、`/en/team`、`/ja/team`）、首页预览与王昊个人主页共用 `students.rows` 名单，人数按名单自动统计。完整项目列表位于 `/projects`、`/en/projects`、`/ja/projects`。项目的三语 `research` 字段分别记录 `question`、`hypothesis`、`system`、`evidence`、`limitations`、`openProblems`；假设与已验证结论分开表述，证据链接以实际公开资料为准。首页使命、研究地图、共创入口与开放问题在 `i18n/*.json` 中维护。
 
 ### 贡献指南
 

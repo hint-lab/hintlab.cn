@@ -37,7 +37,7 @@ export default function WangHaoPage() {
                     <nav className="nav">
                         <Link href="/">{t.nav.home}</Link>
                         <Link href="/people/wang_hao" aria-current="page">{t.nav.about}</Link>
-                        <a href="/#research-areas">{t.labIntro.researchTitle}</a>
+                        <a href="/#research-areas">{t.nav.research}</a>
                         <a href="/#projects">{t.nav.projects}</a>
                         <Link href="/publication">{t.nav.publications}</Link>
                         <a href="#students">{t.nav.students}</a>

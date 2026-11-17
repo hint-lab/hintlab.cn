@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'H!NT Lab | 研究室ホームページ',
-    description: '人工知能、人間とAIの協働認知、自然言語処理に関する研究室ホームページ'
+    description: '複雑で開かれた、不確実性のある現実の環境で、人間とAIがともに理解し、判断し、創造する仕組みを研究します。'
 };
 
 export default function HomePageJA() {

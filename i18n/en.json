@@ -14,34 +14,66 @@
         "contact": "Contact"
     },
     "hero": {
-        "title": "H!NT Lab",
-        "subtitle": "Document Understanding · Human–Computer Interaction · Collaborative Cognition",
-        "ctaLearn": "Learn More",
-        "ctaEmail": "Email"
+        "title": "Bring intelligence into the real world.",
+        "subtitle": "Multimodal Understanding · Human–AI Collaboration · Complex Systems",
+        "ctaLearn": "Explore our research",
+        "ctaEmail": "Join us",
+        "eyebrow": "H!NT LAB · HUMAN–AI INTELLIGENCE"
     },
     "labIntro": {
         "title": "H!NT Lab",
-        "p1": "H!NT Lab (Human-Intelligence iNTegration Lab) explores how human intelligence and machine intelligence can work together more deeply. Our goal is to build human–AI collaboration systems that are more natural, efficient, and genuinely useful.",
-        "researchTitle": "Research Areas",
-        "researchIntro": "Our research is organized around three closely connected areas:",
+        "p1": "We study how people and AI understand, decide, and create together in complex, open, and uncertain real-world environments.",
+        "researchTitle": "Three directions, one shared question",
+        "researchIntro": "How can intelligent systems collaborate reliably when information is incomplete, human judgment is essential, and environments and rules keep changing?",
         "areas": [
             {
                 "icon": "FileText",
-                "title": "Document Understanding",
-                "description": "Multimodal document understanding, generation, and intelligent analysis"
+                "title": "Understand complex information",
+                "subtitle": "Multimodal document understanding",
+                "description": "How can fragmented, heterogeneous, multilingual information become traceable and verifiable knowledge?",
+                "bullets": [
+                    "Preserve document structure, meaning, and provenance",
+                    "Connect retrieval, translation, and verification"
+                ],
+                "projectSlugs": [
+                    "babeldoc",
+                    "deeptrans-studio",
+                    "deepmed-search",
+                    "sea-law",
+                    "chinese-law-translation"
+                ]
             },
             {
                 "icon": "Lightbulb",
-                "title": "Human–Computer Interaction",
-                "description": "Natural, efficient interaction technologies and human–AI collaboration systems"
+                "title": "Build collaborative systems",
+                "subtitle": "Human-in-the-loop organizational intelligence",
+                "description": "How can agents work reliably within organizations, permissions, workflows, and human oversight?",
+                "bullets": [
+                    "Connect actions to responsibility and evidence",
+                    "Study confirmation, handover, and operational feedback"
+                ],
+                "projectSlugs": [
+                    "runos",
+                    "hetuos",
+                    "deepling"
+                ]
             },
             {
                 "icon": "Brain",
-                "title": "Collaborative Cognition",
-                "description": "How human cognition and AI can complement each other in complex tasks"
+                "title": "Explore human–AI integration",
+                "subtitle": "Collaborative cognition and embodied interaction",
+                "description": "How do human cognitive states, intentions, and machine reasoning jointly shape complex system behavior?",
+                "bullets": [
+                    "Enable people to understand, correct, and guide AI",
+                    "Explore collaboration through EEG interfaces and robot operation"
+                ],
+                "projectSlugs": [
+                    "eeg-ui-design",
+                    "embodied-robotics"
+                ]
             }
         ],
-        "synergy": "These three directions reinforce one another. Document understanding provides the foundation for information processing; interaction technologies make communication between humans and AI smoother; and collaborative cognition helps us rethink how human–AI systems can become more effective as a whole."
+        "synergy": "From information to action, and back to human understanding and feedback, these directions test one another in real tasks. Law, medicine, logistics, urban governance, and embodied interaction offer different windows onto the same question."
     },
     "about": {
         "title": "About",
@@ -96,8 +128,12 @@
         ]
     },
     "projects": {
-        "title": "Research Projects",
-        "subtitle": "Selected projects currently underway in our lab"
+        "title": "Featured research projects",
+        "subtitle": "Working systems make research questions concrete. Papers, code, and demonstrations make progress inspectable.",
+        "all": "View all {count} projects",
+        "indexTitle": "Research projects",
+        "indexSummary": "Explore the questions, system designs, public evidence, and boundaries of each project.",
+        "statusGuide": "Exploratory: research plans and early prototypes · Ongoing: system development and evaluation · Active maintenance: open-source evolution · Published outputs: public papers and demonstrations"
     },
     "expectations": {
         "title": "To Prospective Students",
@@ -165,7 +201,7 @@
                 "2026",
                 "芯曜鑫技术（上海）有限公司 / Shanghai Maritime University",
                 "Part-time",
-                "AI4INDUSTRTY"
+                "AI4INDUSTRY"
             ],
             [
                 "Cao Yifan",
@@ -193,7 +229,7 @@
                 "2025",
                 "Suzhou Lexing Information Technology Co., Ltd.",
                 "Part-time",
-                "AI4INDUSTRTY"
+                "AI4INDUSTRY"
             ],
             [
                 "Zhang Qingya",
@@ -372,5 +408,74 @@
                 "href": "https://2026.aclweb.org/program/outstanding_reviewers/"
             }
         ]
+    },
+    "community": {
+        "title": "From research to co-creation",
+        "summary": "Research, educational practice, and infrastructure support one another, with distinct ways to participate.",
+        "items": [
+            {
+                "name": "H!NT Lab",
+                "role": "Research questions · Publications · Research training",
+                "description": "Investigate shared scientific questions through implemented systems and inspectable research outputs.",
+                "action": "Explore research projects"
+            },
+            {
+                "name": "H!NT SPACE",
+                "role": "Co-creation · Real needs · Educational experiments",
+                "description": "An open practice space for teachers and students to turn everyday questions into work that people can try and improve.",
+                "action": "Visit the co-creation space"
+            },
+            {
+                "name": "Lab Services",
+                "role": "Identity and permissions · Internal apps · Research infrastructure",
+                "description": "Internal services supporting collaboration and research, accessed according to membership, application permissions, and actual needs.",
+                "action": "Ask about service access"
+            }
+        ]
+    },
+    "team": {
+        "title": "Ask questions. Build and test together.",
+        "nav": "Team",
+        "summary": "Different backgrounds bring different questions. We have {count} graduate students; here are a few of their research interests.",
+        "all": "Meet the full team",
+        "lead": "Lab lead",
+        "cohort": "Class of {year}",
+        "direction": "Research interest",
+        "pageTitle": "Team and graduate students",
+        "pageSummary": "We welcome people from different disciplines and practical backgrounds to explore human–AI collaboration together.",
+        "back": "Back to home"
+    },
+    "openQuestions": {
+        "title": "Questions we are still working on",
+        "summary": "These questions guide our ongoing research. New observations, counterexamples, and collaborations are welcome.",
+        "items": [
+            {
+                "title": "What makes organizational behavior reliable?",
+                "body": "When several agents share a workflow, how should permissions and evidence be organized so people can confirm, correct, and take over?",
+                "slugs": [
+                    "runos",
+                    "hetuos"
+                ]
+            },
+            {
+                "title": "How can rules evolve in an open system?",
+                "body": "As documents, knowledge, and environments change, how can rules and system memory be revised while preserving provenance and a reviewable process?",
+                "slugs": [
+                    "sea-law",
+                    "deeptrans-studio",
+                    "deepling"
+                ]
+            },
+            {
+                "title": "Where are the boundaries of human–AI collaboration?",
+                "body": "When should a system act, ask, or wait? How can real tasks reveal effects on human control, cognitive load, and collaboration reliability?",
+                "slugs": [
+                    "eeg-ui-design",
+                    "embodied-robotics",
+                    "deepmed-search"
+                ]
+            }
+        ],
+        "cta": "Join us with a question"
     }
 }

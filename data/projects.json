@@ -88,6 +88,38 @@
           }
         }
       ]
+    },
+    "research": {
+      "question": {
+        "zh": "如何让多个智能体在跨境物流的权限、责任与流程约束下可靠协同？",
+        "en": "How can multiple agents collaborate reliably within the permissions, responsibilities, and workflows of cross-border logistics?",
+        "ja": "越境物流の権限・責任・業務プロセスの制約下で、複数エージェントはどう信頼できる協働を実現するか。"
+      },
+      "hypothesis": {
+        "zh": "将身份、事件、文档证据与人工确认组织到同一条行动链，可能减少上下文丢失与责任断裂；需要用真实任务检验。",
+        "en": "Connecting identity, events, documentary evidence, and human confirmation in one action chain may reduce context loss and gaps in accountability; real tasks must test this.",
+        "ja": "認証・イベント・文書の根拠・人の確認を一つの行動連鎖に組み込むことで、文脈や責任の断絶を減らせるかを検証します。"
+      },
+      "system": {
+        "zh": "现有多模块系统原型包括 RunID、RunLoop、RunDoc、RunGateway、RunAgents/RunWorkers 与 RunHome，分别承载身份、流程、证据、调用、执行与入口。",
+        "en": "The existing modular prototype connects RunID, RunLoop, RunDoc, RunGateway, RunAgents/RunWorkers, and RunHome for identity, workflow, evidence, model calls, execution, and access.",
+        "ja": "既存のモジュール型プロトタイプでは、RunID、RunLoop、RunDoc、RunGateway、RunAgents/RunWorkers、RunHomeが認証・業務・根拠・呼出し・実行・入口を担います。"
+      },
+      "evidence": {
+        "zh": "目前公开的是系统架构与场景说明。本页暂未提供独立评测论文、开放业务数据或可复现实验包。",
+        "en": "Public material currently describes the architecture and use cases. This page does not yet provide an independent evaluation paper, open business data, or a reproducible experiment package.",
+        "ja": "現在の公開資料は構成と利用場面の説明です。本ページでは独立した評価論文、公開業務データ、再現実験一式は提供していません。"
+      },
+      "limitations": {
+        "zh": "系统原型与链路演示不足以证明长期组织可靠性；企业级稳定性、跨租户权限和业务收益仍需持续评测。",
+        "en": "A prototype and workflow demonstrations do not establish long-term organizational reliability. Stability, cross-tenant permissions, and business value need ongoing evaluation.",
+        "ja": "プロトタイプと業務デモだけでは長期的な組織の信頼性は示せません。安定性・テナント間権限・業務効果の継続評価が必要です。"
+      },
+      "openProblems": {
+        "zh": "怎样评价越权、证据缺失与人工接管？规则变化后，如何验证已有流程仍然成立？",
+        "en": "How should permission violations, missing evidence, and human takeover be evaluated? How can workflows be revalidated when rules change?",
+        "ja": "権限逸脱・根拠の欠落・人の介入をどう評価し、ルール変更後の業務をどう再検証するか。"
+      }
     }
   },
   {
@@ -179,6 +211,38 @@
           }
         }
       ]
+    },
+    "research": {
+      "question": {
+        "zh": "AI 如何进入城市治理的协同处置过程，同时保留可解释的依据和清晰的责任链？",
+        "en": "How can AI participate in coordinated urban governance while preserving explainable evidence and clear accountability?",
+        "ja": "説明可能な根拠と明確な責任を保ちながら、AIを都市ガバナンスの協働にどう組み込むか。"
+      },
+      "hypothesis": {
+        "zh": "把知识、规则、模型建议和人工确认嵌入事件闭环，可能改善跨部门协作；效果需要场景评测验证。",
+        "en": "Embedding knowledge, rules, model suggestions, and human confirmation in the event lifecycle may improve cross-department coordination; scenario-based evaluation must test this.",
+        "ja": "知識・ルール・モデルの提案・人の確認を事案の処理過程につなぐことで、部門間協働を改善できるかを検証します。"
+      },
+      "system": {
+        "zh": "现有系统框架与场景原型围绕数据汇聚、事件标签、研判建议、分派、处置和复盘组织能力。",
+        "en": "The existing framework and scenario prototypes organize data aggregation, event labels, analysis, dispatch, handling, and review.",
+        "ja": "既存の構成と場面別プロトタイプは、データ集約・事案分類・分析・割当て・対応・振り返りを扱います。"
+      },
+      "evidence": {
+        "zh": "目前提供框架与场景描述。本页暂未公开跨部门对照实验、部署规模或量化治理效果。",
+        "en": "Current public material describes the framework and scenarios. This page does not report comparative cross-department trials, deployment scale, or quantified governance outcomes.",
+        "ja": "公開資料は構成と場面の説明です。本ページでは部門間の比較実験、導入規模、定量的な治理効果は報告していません。"
+      },
+      "limitations": {
+        "zh": "数据口径、治理知识和处置依据仍需完善；场景原型的可用性不能代替对实际治理成效的验证。",
+        "en": "Data definitions, governance knowledge, and decision evidence need further work. Prototype usability alone cannot establish real governance impact.",
+        "ja": "データ定義・治理知識・判断根拠の整備が必要です。プロトタイプの操作性だけでは実際の効果を検証できません。"
+      },
+      "openProblems": {
+        "zh": "部门规则冲突时如何协调？如何评价处置建议的可解释性、责任归属与反馈闭环？",
+        "en": "How should conflicting departmental rules be reconciled? How should explanation, accountability, and feedback be evaluated?",
+        "ja": "部門のルールが衝突したとき、どう調整し、説明・責任・フィードバックを評価するか。"
+      }
     }
   },
   {
@@ -250,6 +314,38 @@
           }
         }
       ]
+    },
+    "research": {
+      "question": {
+        "zh": "如何让跨语言法律研究中的原文、译本与版本对应关系可追溯、可核验？",
+        "en": "How can original laws, translations, and version alignments be made traceable and verifiable across languages?",
+        "ja": "多言語の法律原文・翻訳・版の対応を、どう追跡・検証可能にするか。"
+      },
+      "hypothesis": {
+        "zh": "分别记录法源、文本提取和翻译核验状态，可能帮助研究者识别资料缺口，并回到原文检查判断依据。",
+        "en": "Separately tracking legal sources, text extraction, and translation verification may help researchers identify gaps and check claims against originals.",
+        "ja": "法源・文字抽出・翻訳検証の状態を個別に記録することで、資料の欠落や判断根拠を原文で確認しやすくなると考えます。"
+      },
+      "system": {
+        "zh": "现有工作台按国家、领域、语言与文本状态组织资料，支持多语分栏、条号定位、PDF 页码和文献深链接。",
+        "en": "The workspace organizes materials by country, domain, language, and text status, with parallel reading, article navigation, PDF pages, and document deep links.",
+        "ja": "国・分野・言語・テキスト状態別の検索、多言語対照、条番号移動、PDFページ、文献リンクを備えた作業環境です。"
+      },
+      "evidence": {
+        "zh": "项目提供公开工作台，可查看具体文献的来源与处理状态。资料范围和可读程度以各文献的实际标记为准。",
+        "en": "The public workspace exposes source and processing status for individual documents. Coverage and readability depend on each document’s recorded state.",
+        "ja": "公開環境で各文献の出典と処理状況を確認できます。収録範囲と可読性は各資料の表示状態に従います。"
+      },
+      "limitations": {
+        "zh": "目录收录不等于全文完整或译文已核验；扫描识别、条文对齐和版本更新仍需人工复核。",
+        "en": "A catalog entry does not establish full-text completeness or verified translation. OCR, article alignment, and version updates still require human review.",
+        "ja": "目録への収録は全文の完全性や翻訳検証を意味しません。OCR・条文対応・版の更新には人の確認が必要です。"
+      },
+      "openProblems": {
+        "zh": "如何发现失效或修订法条？如何评价跨语条文对齐、译文忠实度与不确定性表达？",
+        "en": "How can repealed or amended provisions be detected? How should multilingual alignment, translation fidelity, and uncertainty be evaluated?",
+        "ja": "廃止・改正条文をどう検出し、多言語の対応・翻訳の忠実性・不確実性をどう評価するか。"
+      }
     }
   },
   {
@@ -264,7 +360,7 @@
     "link": "",
     "video": "",
     "logo": "",
-    "statusTone": "ongoing",
+    "statusTone": "exploratory",
     "status": {
       "zh": "探索中",
       "en": "Exploratory",
@@ -321,6 +417,38 @@
           }
         }
       ]
+    },
+    "research": {
+      "question": {
+        "zh": "脑电反馈在何种任务中能帮助 AI 界面理解用户状态，同时保持用户的控制感？",
+        "en": "In which tasks can EEG feedback help AI interfaces respond to user state while preserving a sense of control?",
+        "ja": "どの課題で脳波フィードバックが、利用者の主導権を保ちながらAIインターフェースに役立つか。"
+      },
+      "hypothesis": {
+        "zh": "将脑电反馈与显式意图表达结合，并允许用户确认和纠正判断，可能改善提示时机与交互体验。",
+        "en": "Combining EEG feedback with explicit intent and user confirmation may improve prompt timing and interaction experience.",
+        "ja": "脳波と明示的な意図表現を組み合わせ、人が判断を確認・修正できれば、提示のタイミングや体験を改善できる可能性があります。"
+      },
+      "system": {
+        "zh": "项目处于探索阶段，计划从脑电反馈表达和小规模界面原型入手，逐步设计可重复的用户实验。",
+        "en": "The project is exploratory. Planned work starts with EEG feedback representations and small interface prototypes, followed by repeatable user studies.",
+        "ja": "探索段階です。脳波フィードバックの表現と小規模なUI試作から始め、再現可能な利用者実験を設計する計画です。"
+      },
+      "evidence": {
+        "zh": "当前公开内容是研究计划，尚未提供用户实验结果、界面演示或对应论文。",
+        "en": "Public material currently presents a research plan, without user-study results, an interface demonstration, or a corresponding paper.",
+        "ja": "公開内容は研究計画であり、利用者実験の結果・UIデモ・対応論文はまだ掲載していません。"
+      },
+      "limitations": {
+        "zh": "尚未验证脑电反馈相对显式操作的增益；信号噪声、个体差异与误判纠正需要在实验中处理。",
+        "en": "The benefit of EEG beyond explicit interaction is unverified. Signal noise, individual differences, and correction of misclassification need experimental study.",
+        "ja": "明示的操作に対する脳波の追加効果は未検証です。ノイズ・個人差・誤判定の修正を実験で扱う必要があります。"
+      },
+      "openProblems": {
+        "zh": "如何区分状态相关性与交互收益？界面何时应询问用户，而不依据生理信号直接调整？",
+        "en": "How can state correlations be separated from interaction benefits? When should the interface ask rather than adapt directly from physiological signals?",
+        "ja": "状態との相関と操作上の効果をどう分けるか。生理信号だけで変更せず、人に確認すべき場面はどこか。"
+      }
     }
   },
   {
@@ -335,7 +463,7 @@
     "link": "",
     "video": "",
     "logo": "",
-    "statusTone": "ongoing",
+    "statusTone": "exploratory",
     "status": {
       "zh": "探索中",
       "en": "Exploratory",
@@ -404,6 +532,38 @@
           }
         }
       ]
+    },
+    "research": {
+      "question": {
+        "zh": "人在操作真实机器人时，如何持续理解机器状态，并保持意图、行动与反馈的一致？",
+        "en": "How can people maintain an accurate view of robot state and keep intention, action, and feedback aligned during operation?",
+        "ja": "実機操作でロボットの状態を理解し続け、意図・行動・フィードバックをどう一致させるか。"
+      },
+      "hypothesis": {
+        "zh": "清晰的状态同步、操作映射与人工接管设计，可能改善虚实协作中的控制感与任务理解。",
+        "en": "Clear state synchronization, operation mapping, and human takeover design may improve control and task understanding in physical–virtual collaboration.",
+        "ja": "明確な状態同期・操作対応・人の介入設計により、実空間と仮想空間の協働で主導権と課題理解を改善できる可能性があります。"
+      },
+      "system": {
+        "zh": "以实验室现有机器狗为实体平台，计划开展基础操作映射、状态反馈与小规模协作任务。",
+        "en": "The lab’s existing quadruped robot is the physical platform for planned operation mapping, state feedback, and small collaborative tasks.",
+        "ja": "研究室の既存の四足歩行ロボットを使い、基本操作の対応・状態フィードバック・小規模な協働課題を計画しています。"
+      },
+      "evidence": {
+        "zh": "当前公开内容是研究出发点与计划，尚未提供实机演示、可复现实验记录或研究结论。",
+        "en": "Public material currently describes the motivation and plan, without a robot demonstration, reproducible experiment records, or research findings.",
+        "ja": "公開内容は動機と計画です。実機デモ・再現可能な実験記録・研究結果はまだ掲載していません。"
+      },
+      "limitations": {
+        "zh": "操作流程和评价任务仍在设计；尚未验证复杂环境下的协作效果与接管机制。",
+        "en": "Operation procedures and evaluation tasks are still being designed. Collaboration and takeover in complex environments remain unverified.",
+        "ja": "操作手順と評価課題は設計段階です。複雑な環境での協働効果と介入の仕組みは未検証です。"
+      },
+      "openProblems": {
+        "zh": "反馈延迟或状态不一致时，人如何识别风险并接管？如何测量协作中的控制感与认知负担？",
+        "en": "How can people recognize risk and take over when feedback is delayed or inconsistent? How should control and cognitive load be measured?",
+        "ja": "フィードバックの遅延や状態不一致を人はどう認識し介入するか。主導権と認知負荷をどう測るか。"
+      }
     }
   },
   {
@@ -493,6 +653,38 @@
           }
         }
       ]
+    },
+    "research": {
+      "question": {
+        "zh": "AI 内容系统如何在长期运行中保持事实约束、表达一致性与编辑判断？",
+        "en": "How can an AI content system sustain factual grounding, a consistent voice, and editorial judgment over time?",
+        "ja": "AIコンテンツシステムは長期運用で事実の制約・表現の一貫性・編集判断をどう保つか。"
+      },
+      "hypothesis": {
+        "zh": "把选题、资料、生成、审核与发布反馈组成持续工作流，可能比单篇生成更适合研究长期质量。",
+        "en": "A continuous loop of topic selection, sourcing, generation, review, and publishing feedback may better support the study of long-term quality than isolated generation.",
+        "ja": "選題・資料・生成・確認・公開のフィードバックを継続的につなぐことで、長期品質を研究できると考えます。"
+      },
+      "system": {
+        "zh": "现有网站与内容生产链路连接信息采集、话题筛选、生成、审核和发布监控，并将表达规则配置化。",
+        "en": "The website and content workflow connect sourcing, topic filtering, generation, review, and publication monitoring, with configurable expression rules.",
+        "ja": "既存サイトと制作フローは、情報収集・選題・生成・確認・公開監視をつなぎ、表現のルールを設定化しています。"
+      },
+      "evidence": {
+        "zh": "公开网站提供可观察的内容样本。本页暂无对应论文或长期质量的量化评测。",
+        "en": "The public site provides observable content samples. This page does not yet provide a corresponding paper or a quantitative longitudinal evaluation.",
+        "ja": "公開サイトでコンテンツを観察できます。対応論文や長期品質の定量評価は本ページに掲載していません。"
+      },
+      "limitations": {
+        "zh": "稳定发布不等于事实始终正确；事实核验、人格一致性与人工介入效果需要分别评价。",
+        "en": "Stable publishing does not establish factual accuracy. Verification, voice consistency, and the effects of human intervention need separate evaluation.",
+        "ja": "安定した公開だけでは正確性を示せません。事実検証・表現の一貫性・人の介入の効果を個別に評価する必要があります。"
+      },
+      "openProblems": {
+        "zh": "如何发现并修正持续运营中的事实错误与观点漂移？人工编辑应在何处介入？",
+        "en": "How can factual errors and viewpoint drift be detected and corrected over time? Where should human editors intervene?",
+        "ja": "継続運用中の事実誤りや見解の変化をどう検出・修正し、人の編集をどこに組み込むか。"
+      }
     }
   },
   {
@@ -503,11 +695,11 @@
     "link": "https://github.com/funstory-ai/BabelDOC",
     "video": "https://youtu.be/chwrlApH7a4",
     "logo": "",
-    "statusTone": "ongoing",
+    "statusTone": "maintenance",
     "status": {
       "zh": "持续维护",
-      "en": "Active Development",
-      "ja": "継続開発"
+      "en": "Active maintenance",
+      "ja": "継続保守"
     },
     "description": {
       "zh": "基于中间表示的 PDF 翻译框架，兼顾译文质量与原始版式。",
@@ -573,6 +765,38 @@
           }
         }
       ]
+    },
+    "research": {
+      "question": {
+        "zh": "PDF 翻译如何同时利用文档语义与视觉结构，并保留原始版式？",
+        "en": "How can PDF translation use document meaning and visual structure together while preserving layout?",
+        "ja": "PDF翻訳で文書の意味と視覚構造を活用し、原文のレイアウトをどう保つか。"
+      },
+      "hypothesis": {
+        "zh": "以中间表示分离语义与布局，再连接上下文翻译与自适应排版，有助于协调译文质量、术语一致性和版式保真。",
+        "en": "An intermediate representation separating semantics from layout can connect contextual translation and adaptive typesetting to address quality, terminology consistency, and layout fidelity together.",
+        "ja": "意味とレイアウトを中間表現で分離し、文脈に基づく翻訳と適応的組版をつなぐことで、品質・用語一貫性・版面保持を両立できると考えます。"
+      },
+      "system": {
+        "zh": "已提供开源命令行与 Python 接口，串联解析、中间表示、术语与上下文翻译、译文重排版。",
+        "en": "An open-source CLI and Python interface connect parsing, intermediate representation, terminology-aware contextual translation, and typesetting.",
+        "ja": "公開CLIとPythonインターフェースが、解析・中間表現・文脈と用語を用いた翻訳・組版をつなぎます。"
+      },
+      "evidence": {
+        "zh": "提供开源仓库、演示视频与 ACL 2026 System Demonstrations 论文。评价设置和具体结果以论文及仓库记录为准。",
+        "en": "An open-source repository, demonstration video, and ACL 2026 System Demonstrations paper are linked. Consult the paper and repository for evaluation settings and results.",
+        "ja": "公開リポジトリ・デモ動画・ACL 2026 System Demonstrations論文を掲載しています。評価条件と結果は論文・記録で確認できます。"
+      },
+      "limitations": {
+        "zh": "已有评测有其文档和语言范围；不能据此推定任意扫描件、复杂版式与语种都达到相同效果。",
+        "en": "Existing evaluations have specific document and language scopes; they do not establish equal performance on arbitrary scans, complex layouts, or languages.",
+        "ja": "既存評価には文書・言語の範囲があります。任意のスキャン・複雑な版面・言語に同じ効果があるとは限りません。"
+      },
+      "openProblems": {
+        "zh": "如何在更复杂文档上评价语义、公式、版式与可读性的共同损失？人应如何高效定位并修正翻译错误？",
+        "en": "How can semantic, formula, layout, and readability errors be evaluated together on harder documents? How can people efficiently locate and correct translation errors?",
+        "ja": "難しい文書で意味・数式・版面・可読性の損失をどう総合評価し、人が翻訳誤りをどう効率的に修正するか。"
+      }
     }
   },
   {
@@ -583,11 +807,11 @@
     "link": "https://deeptrans.hintlab.cn",
     "video": "https://youtu.be/cNpafhHAEjg",
     "logo": "/projects/deeptrans-logo.svg",
-    "statusTone": "completed",
+    "statusTone": "published",
     "status": {
-      "zh": "已完成",
-      "en": "Completed",
-      "ja": "完了"
+      "zh": "成果已发布",
+      "en": "Published outputs",
+      "ja": "成果公開済み"
     },
     "description": {
       "zh": "面向专业翻译团队的 AI 协作工作台。",
@@ -701,6 +925,38 @@
           }
         }
       ]
+    },
+    "research": {
+      "question": {
+        "zh": "如何把专家在翻译中的干预转化为团队可复用的知识，同时保留具体语境？",
+        "en": "How can expert translation interventions become reusable team knowledge without losing context?",
+        "ja": "翻訳専門家の介入を、文脈を保ったままチームが再利用できる知識にどう変えるか。"
+      },
+      "hypothesis": {
+        "zh": "将专家修改、术语与翻译先例接入共享记忆，并在后续任务中检索，可能提升团队判断的一致性与复用效率。",
+        "en": "Retrieving expert edits, terminology, and translation precedents from shared memory may improve consistency and reuse across team tasks.",
+        "ja": "専門家の修正・用語・翻訳例を共有記憶から検索することで、チーム判断の一貫性と再利用を改善できると考えます。"
+      },
+      "system": {
+        "zh": "现有工作台包括分段对齐、译后编辑、术语管理、团队记忆、多智能体候选与质量检查。",
+        "en": "The workbench provides aligned segments, post-editing, terminology management, team memory, multi-agent candidates, and quality checks.",
+        "ja": "作業環境は分節対応・ポストエディット・用語管理・チーム記憶・複数エージェントの候補・品質確認を扱います。"
+      },
+      "evidence": {
+        "zh": "提供 CSCW Companion 2026 Demo 论文、演示视频，以及关联的 BabelDOC 和法律翻译研究链接。不同成果的研究范围以各自论文为准。",
+        "en": "Links include a CSCW Companion 2026 Demo paper, a video, and related BabelDOC and legal-translation research. Each paper defines the scope of its own evidence.",
+        "ja": "CSCW Companion 2026 Demo論文・動画・関連するBabelDOCと法律翻訳研究を掲載しています。根拠の範囲は各論文に従います。"
+      },
+      "limitations": {
+        "zh": "演示系统不等于所有团队和语种都已验证；记忆过时、专家意见冲突与跨任务迁移仍需研究。",
+        "en": "A demonstration does not establish effectiveness for every team or language. Stale memory, conflicting expert judgments, and transfer across tasks need further study.",
+        "ja": "デモは全チーム・全言語での有効性を示しません。記憶の陳腐化・専門家間の意見衝突・課題間の転移は研究課題です。"
+      },
+      "openProblems": {
+        "zh": "哪些专家修改值得沉淀？共享记忆发生冲突或过时时，如何让团队发现、修订并追溯影响？",
+        "en": "Which expert edits should become shared knowledge? How can teams identify, revise, and trace the effects of conflicting or outdated memory?",
+        "ja": "どの修正を共有知識にすべきか。記憶の衝突や陳腐化をどう発見・改訂し、影響を追跡するか。"
+      }
     }
   },
   {
@@ -711,11 +967,11 @@
     "link": "https://deepmed.hintlab.cn",
     "video": "https://youtu.be/4U4aok8yLpk",
     "logo": "/projects/deepmed-logo.svg",
-    "statusTone": "completed",
+    "statusTone": "published",
     "status": {
-      "zh": "已完成",
-      "en": "Completed",
-      "ja": "完了"
+      "zh": "成果已发布",
+      "en": "Published outputs",
+      "ja": "成果公開済み"
     },
     "description": {
       "zh": "面向医学深度研究的智能文献检索平台。",
@@ -841,6 +1097,38 @@
           }
         }
       ]
+    },
+    "research": {
+      "question": {
+        "zh": "医学深度研究如何形成可追溯、可交叉验证的文献证据链，而非只生成看似合理的答案？",
+        "en": "How can medical deep research produce traceable, cross-checkable literature evidence rather than merely plausible answers?",
+        "ja": "医学の深い文献調査で、もっともらしい回答だけでなく追跡・照合できる根拠をどう構成するか。"
+      },
+      "hypothesis": {
+        "zh": "在问题拆解、文献检索和证据归纳之间加入内省式验证，可能暴露证据缺口并改进答案的可核查性。",
+        "en": "Introspective verification between question decomposition, retrieval, and evidence synthesis may reveal evidence gaps and improve inspectability.",
+        "ja": "問いの分解・文献検索・根拠整理に内省的検証を加えることで、根拠の不足と回答の検証可能性を改善できると考えます。"
+      },
+      "system": {
+        "zh": "现有平台组织问题拆解、文献召回、证据抽取、候选生成与反向质询，并展示检索依据与验证过程。",
+        "en": "The platform organizes question decomposition, retrieval, evidence extraction, candidate generation, and reverse questioning, displaying sources and verification steps.",
+        "ja": "既存環境は問いの分解・検索・根拠抽出・候補生成・逆向きの問い直しをつなぎ、出典と検証過程を表示します。"
+      },
+      "evidence": {
+        "zh": "提供 IJCAI-ECAI 2026 Demonstrations 论文、PDF 与视频，并链接相关 RAG 研究；已录用成果与正式出版成果分别标记。",
+        "en": "An IJCAI-ECAI 2026 Demonstrations paper, PDF, and video are linked alongside related RAG research. Accepted work is distinguished from formally published work.",
+        "ja": "IJCAI-ECAI 2026 Demonstrations論文・PDF・動画と関連RAG研究を掲載しています。採録と正式出版を区別しています。"
+      },
+      "limitations": {
+        "zh": "文献检索与验证系统仍会受召回覆盖、来源质量和知识更新影响；当前系统论文的评测不等于临床有效性验证。",
+        "en": "Retrieval and verification remain limited by coverage, source quality, and updates. System-paper evaluations do not establish clinical effectiveness.",
+        "ja": "検索・検証は収録範囲・情報源の品質・更新の影響を受けます。システム論文の評価は臨床的有効性の検証ではありません。"
+      },
+      "openProblems": {
+        "zh": "如何识别证据冲突和知识漂移？系统何时应表达不确定、继续检索或请研究者判断？",
+        "en": "How can evidence conflicts and knowledge drift be detected? When should the system express uncertainty, search further, or defer to a researcher?",
+        "ja": "根拠の衝突や知識の変化をどう検出するか。いつ不確実性を示し、追加検索し、研究者の判断を求めるか。"
+      }
     }
   },
   {
@@ -851,11 +1139,11 @@
     "link": "https://www.chineselawtranslation.com",
     "video": "",
     "logo": "/projects/chineselaw-logo.png",
-    "statusTone": "completed",
+    "statusTone": "published",
     "status": {
-      "zh": "已完成",
-      "en": "Completed",
-      "ja": "完了"
+      "zh": "成果已发布",
+      "en": "Published outputs",
+      "ja": "成果公開済み"
     },
     "description": {
       "zh": "面向中国法律国际传播的法律翻译资源项目。",
@@ -957,6 +1245,38 @@
           }
         }
       ]
+    },
+    "research": {
+      "question": {
+        "zh": "法律翻译如何保持术语概念、制度语境与立法表达的忠实度？",
+        "en": "How can legal translation preserve terminology, institutional context, and legislative fidelity?",
+        "ja": "法律翻訳で、用語の概念・制度的文脈・立法表現への忠実性をどう保つか。"
+      },
+      "hypothesis": {
+        "zh": "结合术语映射、层级约束与人工确认，可能减少概念漂移，并让翻译选择可以检查和修订。",
+        "en": "Terminology mapping, hierarchical constraints, and human confirmation may reduce concept drift and make translation choices inspectable and revisable.",
+        "ja": "用語対応・階層的制約・人の確認を組み合わせ、概念のずれを減らし翻訳判断を検証・修正可能にできると考えます。"
+      },
+      "system": {
+        "zh": "项目围绕中英法律术语、双语语料、人机协同术语构建与立法文本忠实度检查建设资源和流程。",
+        "en": "The project develops resources and workflows for Chinese–English terminology, bilingual texts, human-in-the-loop terminology construction, and legislative fidelity checks.",
+        "ja": "中英法律用語・対訳資料・人が参加する用語構築・立法文の忠実性確認のための資料とフローを整備しています。"
+      },
+      "evidence": {
+        "zh": "提供法律翻译网站与 2025、2026 年 Artificial Intelligence and Law 论文 DOI，具体实验与适用范围以论文为准。",
+        "en": "The legal-translation site and DOI links for 2025 and 2026 Artificial Intelligence and Law papers are provided. Consult the papers for experiments and scope.",
+        "ja": "翻訳サイトと2025・2026年のArtificial Intelligence and Law論文DOIを掲載しています。実験と適用範囲は論文に従います。"
+      },
+      "limitations": {
+        "zh": "特定术语与文本上的研究不能直接推定跨法域通用；法律概念与版本变化仍需专业判断。",
+        "en": "Findings for specific terms and texts do not establish cross-jurisdiction generality. Legal concepts and version changes still require expert judgment.",
+        "ja": "特定の用語・文書の結果が他法域へそのまま適用できるとは限りません。概念と版の変化には専門的判断が必要です。"
+      },
+      "openProblems": {
+        "zh": "如何评价不同法域间不可一一对应的概念？法律修订后，如何发现并修正受影响的译文与术语？",
+        "en": "How should concepts without one-to-one equivalents be evaluated? After legal amendments, how can affected translations and terms be identified and revised?",
+        "ja": "一対一に対応しない法概念をどう評価し、法改正後の翻訳・用語への影響をどう発見・修正するか。"
+      }
     }
   }
 ]

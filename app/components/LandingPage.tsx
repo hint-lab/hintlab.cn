@@ -3,135 +3,92 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { ArrowRight, Brain, ExternalLink, FileText, Lightbulb, Mail, Menu, PlayCircle, Shield, X } from 'lucide-react';
+import { ArrowRight, Brain, FileText, Lightbulb, Mail, Menu, X } from 'lucide-react';
 import LangSwitch from './LangSwitch';
 import SideToc from './SideToc';
-import ContactModal from './ContactModal';
+import ProjectCard, { projectHref } from './ProjectCard';
 import type { Dict } from '../lib/i18n';
-import { getProjects } from '../lib/projects';
+import { getProjects, type Locale } from '../lib/projects';
 import pubs from '../../data/publications.json';
 
 type LandingPageProps = {
   t: Dict;
   aboutHref: string;
   publicationHref: string;
-  locale: 'zh' | 'en' | 'ja';
+  locale: Locale;
 };
 
-const iconMap: Record<string, any> = {
-  Brain,
-  Lightbulb,
-  FileText,
-  Shield,
-};
+const iconMap = { Brain, Lightbulb, FileText };
 
 function SectionHeading({ kicker, title, summary }: { kicker?: string; title: string; summary?: string }) {
   return (
     <div className="section-head">
-      {kicker ? (
-        <p className="section-kicker" style={{ fontSize: 13, fontWeight: 600, color: 'var(--color-primary)', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: 12 }}>
-          {kicker}
-        </p>
-      ) : null}
+      {kicker && <p className="section-kicker">{kicker}</p>}
       <h2 className="section-title">{title}</h2>
-      {summary ? <p className="section-summary">{summary}</p> : null}
+      {summary && <p className="section-summary">{summary}</p>}
       <div className="section-line" />
     </div>
   );
 }
 
 export default function LandingPage({ t, aboutHref, publicationHref, locale }: LandingPageProps) {
-  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showContactModal, setShowContactModal] = useState(false);
   // Keep the homepage selection and order independent of publication dates.
   const homePubs = ['qi2026babeldoc', 'lian2026deeptrans', 'liu2026deepmed']
     .flatMap((id) => pubs.filter((pub) => pub.id === id));
   const projects = getProjects(locale);
-  const contactSummary =
-    locale === 'zh'
-      ? '如需了解实验室、合作研究或招生信息，请与我们联系。'
-      : locale === 'ja'
-        ? '研究室、共同研究、学生募集に関する問い合わせはこちら。'
-        : 'Questions about the lab, research collaboration, or student opportunities.';
-  const footerLinks =
-    locale === 'zh'
-      ? { home: '首页', research: '研究方向', projects: '项目', contact: '联系' }
-      : locale === 'ja'
-        ? { home: 'ホーム', research: '研究領域', projects: '研究プロジェクト', contact: '連絡先' }
-        : { home: 'Home', research: 'Research', projects: 'Projects', contact: 'Contact' };
-  const actionLabels =
-    locale === 'zh'
-      ? { website: '网站', video: '视频' }
-      : locale === 'ja'
-        ? { website: 'ウェブサイト', video: '動画' }
-        : { website: 'Website', video: 'Video' };
-
+  const featuredProjects = ['babeldoc', 'deeptrans-studio', 'deepmed-search', 'sea-law', 'runos', 'hetuos']
+    .flatMap((slug) => projects.filter((project) => project.slug === slug));
+  const homeHref = locale === 'zh' ? '/' : `/${locale}/`;
+  const teamHref = `${homeHref}team`;
+  const projectsHref = `${homeHref}projects`;
+  const footerLinks = { home: t.nav.home, research: t.nav.research, projects: t.nav.projects, contact: t.nav.contact };
+  const contactSummary = locale === 'zh' ? '研究合作、开放问题、招生与参与方式，欢迎带着具体的观察与我们交流。' : locale === 'ja' ? '共同研究、未解決の問い、学生募集や参加方法について、お気軽にご連絡ください。' : 'Get in touch about research, open questions, student opportunities, or ways to participate.';
   const closeMenu = () => setMenuOpen(false);
+  const projectLinks = (slugs: string[]) => (
+    <div className="research-project-links">
+      {slugs.map((slug) => {
+        const project = projects.find((item) => item.slug === slug);
+        return project ? <Link key={slug} href={projectHref(locale, slug)}>{project.name}<ArrowRight size={12} aria-hidden="true" /></Link> : null;
+      })}
+    </div>
+  );
 
   return (
     <main className="page-shell">
       <header className={`site-header${menuOpen ? ' header-menu-open' : ''}`}>
         <div className="container header-inner">
-          <div className="brand">
-            <Link href="/">{t.brand}</Link>
-          </div>
-
-          <nav className={`nav${menuOpen ? ' nav-open' : ''}`}>
+          <div className="brand"><Link href={homeHref}>{t.brand}</Link></div>
+          <nav id="main-nav" className={`nav${menuOpen ? ' nav-open' : ''}`}>
             <a href="#home" aria-current="page" onClick={closeMenu}>{t.nav.home}</a>
             <Link href={aboutHref} onClick={closeMenu}>{t.nav.about}</Link>
-            <a href="#research-areas" onClick={closeMenu}>{t.labIntro.researchTitle}</a>
-            <a href="#projects" onClick={closeMenu}>{t.nav.projects}</a>
+            <a href="#research-areas" onClick={closeMenu}>{t.nav.research}</a>
+            <Link href={projectsHref} onClick={closeMenu}>{t.nav.projects}</Link>
             <Link href={publicationHref} onClick={closeMenu}>{t.nav.publications}</Link>
-            <a href="#students" onClick={closeMenu}>{t.nav.students}</a>
+            <Link href={teamHref} onClick={closeMenu}>{t.team.nav}</Link>
             <a href="#contact" onClick={closeMenu}>{t.nav.contact}</a>
           </nav>
-
           <div className="header-actions">
             <LangSwitch />
-            <button
-              className="menu-toggle"
-              onClick={() => setMenuOpen(!menuOpen)}
-              aria-label="Toggle menu"
-            >
+            <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label={locale === 'zh' ? '切换导航菜单' : locale === 'ja' ? 'メニュー切替' : 'Toggle menu'} aria-expanded={menuOpen} aria-controls="main-nav">
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
       </header>
 
-      <section id="home" className="hero">
-        <Image
-          src="/hero.jpg"
-          alt="H!NT Lab Hero Background"
-          fill
-          className="hero-bg"
-          priority
-        />
+      <section id="home" className="hero mission-hero">
+        <Image src="/hero.jpg" alt="" fill className="hero-bg" priority />
         <div className="hero-overlay" />
         <div className="container">
           <div className="hero-content">
+            <p className="hero-eyebrow">{t.hero.eyebrow}</p>
             <h1 className="hero-title">{t.hero.title}</h1>
-            <p className="hero-subtitle">
-              {locale === 'zh'
-                ? '人机智能融合实验室'
-                : locale === 'ja'
-                  ? '人間-AI統合研究室'
-                  : 'Human-Intelligence iNTegration Lab'}
-            </p>
-            <p className="hero-keywords">{t.hero.subtitle}</p>
             <p className="hero-description">{t.labIntro.p1}</p>
-
+            <p className="hero-keywords">{t.hero.subtitle}</p>
             <div className="hero-actions">
-              <a className="btn btn-primary" href="#research-areas">
-                <span>{t.hero.ctaLearn}</span>
-                <ArrowRight size={18} />
-              </a>
-              <button className="btn btn-outline" onClick={() => setShowContactModal(true)}>
-                <span>{t.hero.ctaEmail}</span>
-                <Mail size={18} />
-              </button>
+              <a className="btn btn-primary" href="#projects">{t.hero.ctaLearn}<ArrowRight size={18} /></a>
+              <a className="btn btn-outline" href="#expectations">{t.hero.ctaEmail}<ArrowRight size={18} /></a>
             </div>
           </div>
         </div>
@@ -139,245 +96,100 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
 
       <section id="research-areas" className="section section-alt">
         <div className="container">
-          <SectionHeading
-            title={t.labIntro.researchTitle}
-            summary={t.labIntro.researchIntro}
-          />
-
-          <div className="feature-grid">
-            {t.labIntro.areas.map((area: any, idx: number) => {
-              const IconComponent = iconMap[area.icon] || Brain;
+          <SectionHeading kicker="01 · Research" title={t.labIntro.researchTitle} summary={t.labIntro.researchIntro} />
+          <div className="feature-grid research-map">
+            {t.labIntro.areas.map((area, index) => {
+              const Icon = iconMap[area.icon as keyof typeof iconMap] || Brain;
               return (
-                <article key={idx} className="feature-card" style={{ textAlign: 'left' }}>
-                  <div className="feature-icon">
-                    <IconComponent size={44} strokeWidth={1.5} />
-                  </div>
+                <article key={area.title} className="feature-card research-area">
+                  <div className="research-area-top"><span>0{index + 1}</span><Icon size={26} strokeWidth={1.5} aria-hidden="true" /></div>
                   <h3>{area.title}</h3>
-                  {area.subtitle && (
-                    <p style={{ marginTop: 0, fontSize: 13, color: '#888', fontWeight: 400 }}>{area.subtitle}</p>
-                  )}
-                  <p style={{ textAlign: 'left' }}>{area.description}</p>
-                  {area.bullets && area.bullets.length > 0 && (
-                    <ul style={{ marginTop: 12, paddingLeft: 0, fontSize: 14, color: '#555', listStyleType: 'none' }}>
-                      {area.bullets.map((bullet: string, i: number) => (
-                        <li key={i} style={{ marginBottom: 6, paddingLeft: 16, textAlign: 'left', position: 'relative' }}>
-                          <span style={{ position: 'absolute', left: 0, color: '#2563eb' }}>▸</span>
-                          {bullet}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                  <p className="research-discipline">{area.subtitle}</p>
+                  <p className="research-question">{area.description}</p>
+                  <ul className="research-bullets">{area.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>
+                  {projectLinks(area.projectSlugs)}
                 </article>
               );
             })}
           </div>
-
-          <div className="callout" style={{ textAlign: 'center', marginTop: 80, border: 'none', background: 'transparent', boxShadow: 'none', fontSize: 16, color: '#86868b' }}>
-            <p>{t.labIntro.synergy}</p>
-          </div>
+          <p className="research-synergy">{t.labIntro.synergy}</p>
         </div>
       </section>
 
       <section id="projects" className="section">
         <div className="container">
-          <SectionHeading
-            title={t.projects.title}
-            summary={t.projects.subtitle}
-          />
-
-          <div className="projects-grid">
-            {projects.map((project) => {
-              const papers = project.papers;
-              const detailHref = project.slug
-                ? locale === 'zh'
-                  ? `/projects/${project.slug}`
-                  : `/${locale}/projects/${project.slug}`
-                : '';
-              const style = { class: `thumb-${project.theme}`, label: project.label };
-              const openDetail = () => {
-                if (detailHref) router.push(detailHref);
-              };
-              const openDetailByKeyboard = (event: React.KeyboardEvent<HTMLElement>) => {
-                if (!detailHref) return;
-                if (event.key === 'Enter' || event.key === ' ') {
-                  event.preventDefault();
-                  router.push(detailHref);
-                }
-              };
-              const keepActionClick = (event: React.MouseEvent<HTMLElement>) => {
-                event.stopPropagation();
-              };
-
-              return (
-                <article
-                  key={project.slug}
-                  className="project-card"
-                  role={detailHref ? 'link' : undefined}
-                  tabIndex={detailHref ? 0 : undefined}
-                  onClick={openDetail}
-                  onKeyDown={openDetailByKeyboard}
-                  aria-label={`${project.name} ${locale === 'zh' ? '详情' : locale === 'ja' ? '詳細' : 'details'}`}
-                >
-                  <div className={`project-thumb ${style.class}`}>
-                    {project.status && (
-                      <span className={`project-thumb-status project-thumb-status-${project.statusTone || 'neutral'}`}>
-                        {project.status}
-                      </span>
-                    )}
-                    <span>{style.label}</span>
-                  </div>
-                  <div className="project-content">
-                    <h3>{project.name}</h3>
-                    <p>{project.description}</p>
-                    {(detailHref || project.link || project.video || papers.length > 0) && (
-                      <div className="project-actions">
-                        {detailHref && (
-                          <Link href={detailHref} className="project-link" onClick={keepActionClick}>
-                            <ArrowRight size={14} />
-                            {locale === 'zh' ? '详情' : locale === 'ja' ? '詳細' : 'Details'}
-                          </Link>
-                        )}
-                        {project.link && (
-                          <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link" onClick={keepActionClick}>
-                            <ExternalLink size={14} />
-                            {actionLabels.website}
-                          </a>
-                        )}
-                        {project.video && (
-                          <a href={project.video} target="_blank" rel="noopener noreferrer" className="project-link" onClick={keepActionClick}>
-                            <PlayCircle size={14} />
-                            {actionLabels.video}
-                          </a>
-                        )}
-                        {papers.map((paper: any) => (
-                          paper.href ? (
-                            <a key={`${paper.label}-${paper.href}`} href={paper.href} className="project-link" onClick={keepActionClick}>
-                              <FileText size={14} />
-                              {paper.label || 'Paper'}
-                            </a>
-                          ) : (
-                            <span key={paper.label} className="project-link project-link-static" onClick={keepActionClick}>
-                              <FileText size={14} />
-                              {paper.label || 'Paper'}
-                            </span>
-                          )
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </article>
-              );
-            })}
-          </div>
+          <SectionHeading kicker="02 · Systems" title={t.projects.title} summary={t.projects.subtitle} />
+          <div className="projects-grid">{featuredProjects.map((project) => <ProjectCard key={project.slug} project={project} locale={locale} />)}</div>
+          <div className="view-all-wrap"><Link className="btn btn-light" href={projectsHref}>{t.projects.all.replace('{count}', String(projects.length))}<ArrowRight size={16} /></Link></div>
         </div>
       </section>
 
       <section id="publications" className="section section-alt">
         <div className="container">
-          <SectionHeading
-            title={t.nav.publications}
-            summary={locale === 'zh' ? '精选成果：ACL、CSCW 与 IJCAI 代表性论文' : locale === 'ja' ? '注目の研究成果：ACL・CSCW・IJCAIの代表的な論文' : 'Featured publications at ACL, CSCW, and IJCAI'}
-          />
-
+          <SectionHeading kicker="03 · Evidence" title={t.nav.publications} summary={locale === 'zh' ? '精选成果：ACL、CSCW 与 IJCAI 代表性论文' : locale === 'ja' ? 'ACL・CSCW・IJCAIの代表的な論文' : 'Selected publications at ACL, CSCW, and IJCAI'} />
           <div className="pub-list">
-            {homePubs.map((e) => (
-              <a key={e.id} className="pub-item" href={e.doi || e.url || `${publicationHref}#${e.id}`}>
-                <div className="pub-year">{e.year}</div>
-                <div className="pub-title">{e.title}</div>
-                <div className="pub-venue">{(e as any).abbr || (e as any).journal || (e as any).booktitle || ''}</div>
-                <div className="card-arrow">
-                  <ArrowRight size={18} />
-                </div>
+            {homePubs.map((entry) => (
+              <a key={entry.id} className="pub-item" href={entry.doi || entry.url || `${publicationHref}#${entry.id}`}>
+                <div className="pub-year">{entry.year}</div>
+                <div className="pub-title">{entry.title}</div>
+                <div className="pub-venue">{entry.abbr || entry.journal || entry.booktitle || ''}</div>
+                <div className="card-arrow"><ArrowRight size={18} /></div>
               </a>
             ))}
           </div>
+          <div className="view-all-wrap"><Link href={publicationHref} className="btn btn-light">{locale === 'zh' ? '查看全部成果' : locale === 'ja' ? '全ての業績を見る' : 'View all publications'}<ArrowRight size={16} /></Link></div>
+        </div>
+      </section>
 
-          <div className="view-all-wrap">
-            <Link href={publicationHref} className="btn btn-outline" style={{ color: 'var(--color-text)', borderColor: 'var(--color-border)' }}>
-              <span>{locale === 'zh' ? '查看全部成果' : locale === 'ja' ? '全ての業績を見る' : 'View all publications'}</span>
-              <ArrowRight size={16} />
-            </Link>
+      <section id="community" className="section">
+        <div className="container">
+          <SectionHeading kicker="04 · Community" title={t.community.title} summary={t.community.summary} />
+          <div className="community-grid">
+            {t.community.items.map((item, index) => (
+              <article className="community-card" key={item.name}>
+                <h3>{item.name}</h3>
+                <p className="community-role">{item.role}</p>
+                <p>{item.description}</p>
+                {index === 1 ? <a className="text-action" href="https://space.hintlab.cn/" target="_blank" rel="noopener noreferrer">{item.action}<ArrowRight size={16} /></a> : <Link className="text-action" href={index === 0 ? projectsHref : '#contact'}>{item.action}<ArrowRight size={16} /></Link>}
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      <section id="students" className="section">
+      <section id="students" className="section section-alt">
         <div className="container">
-          <SectionHeading
-            title={t.students.title}
-            summary={t.students.summary.replace('{count}', String(t.students.rows.length))}
-          />
-          <div className="table-wrap student-table-wrap" tabIndex={0} role="region" aria-label={t.students.title}>
-            <table className="table student-table">
-              <thead>
-                <tr>
-                  {t.students.columns.map((column) => <th key={column} scope="col">{column}</th>)}
-                </tr>
-              </thead>
-              <tbody>
-                {t.students.rows.map((row, rowIndex) => (
-                  <tr key={rowIndex}>
-                    {row.map((cell, columnIndex) => (
-                      <td key={columnIndex}>
-                        {typeof cell === 'object' ? <Link href={cell.href}>{cell.text}</Link> : cell}
-                      </td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <SectionHeading kicker="05 · People" title={t.team.title} summary={t.team.summary.replace('{count}', String(t.students.rows.length))} />
+          <Link className="team-lead-link" href={aboutHref}>{t.team.lead} · {t.profile.name}<ArrowRight size={16} /></Link>
+          <div className="team-preview">
+            {[6, 7, 11].map((index) => {
+              const row = t.students.rows[index];
+              if (!row) return null;
+              const name = row[0];
+              return <article className="team-member" key={index}>
+                <p className="member-cohort">{t.team.cohort.replace('{year}', String(row[1]))}</p>
+                <h3>{typeof name === 'object' ? <Link href={name.href}>{name.text}<ArrowRight size={16} /></Link> : name}</h3>
+                <p className="member-direction-label">{t.team.direction}</p>
+                <p>{typeof row[4] === 'string' ? row[4] : row[4].text}</p>
+              </article>;
+            })}
           </div>
+          <div className="view-all-wrap"><Link className="btn btn-light" href={teamHref}>{t.team.all}<ArrowRight size={16} /></Link></div>
         </div>
       </section>
 
-      <section id="contact" className="section section-alt">
+      <section id="open-questions" className="section">
         <div className="container">
-          <SectionHeading
-            title={t.contact.title}
-            summary={contactSummary}
-          />
-
-          <div className="contact-panel">
-            <div className="contact-panel-item">
-              <div className="contact-icon-box">
-                <Mail size={22} strokeWidth={1.5} />
-              </div>
-              <div className="contact-text-box">
-                <label>{t.contact.emailLabel}</label>
-                <button onClick={() => setShowContactModal(true)} style={{ background: 'none', border: 'none', color: 'var(--color-primary)', cursor: 'pointer', fontSize: 'inherit', fontWeight: 500, textDecoration: 'underline', padding: 0 }}>{t.contact.email}</button>
-              </div>
-            </div>
-
-            <div className="contact-panel-divider" />
-
-            <a
-              className="contact-panel-item"
-              href="https://github.com/hint-lab"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="contact-icon-box">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                </svg>
-              </div>
-              <div className="contact-text-box">
-                <label>GitHub</label>
-                <span>github.com/hint-lab</span>
-              </div>
-            </a>
+          <SectionHeading kicker="06 · Open Questions" title={t.openQuestions.title} summary={t.openQuestions.summary} />
+          <div className="open-questions-list">
+            {t.openQuestions.items.map((question, index) => (
+              <article className="open-question" key={question.title}>
+                <span className="question-number">0{index + 1}</span>
+                <div><h3>{question.title}</h3><p>{question.body}</p>{projectLinks(question.slugs)}</div>
+              </article>
+            ))}
           </div>
+          <a className="text-action" href="#expectations">{t.openQuestions.cta}<ArrowRight size={16} /></a>
         </div>
       </section>
 
@@ -434,6 +246,58 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
         </div>
       </section>
 
+
+      <section id="contact" className="section section-alt">
+        <div className="container">
+          <SectionHeading
+            title={t.contact.title}
+            summary={contactSummary}
+          />
+
+          <div className="contact-panel">
+            <div className="contact-panel-item">
+              <div className="contact-icon-box">
+                <Mail size={22} strokeWidth={1.5} />
+              </div>
+              <div className="contact-text-box">
+                <label>{t.contact.emailLabel}</label>
+                <a className="contact-email-link" href={`mailto:${t.contact.email}`}>{t.contact.email}</a>
+              </div>
+            </div>
+
+            <div className="contact-panel-divider" />
+
+            <a
+              className="contact-panel-item"
+              href="https://github.com/hint-lab"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="contact-icon-box">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
+              </div>
+              <div className="contact-text-box">
+                <label>GitHub</label>
+                <span>github.com/hint-lab</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <footer className="site-footer">
         <div className="container">
           <p className="footer-brand">© {new Date().getFullYear()} H!NT Lab · Shanghai University</p>
@@ -441,7 +305,7 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
             <a href="#home">{footerLinks.home}</a>
             <a href="#research-areas">{footerLinks.research}</a>
             <a href="#projects">{footerLinks.projects}</a>
-            <a href="#students">{t.nav.students}</a>
+            <Link href={teamHref}>{t.team.nav}</Link>
             <a href="#contact">{footerLinks.contact}</a>
           </div>
           <div className="footer-beian">
@@ -458,23 +322,15 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
         </div>
       </footer>
 
-      <SideToc
-        items={[
-          { id: 'home', label: t.nav.home },
-          { id: 'research-areas', label: t.labIntro.researchTitle },
-          { id: 'projects', label: t.nav.projects },
-          { id: 'students', label: t.nav.students },
-          { id: 'contact', label: t.nav.contact },
-          { id: 'expectations', label: t.expectations.title },
-        ]}
-      />
-
-      {showContactModal && (
-        <ContactModal
-          t={{ ...t.expectations, email: t.contact.email }}
-          onClose={() => setShowContactModal(false)}
-        />
-      )}
+      <SideToc items={[
+        { id: 'home', label: t.nav.home },
+        { id: 'research-areas', label: t.nav.research },
+        { id: 'projects', label: t.nav.projects },
+        { id: 'publications', label: t.nav.publications },
+        { id: 'community', label: 'H!NT SPACE' },
+        { id: 'open-questions', label: locale === 'zh' ? '开放问题' : locale === 'ja' ? '未解決の問い' : 'Open questions' },
+        { id: 'expectations', label: t.hero.ctaEmail },
+      ]} />
     </main>
   );
 }

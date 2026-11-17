@@ -8,7 +8,7 @@ import { ChevronDown } from 'lucide-react';
 
 type LangSwitchProps = {
     /** site = 首页导航；about = 王老师页面三语切换；person = 学生/成员页面三语切换 */
-    scope?: 'site' | 'about' | 'person';
+    scope?: 'site' | 'about' | 'person' | 'team' | 'projects';
     /** 仅 scope='person' 时使用，对应 data/people/<id>.json 的 id */
     personId?: string;
     /** 'dark' = hero 深色背景, 'light' = 白色背景页面 */
@@ -19,7 +19,9 @@ export default function LangSwitch({ scope = 'site', personId, theme = 'dark' }:
     const pathname = usePathname();
 
     const routes: { zh: string; en: string; ja: string } =
-        scope === 'about'
+        scope === 'team' || scope === 'projects'
+            ? { zh: `/${scope}`, en: `/en/${scope}`, ja: `/ja/${scope}` }
+            : scope === 'about'
             ? { zh: '/people/wang_hao', en: '/people/wang_hao/en', ja: '/people/wang_hao/ja' }
             : scope === 'person' && personId
                 ? { zh: `/people/${personId}`, en: `/people/${personId}/en`, ja: `/people/${personId}/ja` }

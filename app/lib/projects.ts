@@ -8,6 +8,9 @@ type Localized<T> = {
   ja: T;
 };
 
+export const researchFields = ['question', 'hypothesis', 'system', 'evidence', 'limitations', 'openProblems'] as const;
+export type ResearchField = typeof researchFields[number];
+
 type ProjectSource = {
   slug: string;
   name: string | Localized<string>;
@@ -19,6 +22,7 @@ type ProjectSource = {
   statusTone?: string;
   status?: Localized<string>;
   description: Localized<string>;
+  research: Record<ResearchField, Localized<string>>;
   papers?: Array<{
     label: Localized<string>;
     href: Localized<string>;
@@ -45,6 +49,7 @@ export type ProjectView = {
   status: string;
   statusTone: string;
   description: string;
+  research: Record<ResearchField, string>;
   papers: Array<{
     label: string;
     href: string;
@@ -78,6 +83,7 @@ export function getProjects(locale: Locale): ProjectView[] {
     status: project.status ? pick(project.status, locale) : '',
     statusTone: project.statusTone || '',
     description: pick(project.description, locale),
+    research: Object.fromEntries(researchFields.map((field) => [field, pick(project.research[field], locale)])) as Record<ResearchField, string>,
     papers: (project.papers || []).map((paper) => ({
       label: pick(paper.label, locale),
       href: pick(paper.href, locale),
