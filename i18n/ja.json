@@ -427,9 +427,9 @@
                 "action": "H!NT SPACEへ"
             },
             {
-                "name": "Lab Services",
+                "name": "H!NT Portal",
                 "role": "内部アプリ · 研究ツール",
-                "description": "研究室メンバー向けの内部アプリと研究ツールです。利用権限に応じてアクセスできます。",
+                "description": "研究室メンバー専用です。ログインすると、利用権限のある内部アプリや研究ツールにアクセスできます。",
                 "action": "H!NT Portalへ"
             }
         ]

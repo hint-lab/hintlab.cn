@@ -439,9 +439,9 @@
                 "action": "进入共创空间"
             },
             {
-                "name": "Lab Services",
+                "name": "H!NT Portal",
                 "role": "内部应用 · 研究工具",
-                "description": "供实验室成员使用的内部应用与研究工具，按权限开放。",
+                "description": "仅实验室成员使用。登录后可访问已获授权的内部应用与研究工具。",
                 "action": "进入 H!NT Portal"
             }
         ]

@@ -426,9 +426,9 @@
                 "action": "Visit H!NT SPACE"
             },
             {
-                "name": "Lab Services",
+                "name": "H!NT Portal",
                 "role": "Internal apps · Research tools",
-                "description": "Internal applications and research tools for lab members, with access based on permissions.",
+                "description": "For lab members only. Sign in to access the internal apps and research tools available to you.",
                 "action": "Open H!NT Portal"
             }
         ]
