@@ -157,7 +157,13 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
                 <h3>{item.name}</h3>
                 <p className="community-role">{item.role}</p>
                 <p>{item.description}</p>
-                {index === 1 ? <a className="text-action" href="https://space.hintlab.cn/" target="_blank" rel="noopener noreferrer">{item.action}<ArrowRight size={16} /></a> : <Link className="text-action" href={index === 0 ? projectsHref : '#contact'}>{item.action}<ArrowRight size={16} /></Link>}
+                {index === 0 ? (
+                  <Link className="text-action" href={projectsHref}>{item.action}<ArrowRight size={16} /></Link>
+                ) : index === 1 ? (
+                  <a className="text-action" href="https://space.hintlab.cn/" target="_blank" rel="noopener noreferrer">{item.action}<ArrowRight size={16} /></a>
+                ) : (
+                  <a className="text-action" href={portalHref}>{item.action}<ArrowRight size={16} /></a>
+                )}
               </article>
             ))}
           </div>

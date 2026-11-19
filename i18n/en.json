@@ -429,7 +429,7 @@
                 "name": "Lab Services",
                 "role": "Internal apps · Research tools",
                 "description": "Internal applications and research tools for lab members, with access based on permissions.",
-                "action": "Ask about access"
+                "action": "Open H!NT Portal"
             }
         ]
     },
