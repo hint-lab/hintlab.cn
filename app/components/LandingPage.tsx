@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Brain, FileText, Lightbulb, Mail, Menu, X } from 'lucide-react';
+import { ArrowRight, Brain, FileText, Lightbulb, LockKeyhole, Mail, Menu, X } from 'lucide-react';
 import LangSwitch from './LangSwitch';
 import SideToc from './SideToc';
 import ProjectCard, { projectHref } from './ProjectCard';
@@ -19,6 +19,7 @@ type LandingPageProps = {
 };
 
 const iconMap = { Brain, Lightbulb, FileText };
+const portalHref = 'https://portal.hintlab.cn/';
 
 function SectionHeading({ kicker, title, summary }: { kicker?: string; title: string; summary?: string }) {
   return (
@@ -44,6 +45,7 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
   const projectsHref = `${homeHref}projects`;
   const footerLinks = { home: t.nav.home, research: t.nav.research, projects: t.nav.projects, contact: t.nav.contact };
   const contactSummary = locale === 'zh' ? '欢迎咨询研究合作、招生及实验室服务。' : locale === 'ja' ? '共同研究、学生募集、研究室サービスについてお問い合わせください。' : 'Contact us about research collaboration, graduate study, or lab services.';
+  const portalLabel = locale === 'zh' ? '成员入口' : locale === 'ja' ? 'メンバー入口' : 'Members';
   const closeMenu = () => setMenuOpen(false);
   const projectLinks = (slugs: string[]) => (
     <div className="research-project-links">
@@ -67,9 +69,14 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
             <Link href={publicationHref} onClick={closeMenu}>{t.nav.publications}</Link>
             <Link href={teamHref} onClick={closeMenu}>{t.team.nav}</Link>
             <a href="#contact" onClick={closeMenu}>{t.nav.contact}</a>
+            <a className="member-entry-mobile" href={portalHref} onClick={closeMenu}>{portalLabel}</a>
           </nav>
           <div className="header-actions">
             <LangSwitch />
+            <a className="member-entry" href={portalHref}>
+              <LockKeyhole size={15} aria-hidden="true" />
+              {portalLabel}
+            </a>
             <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label={locale === 'zh' ? '切换导航菜单' : locale === 'ja' ? 'メニュー切替' : 'Toggle menu'} aria-expanded={menuOpen} aria-controls="main-nav">
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
