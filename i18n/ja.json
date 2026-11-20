@@ -16,14 +16,13 @@
     "hero": {
         "title": "知能を、現実の世界へ。",
         "subtitle": "マルチモーダル理解 · 人間とAIの協働 · 複雑システム",
-        "ctaLearn": "研究プロジェクトを見る",
         "ctaEmail": "参加する",
         "eyebrow": "H!NT LAB · HUMAN–AI INTELLIGENCE"
     },
     "labFilm": {
         "title": "研究室紹介動画",
-        "description": "多言語文書から人と AI の協働まで、H!NT Lab の研究を60秒で紹介します。",
-        "play": "動画を再生"
+        "view": "紹介を見る",
+        "close": "動画を閉じる"
     },
     "labIntro": {
         "title": "H!NT Lab",

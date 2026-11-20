@@ -35,7 +35,15 @@ function SectionHeading({ kicker, title, summary }: { kicker?: string; title: st
 
 export default function LandingPage({ t, aboutHref, publicationHref, locale }: LandingPageProps) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const filmButton = useRef<HTMLButtonElement>(null);
+  const filmDialog = useRef<HTMLDialogElement>(null);
   const filmPlayer = useRef<HTMLVideoElement>(null);
+  const openFilm = () => {
+    const dialog = filmDialog.current;
+    if (!dialog || dialog.open) return;
+    dialog.showModal();
+    void filmPlayer.current?.play().catch(() => {});
+  };
   // Keep the homepage selection and order independent of publication dates.
   const homePubs = ['qi2026babeldoc', 'lian2026deeptrans', 'liu2026deepmed']
     .flatMap((id) => pubs.filter((pub) => pub.id === id));
@@ -96,38 +104,43 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
             <p className="hero-description">{t.labIntro.p1}</p>
             <p className="hero-keywords">{t.hero.subtitle}</p>
             <div className="hero-actions">
-              <a className="btn btn-primary" href="#projects">{t.hero.ctaLearn}<ArrowRight size={18} /></a>
+              <button ref={filmButton} id="lab-film" className="btn btn-primary lab-film-trigger" type="button"
+                aria-haspopup="dialog" aria-controls="lab-film-dialog" onClick={openFilm}>
+                <Play size={17} aria-hidden="true" />{t.labFilm.view}
+              </button>
               <a className="btn btn-outline" href="#expectations">{t.hero.ctaEmail}<ArrowRight size={18} /></a>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="lab-film" className="lab-film" aria-labelledby="lab-film-title">
-        <div className="container lab-film-inner">
-          <div className="lab-film-copy">
+      <dialog ref={filmDialog} id="lab-film-dialog" className="lab-film-dialog" aria-labelledby="lab-film-title"
+        onClick={(event) => {
+          if (event.target === event.currentTarget) event.currentTarget.close();
+        }}
+        onClose={() => {
+          filmPlayer.current?.pause();
+          filmButton.current?.focus({ preventScroll: true });
+        }}>
+        <div className="lab-film-content">
+          <header className="lab-film-header">
             <h2 id="lab-film-title">{t.labFilm.title}</h2>
-            <p>{t.labFilm.description}</p>
-            <button className="btn btn-light lab-film-play" type="button" aria-controls="lab-film-player" onClick={() => {
-              const player = filmPlayer.current;
-              if (player) {
-                player.focus();
-                void player.play().catch(() => {});
-              }
-            }}>
-              <Play size={17} aria-hidden="true" />{t.labFilm.play}
-            </button>
-          </div>
+            <form method="dialog">
+              <button className="lab-film-close" type="submit" aria-label={t.labFilm.close}>
+                <X size={22} aria-hidden="true" />
+              </button>
+            </form>
+          </header>
           <video ref={filmPlayer} id="lab-film-player" className="lab-film-player" aria-labelledby="lab-film-title"
             poster={`${labFilm}-poster.webp`} width={2560} height={1440} controls playsInline preload="none" tabIndex={0}>
             <source src={`${labFilm}.mp4`} type="video/mp4" />
             <track kind="captions" src={`${labFilm}-zh.vtt`} srcLang="zh-CN" label="简体中文" />
             <track kind="subtitles" src={`${labFilm}-en.vtt`} srcLang="en" label="English" default={locale === 'en'} />
             <track kind="subtitles" src={`${labFilm}-ja.vtt`} srcLang="ja" label="日本語" default={locale === 'ja'} />
-            <a href={`${labFilm}.mp4`}>{t.labFilm.play}</a>
+            <a href={`${labFilm}.mp4`}>{t.labFilm.view}</a>
           </video>
         </div>
-      </section>
+      </dialog>
 
       <section id="research-areas" className="section section-alt">
         <div className="container">

@@ -16,14 +16,13 @@
     "hero": {
         "title": "Bring intelligence into the real world.",
         "subtitle": "Multimodal Understanding · Human–AI Collaboration · Complex Systems",
-        "ctaLearn": "View research projects",
         "ctaEmail": "Join us",
         "eyebrow": "H!NT LAB · HUMAN–AI INTELLIGENCE"
     },
     "labFilm": {
         "title": "Meet H!NT Lab",
-        "description": "A 60-second look at our work, from multilingual documents to human–AI collaboration.",
-        "play": "Play the film"
+        "view": "View introduction",
+        "close": "Close video"
     },
     "labIntro": {
         "title": "H!NT Lab",

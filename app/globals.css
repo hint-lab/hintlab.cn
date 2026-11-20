@@ -1920,48 +1920,72 @@ img {
 .mission-hero .hero-description { max-width: 650px; font-size: 18px; margin: 24px 0; }
 .mission-hero .hero-keywords { font-size: 13px; letter-spacing: 0.1em; margin-bottom: 34px; }
 
-.lab-film-inner {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.48fr);
-  gap: clamp(32px, 6vw, 92px);
-  align-items: center;
-  padding-block: clamp(44px, 5vw, 72px);
-}
-
-.lab-film-copy h2 {
-  margin: 0 0 12px;
-  font-size: clamp(1.65rem, 3vw, 2.4rem);
-  letter-spacing: -0.03em;
-  line-height: 1.2;
-}
-
-.lab-film-copy p {
-  max-width: 36ch;
-  margin: 0 0 24px;
-  color: var(--color-muted);
-  line-height: 1.75;
-}
-
-.lab-film-play {
-  min-height: 44px;
+.lab-film-trigger {
+  border: 1px solid transparent;
   font-family: inherit;
+  line-height: inherit;
   cursor: pointer;
 }
+
+html:has(.lab-film-dialog[open]) { overflow: hidden; }
+
+.lab-film-dialog {
+  width: min(960px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 12px;
+  background: #141617;
+  color: #fff;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+  overflow: hidden;
+}
+
+.lab-film-dialog::backdrop { background: rgba(0, 0, 0, 0.72); }
+
+.lab-film-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 10px 6px 20px;
+}
+
+.lab-film-header h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.lab-film-close {
+  display: grid;
+  place-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.lab-film-close:hover { background: rgba(255, 255, 255, 0.1); }
 
 .lab-film-player {
   display: block;
   width: 100%;
   height: auto;
+  max-height: calc(100dvh - 90px);
   aspect-ratio: 16 / 9;
-  border-radius: 8px;
+  object-fit: contain;
   background: #080b0c;
-  box-shadow: var(--shadow-sm);
 }
 
-.lab-film-play:focus-visible,
+.lab-film-trigger:focus-visible,
+.lab-film-close:focus-visible,
 .lab-film-player:focus-visible {
-  outline: 2px solid var(--color-text);
-  outline-offset: 4px;
+  outline: 2px solid #fff;
+  outline-offset: 3px;
 }
 
 .research-area { align-items: stretch; text-align: left; }
@@ -2055,7 +2079,8 @@ img {
   .hero-eyebrow { font-size: 10px; letter-spacing: 0.1em; }
   .mission-hero .hero-description { font-size: 15px; display: block; overflow: visible; }
   .mission-hero .hero-keywords { font-size: 12px; line-height: 1.8; }
-  .lab-film-inner { grid-template-columns: minmax(0, 1fr); gap: 24px; padding-block: 40px; }
+  .mission-hero .hero-actions { flex-flow: row wrap; }
+  .mission-hero .hero-actions .btn { gap: 8px; padding-inline: clamp(14px, 4vw, 24px); }
   .team-preview, .research-evidence-grid { grid-template-columns: 1fr; gap: 12px; }
   .open-question { grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 26px 0; }
   .open-question h3 { font-size: 19px; }
