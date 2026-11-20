@@ -20,6 +20,11 @@
         "ctaEmail": "Join us",
         "eyebrow": "H!NT LAB · HUMAN–AI INTELLIGENCE"
     },
+    "labFilm": {
+        "title": "Meet H!NT Lab",
+        "description": "A 60-second look at our work, from multilingual documents to human–AI collaboration.",
+        "play": "Play the film"
+    },
     "labIntro": {
         "title": "H!NT Lab",
         "p1": "We study how people and AI understand information, make decisions, and solve problems together in real tasks.",

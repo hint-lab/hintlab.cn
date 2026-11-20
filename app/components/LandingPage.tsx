@@ -1,9 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Brain, FileText, Lightbulb, LockKeyhole, Mail, Menu, X } from 'lucide-react';
+import { ArrowRight, Brain, FileText, Lightbulb, LockKeyhole, Mail, Menu, Play, X } from 'lucide-react';
 import LangSwitch from './LangSwitch';
 import SideToc from './SideToc';
 import ProjectCard, { projectHref } from './ProjectCard';
@@ -20,6 +20,7 @@ type LandingPageProps = {
 
 const iconMap = { Brain, Lightbulb, FileText };
 const portalHref = 'https://portal.hintlab.cn/';
+const labFilm = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/media/hintlab-film-20261121`;
 
 function SectionHeading({ kicker, title, summary }: { kicker?: string; title: string; summary?: string }) {
   return (
@@ -34,6 +35,7 @@ function SectionHeading({ kicker, title, summary }: { kicker?: string; title: st
 
 export default function LandingPage({ t, aboutHref, publicationHref, locale }: LandingPageProps) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const filmPlayer = useRef<HTMLVideoElement>(null);
   // Keep the homepage selection and order independent of publication dates.
   const homePubs = ['qi2026babeldoc', 'lian2026deeptrans', 'liu2026deepmed']
     .flatMap((id) => pubs.filter((pub) => pub.id === id));
@@ -98,6 +100,32 @@ export default function LandingPage({ t, aboutHref, publicationHref, locale }: L
               <a className="btn btn-outline" href="#expectations">{t.hero.ctaEmail}<ArrowRight size={18} /></a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="lab-film" className="lab-film" aria-labelledby="lab-film-title">
+        <div className="container lab-film-inner">
+          <div className="lab-film-copy">
+            <h2 id="lab-film-title">{t.labFilm.title}</h2>
+            <p>{t.labFilm.description}</p>
+            <button className="btn btn-light lab-film-play" type="button" aria-controls="lab-film-player" onClick={() => {
+              const player = filmPlayer.current;
+              if (player) {
+                player.focus();
+                void player.play().catch(() => {});
+              }
+            }}>
+              <Play size={17} aria-hidden="true" />{t.labFilm.play}
+            </button>
+          </div>
+          <video ref={filmPlayer} id="lab-film-player" className="lab-film-player" aria-labelledby="lab-film-title"
+            poster={`${labFilm}-poster.webp`} width={2560} height={1440} controls playsInline preload="none" tabIndex={0}>
+            <source src={`${labFilm}.mp4`} type="video/mp4" />
+            <track kind="captions" src={`${labFilm}-zh.vtt`} srcLang="zh-CN" label="简体中文" />
+            <track kind="subtitles" src={`${labFilm}-en.vtt`} srcLang="en" label="English" default={locale === 'en'} />
+            <track kind="subtitles" src={`${labFilm}-ja.vtt`} srcLang="ja" label="日本語" default={locale === 'ja'} />
+            <a href={`${labFilm}.mp4`}>{t.labFilm.play}</a>
+          </video>
         </div>
       </section>
 

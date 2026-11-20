@@ -20,6 +20,11 @@
         "ctaEmail": "参加する",
         "eyebrow": "H!NT LAB · HUMAN–AI INTELLIGENCE"
     },
+    "labFilm": {
+        "title": "研究室紹介動画",
+        "description": "多言語文書から人と AI の協働まで、H!NT Lab の研究を60秒で紹介します。",
+        "play": "動画を再生"
+    },
     "labIntro": {
         "title": "H!NT Lab",
         "p1": "実際の課題において、人間とAIがともに情報を理解し、判断し、問題を解決する仕組みを研究しています。",

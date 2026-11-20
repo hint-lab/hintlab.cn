@@ -21,6 +21,11 @@
         "ctaEmail": "加入我们",
         "eyebrow": "H!NT LAB · HUMAN–AI INTELLIGENCE"
     },
+    "labFilm": {
+        "title": "实验室短片",
+        "description": "从跨语言文档到人机协同，60 秒了解 H!NT Lab。",
+        "play": "播放短片"
+    },
     "labIntro": {
         "title": "H!NT Lab",
         "p1": "我们研究人类与人工智能如何在真实任务中共同理解信息、作出决策、解决问题。",
